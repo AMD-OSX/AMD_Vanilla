@@ -1,2 +1,6 @@
 # AMD_Vanilla
-Native AMD macOS
+
+
+ - Beta 
+ - Support Currently only supports Ryzen CPUs
+ -  Enables the use of iMessage, Siri etc
