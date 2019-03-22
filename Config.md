@@ -9,6 +9,7 @@
  
  ### Clover KernelToPatch
 
+
     	<key>KernelAndKextPatches</key>
 	<dict>
 		<key>KernelToPatch</key>
@@ -36,13 +37,13 @@
 				<false/>
 				<key>Find</key>
 				<data>
-				6Ar2//8=
+				6Ar2//+c
 				</data>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
 				<key>Replace</key>
 				<data>
-				Dx9EAAA=
+				Dx9EAACc
 				</data>
 			</dict>
 			<dict>
@@ -55,7 +56,7 @@
 				6Kn1//8=
 				</data>
 				<key>MatchOS</key>
-				<string>10.14.1,10.14.3</string>
+				<string>10.14.x</string>
 				<key>Replace</key>
 				<data>
 				Dx9EAAA=
@@ -72,12 +73,36 @@
 				9jHAQYnIRInyidno6IlYAEGD/gQPgvoBAABFMfbrDGYP
 				H4QAAAAAAA==
 				</data>
+				<key>MatchBuild</key>
+				<string>17G65</string>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
 				<key>Replace</key>
 				<data>
 				uB0AAIAx2zHJMdIPokGJxkGJ0YM9xwWNAAB0G0iNPY+S
 				XwC+HQAAgDHAQYnIRInyidno4olYAEGD/gQPgvQBAABF
+				MfbrBg8fAA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>algrey - cpuid_set_cache_info - cpuid 0x8000001D instead 0</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				McAx2zHJMdIPokGJxkGJ0YM9yu2MAAB0GEiNPQ+GXwAx
+				9jHAQYnIRInyidno2HpYAEGD/gQPgvoBAABFMfbrDGYP
+				H4QAAAAAAA==
+				</data>
+				<key>MatchBuild</key>
+				<string>17G5019</string>
+				<key>MatchOS</key>
+				<string>10.13.6</string>
+				<key>Replace</key>
+				<data>
+				uB0AAIAx2zHJMdIPokGJxkGJ0YM9x+2MAAB0G0iNPQyG
+				XwC+HQAAgDHAQYnIRInyidno0npYAEGD/gQPgvQBAABF
 				MfbrBg8fAA==
 				</data>
 			</dict>
@@ -146,6 +171,26 @@
 				<data>
 				wega/8CJBRgEjQBEieg=
 				</data>
+				<key>MatchBuild</key>
+				<string>17G65</string>
+				<key>MatchOS</key>
+				<string>10.13.6</string>
+				<key>Replace</key>
+				<data>
+				Zg8fhAAAAAAADx9EAAA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>algrey - cpuid_set_cache_info - cpuid 0x8000001D instead 4 part2</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				wega/8CJBRjsjABEieg=
+				</data>
+				<key>MatchBuild</key>
+				<string>17G5019</string>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
 				<key>Replace</key>
@@ -235,6 +280,22 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>algrey - cpuid_set_generic_info - disable check to allow leaf7</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				ADoPgg==
+				</data>
+				<key>MatchOS</key>
+				<string>10.13.6,10.14.x</string>
+				<key>Replace</key>
+				<data>
+				AAAPgg==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>algrey - cpuid_set_info - GenuineIntel to AuthenticAMD </string>
 				<key>Disabled</key>
 				<false/>
@@ -258,6 +319,26 @@
 				<data>
 				MduAPbgLjQAGdVw=
 				</data>
+				<key>MatchBuild</key>
+				<string>17G65</string>
+				<key>MatchOS</key>
+				<string>10.13.6</string>
+				<key>Replace</key>
+				<data>
+				u58h/DfpXQAAAJA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>algrey - cpuid_set_cpufamily - force CPUFAMILY_INTEL_SKYLAKE </string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				MduAPbjzjAAGdVw=
+				</data>
+				<key>MatchBuild</key>
+				<string>17G5019</string>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
 				<key>Replace</key>
@@ -310,6 +391,8 @@
 				EIkFOguNAIkVOAuNAIXAdRiLBWIKjQCJBSQLjQCLBVoK
 				jQCJBRwLjQA=
 				</data>
+				<key>MatchBuild</key>
+				<string>17G65</string>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
 				<key>Replace</key>
@@ -319,6 +402,32 @@
 				HgAAgDHbMckx0g+iQYnAQYnRZg8fhAAAAAAAD7bP/8Ex
 				0kSJ8PfxiQVtCo0ARIk1agqNAIM9JwuNAAB1DYkFHwuN
 				AESJNRwLjQA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>algrey - cpuid_set_info - ryzen cores and logicals count</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				PexeO1d0Gz28T+p4dTaLBcjyjACJBYrzjACLDcDyjADr
+				Frk1AAAADzIPt8jB6BCD4A+JBWzzjACJDWrzjACFwHVK
+				6zC5NQAAAA8ySMHiIInBSAnRuQEAAQAPRcgPt9GJyMHo
+				EIkFOvOMAIkVOPOMAIXAdRiLBWLyjACJBSTzjACLBVry
+				jACJBRzzjAA=
+				</data>
+				<key>MatchBuild</key>
+				<string>17G5019</string>
+				<key>MatchOS</key>
+				<string>10.13.6</string>
+				<key>Replace</key>
+				<data>
+				uAgAAIAx2zHJMdIPokGJwEGJzkGJ0YM97/OMAAB0G2YP
+				H4QAAAAAAGYPH4QAAAAAAGYPH4QAAAAAAEUPtvZB/8a4
+				HgAAgDHbMckx0g+iQYnAQYnRZg8fhAAAAAAAD7bP/8Ex
+				0kSJ8PfxiQVt8owARIk1avKMAIM9J/OMAAB1DYkFH/OM
+				AESJNRzzjAA=
 				</data>
 			</dict>
 			<dict>
@@ -395,6 +504,8 @@
 				SLrbNLbXgt4bQ0iJyEj34kjB6hJpwkBCDwApwUiNPaeN
 				XgAxwInWicpMieFJidjobTNXAEiLHeaqhQA=
 				</data>
+				<key>MatchBuild</key>
+				<string>17G65</string>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
 				<key>Replace</key>
@@ -402,6 +513,30 @@
 				uWQAAcAPMg+2yInGwe4Ig+Y/RTH/MdJIichI9/ZIicZI
 				acYAwusLSAH2SIkFCquFADHSSPf2SInDSIkdI6uFAEiJ
 				NQyrhQBmDx+EAAAAAABmDx+EAAAAAABmDx+EAAAAAABm
+				Dx+EAAAAAABmDx+EAAAAAABmDx+EAAAAAAA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>algrey - tsc_init - replace skylake with zen</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				RIug0AEAAIuY1AEAAEiNPceBXgDo2gMAAEiFwLkANm4B
+				SA9FyEiJyEkPr8RFMf8x0kj380iJBQCThQBIiQUhk4UA
+				SLrbNLbXgt4bQ0iJyEj34kjB6hJpwkBCDwApwUiNPYOB
+				XgAxwInWicpMieFJidjoXSRXAEiLHeaShQA=
+				</data>
+				<key>MatchBuild</key>
+				<string>17G5019</string>
+				<key>MatchOS</key>
+				<string>10.13.6</string>
+				<key>Replace</key>
+				<data>
+				uWQAAcAPMg+2yInGwe4Ig+Y/RTH/MdJIichI9/ZIicZI
+				acYAwusLSAH2SIkFCpOFADHSSPf2SInDSIkdI5OFAEiJ
+				NQyThQBmDx+EAAAAAABmDx+EAAAAAABmDx+EAAAAAABm
 				Dx+EAAAAAABmDx+EAAAAAABmDx+EAAAAAAA=
 				</data>
 			</dict>
@@ -474,6 +609,26 @@
 				<data>
 				gz2UlnAAAHQK
 				</data>
+				<key>MatchBuild</key>
+				<string>17G65</string>
+				<key>MatchOS</key>
+				<string>10.13.6</string>
+				<key>Replace</key>
+				<data>
+				60gPH4AAAAAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>algrey - lapic_interrupt - skip checks and prevent panic</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				gz2UfnAAAHQK
+				</data>
+				<key>MatchBuild</key>
+				<string>17G5019</string>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
 				<key>Replace</key>
