@@ -4,9 +4,14 @@
 ## Patches to enable Native AMD CPU Support on 10.13.6 and 10.14.x
 
  - Beta 
- - Support Currently only supports Ryzen CPUs
- -  Enables the use of iMessage, Siri etc
+ -  Supports Zen CPUs only (Ryzen, Threadripper, Athlon 2xxGE) 
+ -  Enables iMessage, Siri, Facetime, etc.
+ -  No OPEMU (32-bit app support)
  
+ 
+ Supported macOS : 
+ - High Sierra 10.13.6 (17G65, 17G66, 17G5019, 17G6029, 17G6030)
+ - Mojave 10.14.1, 10.14.3, 10.14.4
  
  ### Clover KernelToPatch
 
@@ -128,6 +133,28 @@
 				<false/>
 				<key>Find</key>
 				<data>
+				McAx2zHJMdIPokGJxkGJ0YM9yv2MAAB0GEiNPd+JXwAx
+				9jHAQYnIRInyidnoqH5YAEGD/gQPgvoBAABFMfbrDGYP
+				H4QAAAAAAA==
+				</data>
+				<key>MatchBuild</key>
+				<string>17G6029,17G6030</string>
+				<key>MatchOS</key>
+				<string>10.13.6</string>
+				<key>Replace</key>
+				<data>
+				uB0AAIAx2zHJMdIPokGJxkGJ0YM9x/2MAAB0G0iNPdyJ
+				XwC+HQAAgDHAQYnIRInyidnoon5YAEGD/gQPgvQBAABF
+				MfbrBg8fAA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>algrey - cpuid_set_cache_info - cpuid 0x8000001D instead 0</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
 				McAx2zHJMdIPokGJxkGJ0YM9+kGYAAB0GEiNPSvZZwAx
 				9jHAQYnIRInyidno2CxgAEGD/gQPgvsBAABFMfbrDGYP
 				H4QAAAAAAA==
@@ -195,74 +222,6 @@
 				<key>Replace</key>
 				<data>
 				uB0AAIBEifFEiQ==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>algrey - cpuid_set_cache_info - don't set cpuid_cores_per_package</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				wega/8CJBRgEjQBEieg=
-				</data>
-				<key>MatchBuild</key>
-				<string>17G65,17G66</string>
-				<key>MatchOS</key>
-				<string>10.13.6</string>
-				<key>Replace</key>
-				<data>
-				Zg8fhAAAAAAADx9EAAA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>algrey - cpuid_set_cache_info - don't set cpuid_cores_per_package</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				wega/8CJBRjsjABEieg=
-				</data>
-				<key>MatchBuild</key>
-				<string>17G5019</string>
-				<key>MatchOS</key>
-				<string>10.13.6</string>
-				<key>Replace</key>
-				<data>
-				Zg8fhAAAAAAADx9EAAA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>algrey - cpuid_set_cache_info - don't set cpuid_cores_per_package</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				wega/8CJBUhAmABEieg=
-				</data>
-				<key>MatchOS</key>
-				<string>10.14.1</string>
-				<key>Replace</key>
-				<data>
-				Zg8fhAAAAAAADx9EAAA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>algrey - cpuid_set_cache_info - don't set cpuid_cores_per_package</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				wega/8CJBZgimABEieg=
-				</data>
-				<key>MatchOS</key>
-				<string>10.14.3</string>
-				<key>Replace</key>
-				<data>
-				Zg8fhAAAAAAADx9EAAA=
 				</data>
 			</dict>
 			<dict>
@@ -404,6 +363,24 @@
 				<false/>
 				<key>Find</key>
 				<data>
+				MduAPbgDjQAGdVw=
+				</data>
+				<key>MatchBuild</key>
+				<string>17G6029,17G6030</string>
+				<key>MatchOS</key>
+				<string>10.13.6</string>
+				<key>Replace</key>
+				<data>
+				u58h/DfpXQAAAJA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>algrey - cpuid_set_cpufamily - force CPUFAMILY_INTEL_SKYLAKE </string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
 				MduAPehHmAAGdVw=
 				</data>
 				<key>MatchOS</key>
@@ -495,6 +472,32 @@
 				HgAAgDHbMckx0g+iQYnAQYnRZg8fhAAAAAAAD7bP/8Ex
 				0kSJ8PfxiQVt8owARIk1avKMAIM9J/OMAAB1DYkFH/OM
 				AESJNRzzjAA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>algrey - cpuid_set_info - ryzen cores and logicals count</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				PexeO1d0Gz28T+p4dTaLBcgCjQCJBYoDjQCLDcACjQDr
+				Frk1AAAADzIPt8jB6BCD4A+JBWwDjQCJDWoDjQCFwHVK
+				6zC5NQAAAA8ySMHiIInBSAnRuQEAAQAPRcgPt9GJyMHo
+				EIkFOgONAIkVOAONAIXAdRiLBWICjQCJBSQDjQCLBVoC
+				jQCJBRwDjQA=
+				</data>
+				<key>MatchBuild</key>
+				<string>17G6029,17G6030</string>
+				<key>MatchOS</key>
+				<string>10.13.6</string>
+				<key>Replace</key>
+				<data>
+				uAgAAIAx2zHJMdIPokGJwEGJzkGJ0YM97wONAAB0G2YP
+				H4QAAAAAAGYPH4QAAAAAAGYPH4QAAAAAAEUPtvZB/8a4
+				HgAAgDHbMckx0g+iQYnAQYnRZg8fhAAAAAAAD7bP/8Ex
+				0kSJ8PfxiQVtAo0ARIk1agKNAIM9JwONAAB1DYkFHwON
+				AESJNRwDjQA=
 				</data>
 			</dict>
 			<dict>
@@ -636,6 +639,30 @@
 				<false/>
 				<key>Find</key>
 				<data>
+				RIug0AEAAIuY1AEAAEiNPZeFXgDo2gMAAEiFwLkANm4B
+				SA9FyEiJyEkPr8RFMf8x0kj380iJBQCjhQBIiQUho4UA
+				SLrbNLbXgt4bQ0iJyEj34kjB6hJpwkBCDwApwUiNPVOF
+				XgAxwInWicpMieFJidjoLShXAEiLHeaihQA=
+				</data>
+				<key>MatchBuild</key>
+				<string>17G6029,17G6030</string>
+				<key>MatchOS</key>
+				<string>10.13.6</string>
+				<key>Replace</key>
+				<data>
+				uWQAAcAPMg+2yInGwe4Ig+Y/RTH/MdJIichI9/ZIicZI
+				acYAwusLSAH2SIkFCqOFADHSSPf2SInDSIkdI6OFAEiJ
+				NQyjhQBmDx+EAAAAAABmDx+EAAAAAABmDx+EAAAAAABm
+				Dx+EAAAAAABmDx+EAAAAAABmDx+EAAAAAAA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>algrey - tsc_init - replace skylake with zen</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
 				RIug0AEAAIuY1AEAAEiNPWqsZgDo8AMAAEiFwLkANm4B
 				SA9FyEiJyEkPr8Qx0kj380iJBenFkABIiQUKxpAASLrb
 				NLbXgt4bQ0iJyEj34kUx/0jB6hJpwkBCDwApwUiNPSas
@@ -711,7 +738,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>algrey - tsc_init - hardset tsc </string>
+				<string>algrey - tsc_init - use TSC calculated from MSR</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
@@ -770,6 +797,24 @@
 				</data>
 				<key>MatchBuild</key>
 				<string>17G5019</string>
+				<key>MatchOS</key>
+				<string>10.13.6</string>
+				<key>Replace</key>
+				<data>
+				60gPH4AAAAAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>algrey - lapic_interrupt - skip checks and prevent panic</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				gz2UjnAAAHQK
+				</data>
+				<key>MatchBuild</key>
+				<string>17G6029,17G6030</string>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
 				<key>Replace</key>
@@ -855,48 +900,6 @@
 				<key>Replace</key>
 				<data>
 				uXcCAAC4BgEHALoGAQcADx9AAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>algrey - lapic_configure - remove config_mca and add extra lapic_write</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				dSlIiwXyZoUAvzUAAAD/UAgl//j+/42wAAcAAEiLBdhm
-				hQC/NQAAAP9QEEiLBclmhQCLNRs2bACDxg2/MgAAAP9Q
-				EEiLBbFmhQCLNQM2bACDxg+/NAAAAP9QEEiLBZlmhQCL
-				Nes1bACDxgy/MwAAAP9QEIoFMmaLAITAdQXoqTL//4M9
-				OmaLAAB0GEiLBWlmhQCLNbs1bACDxgm/LwAAAP9QEA==
-				</data>
-				<key>MatchOS</key>
-				<string>10.13.6</string>
-				<key>Replace</key>
-				<data>
-				SIsF9GaFAL81AAAAdRz/UAgl//j+/42wAAcAAEiLBdhm
-				hQC/NQAAAOsFvgAHAQD/UBBIiwXCZoUAizUUNmwAg8YN
-				vzIAAAD/UBBIiwWqZoUAizX8NWwAg8YPvzQAAAD/UBBI
-				iwWSZoUAizXkNWwAg8YMvzMAAAD/UBBmDx+EAAAAAABm
-				Dx+EAAAAAABmDx+EAAAAAABmDx+EAAAAAAAPH0QAAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>algrey - cpu_topology_sort -disable cpshadows</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				SIsF34BtAEiNDYgI2f9IiYhYAQAAQbcBg33IAQ+EhQAA
-				AEyLbdBB9sUBdSk=
-				</data>
-				<key>MatchOS</key>
-				<string>10.13.6</string>
-				<key>Replace</key>
-				<data>
-				QbcBTIttyEyJbdDpAAAAAGYPH4QAAAAAAGYPH4QAAAAA
-				AEyLbdAPH0AA63s=
 				</data>
 			</dict>
 		</array>
