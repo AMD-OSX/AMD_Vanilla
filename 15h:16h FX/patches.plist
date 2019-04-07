@@ -334,24 +334,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>xlnc - cpuid_set_info - grab cores and logicals count from MSR #2</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				igWxC40ABHI80HdQD7bASI0NpAIAAEhjBIFIAcg=
-				</data>
-				<key>MatchBuild</key>
-				<string>17G65,17G66</string>
-				<key>MatchOS</key>
-				<string>10.13.6</string>
-				<key>Replace</key>
-				<data>
-				uAgAAIAx2zHJMdIPokGJzkEPtsb/wA8fAOtSAcg=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>algrey - cpuid_set_info - grab cores and logicals count from MSR</string>
 				<key>Disabled</key>
 				<false/>
@@ -370,24 +352,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>xlnc - cpuid_set_info - grab cores and logicals count from MSR #2</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				igWxA40ABHI80HdQD7bASI0NpAIAAEhjBIFIAcg=
-				</data>
-				<key>MatchBuild</key>
-				<string>17G6029,17G6030</string>
-				<key>MatchOS</key>
-				<string>10.13.6</string>
-				<key>Replace</key>
-				<data>
-				uAgAAIAx2zHJMdIPokGJzkEPtsb/wA8fAOtSAcg=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>xlnc - cpuid_set_info - grab cores and logicals count from MSR</string>
 				<key>Disabled</key>
 				<false/>
@@ -400,22 +364,6 @@
 				<key>Replace</key>
 				<data>
 				uAgAAIAx2zHJMdIPokGJzkEPtsb/wA8fAOtc
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>xlnc - cpuid_set_info - grab cores and logicals count from MSR #2</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				igWR85cABHI80HdQD7bASI0NpAIAAEhjBIFIAcg=
-				</data>
-				<key>MatchOS</key>
-				<string>10.14.4</string>
-				<key>Replace</key>
-				<data>
-				uAgAAIAx2zHJMdIPokGJzkEPtsb/wA8fAOtSAcg=
 				</data>
 			</dict>
 			<dict>
