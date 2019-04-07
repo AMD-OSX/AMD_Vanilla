@@ -14,6 +14,7 @@
  - Mojave 10.14.1, 10.14.3, 10.14.4
  
  FX Supported macOS:
+ - High Sierra 10.13.6 (17G65 , 17G66, 17G6029 , 17G6030)
  - Mojave 10.14.4
  
  
