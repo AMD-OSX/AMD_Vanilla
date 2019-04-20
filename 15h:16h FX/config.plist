@@ -167,10 +167,6 @@
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
-		<key>AppleRTC</key>
-		<true/>
-		<key>KernelCpu</key>
-		<false/>
 		<key>KernelToPatch</key>
 		<array>
 		<dict>
