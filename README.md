@@ -1,29 +1,53 @@
 
-# AMD Vanilla Clover Patches
+AMD Vanilla
+==========
+Kernel binary patches to enable native AMD CPU support on macOS.
 
-## Patches to enable Native AMD CPU Support on 10.13.6 and 10.14.x
+### Features
+- Enables macOS to run on AMD CPUs on the fly.
+- Enables iMessage, Siri, Facetime, etc.
+- Enables HandOff, Continuity etc.
+- Faster releases compared to open source kernel
 
- -  Supports Zen CPUs  (Ryzen, Threadripper, Athlon 2xxGE) 
- -  Beta 15H (Bulldozer) and 16H (Jaguar) CPUs Support (FX, A Series...)
- -  Enables iMessage, Siri, Facetime, etc.
- -  No OPEMU (32-bit app support)
- 
- 
- Zen Supported macOS : 
- - High Sierra 10.13.6 (17G65, 17G66, 17G5019, 17G6029, 17G6030)
- - Mojave 10.14.1, 10.14.3, 10.14.4
- 
- 15H/and 16H Supported macOS:
- - High Sierra 10.13.6 (17G65 , 17G66, 17G6029 , 17G6030)
- - Mojave 10.14.4
- 
- ## How to use
- Add the patches from the [patches.plist](https://github.com/AMD-OSX/AMD_Vanilla/blob/master/15h:16h%20FX/patches.plist) in [the FX folder](https://github.com/AMD-OSX/AMD_Vanilla/tree/master/15h:16h%20FX) or the [patches.plist](https://github.com/AMD-OSX/AMD_Vanilla/blob/master/Zen/patches.plist) in [the Zen folder](https://github.com/AMD-OSX/AMD_Vanilla/tree/master/Zen) to your config.plist. If you have existing patches you may want to merge them.
- 
- #### OR
- 
- Replace your current config.plist with the [config.plist](https://github.com/AMD-OSX/AMD_Vanilla/blob/master/15h:16h%20FX/config.plist) in [the FX folder](https://github.com/AMD-OSX/AMD_Vanilla/tree/master/15h:16h%20FX) or the [config.plist](https://github.com/AMD-OSX/AMD_Vanilla/blob/master/Zen/config.plist) in [the Zen folder](https://github.com/AMD-OSX/AMD_Vanilla/tree/master/Zen). Make any changes as necessary.
- 
- ### Credits to [AlGrey](https://github.com/AlGreyy)
+### Disadvantages
+- No 32-bit app support (i.e No OPEMU)
 
- #### [XLNC](https://github.com/XLNCs) for testing on FX and for porting the 15H/16H patches to 10.13.6 (17G65 , 17G66) and 10.14.4
+### Supported AMD CPU's
+| Family | Codename| Example |
+|--------|---------|----------|
+|   [15h](https://github.com/AMD-OSX/AMD_Vanilla/tree/master/15h_16h)  |Bulldozer| FX Series|
+|   [16h](https://github.com/AMD-OSX/AMD_Vanilla/tree/master/15h_16h)  | Jaguar  | A Series |
+|   [17h](https://github.com/AMD-OSX/AMD_Vanilla/tree/master/17h) |  Zen    | Ryzen, Threadripper, Athlon 2xxGE | <br />
+
+### Supported macOS versions
+
+**`For 15h_16h CPU's :`**
+
+- High Sierra 10.13.6 (17G65, 17G66, 17G6029, 17G6030, 17G7024)
+- Mojave 10.14.4 (18E226,18E227), 10.14.5 (18F132)
+
+**`For 17h CPU's :`**
+
+- High Sierra 10.13.6 (17G65, 17G66, 17G5019, 17G6029, 17G6030)
+- Mojave 10.14.1, 10.14.3, 10.14.4 (18E226,18E227), 10.14.5 (18F132)
+
+
+### Instructions
+
+#### Method I
+
+`NOTE : Includes only patches.`
+- Grab the `patches.plist` file according to your CPU family model , provided in respective `15h_16h` or `17h` CPU family folders.
+- Open the `patches.plist` file with a text editor and copy the patches manually to your existing clover `config.plist` which is located in `EFI/EFI/CLOVER/`
+- Save and Done.
+
+#### Method II
+
+- Grab the generic `config.plist` file according to your CPU family model , provided in respective `15h_16h` or `17h` CPU family folders.
+- Open it with Text Editor and edit it according to your macOS system needs.
+- Save it in `EFI/EFI/CLOVER/` and Done.
+
+### Credits
+
+- [AlGrey](https://github.com/AlGreyy) for the idea and creating the patches.
+- [XLNC](https://github.com/XLNCs) for maintaining 15h_16h patches to various macOS versions.
