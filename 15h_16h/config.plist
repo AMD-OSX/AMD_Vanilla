@@ -2,11 +2,157 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>ACPI</key>
+	<dict>
+		<key>DSDT</key>
+		<dict>
+			<key>Fixes</key>
+			<dict>
+				<key>AddDTGP</key>
+				<false/>
+				<key>AddHDMI</key>
+				<false/>
+				<key>DeleteUnused</key>
+				<false/>
+				<key>FakeLPC</key>
+				<false/>
+				<key>FixAirport</key>
+				<false/>
+				<key>FixDisplay</key>
+				<false/>
+				<key>FixHDA</key>
+				<false/>
+				<key>FixHPET</key>
+				<false/>
+				<key>FixLAN</key>
+				<false/>
+				<key>FixRTC</key>
+				<false/>
+				<key>FixShutdown</key>
+				<true/>
+				<key>FixUSB</key>
+				<false/>
+			</dict>
+			<key>Name</key>
+			<string>DSDT.aml</string>
+		</dict>
+		<key>HaltEnabler</key>
+		<true/>
+		<key>SSDT</key>
+		<dict>
+			<key>EnableC6</key>
+			<false/>
+			<key>Generate</key>
+			<dict>
+				<key>CStates</key>
+				<false/>
+				<key>PStates</key>
+				<false/>
+			</dict>
+		</dict>
+	</dict>
+	<key>Boot</key>
+	<dict>
+		<key>Arguments</key>
+		<string>-v npci=0x2000</string>
+		<key>DefaultLoader</key>
+		<string>boot.efi</string>
+		<key>DefaultVolume</key>
+		<string>LastBootedVolume</string>
+		<key>Legacy</key>
+		<string>PBR</string>
+		<key>NeverHibernate</key>
+		<true/>
+		<key>Timeout</key>
+		<integer>-1</integer>
+	</dict>
+	<key>BootGraphics</key>
+	<dict>
+		<key>EFILoginHiDPI</key>
+		<integer>1</integer>
+		<key>UIScale</key>
+		<integer>1</integer>
+	</dict>
+	<key>CPU</key>
+	<dict>
+		<key>C6</key>
+		<false/>
+		<key>UseARTFrequency</key>
+		<false/>
+	</dict>
+	<key>Devices</key>
+	<dict>
+		<key>Audio</key>
+		<dict>
+			<key>AFGLowPowerState</key>
+			<true/>
+			<key>ResetHDA</key>
+			<true/>
+		</dict>
+		<key>ForceHPET</key>
+		<false/>
+		<key>HDMIInjection</key>
+		<false/>
+		<key>InjectHDMI</key>
+		<false/>
+		<key>InjectLAN</key>
+		<false/>
+		<key>LANInjection</key>
+		<true/>
+		<key>USB</key>
+		<dict>
+			<key>AddClockID</key>
+			<false/>
+			<key>FixOwnership</key>
+			<false/>
+			<key>Inject</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>GUI</key>
+	<dict>
+		<key>EmbeddedThemeType</key>
+		<string>Dark</string>
+		<key>Hide</key>
+		<array>
+			<string>Preboot</string>
+			<string>Legacy</string>
+		</array>
+		<key>KbdPrevLang</key>
+		<true/>
+		<key>Language</key>
+		<string>en:0</string>
+		<key>Mouse</key>
+		<dict>
+			<key>Enabled</key>
+			<true/>
+		</dict>
+		<key>Scan</key>
+		<true/>
+		<key>TextOnly</key>
+		<true/>
+		<key>Theme</key>
+		<string>embedded</string>
+	</dict>
+	<key>Graphics</key>
+	<dict>
+		<key>Inject</key>
+		<dict>
+			<key>ATI</key>
+			<false/>
+			<key>NVidia</key>
+			<false/>
+		</dict>
+		<key>RadeonDeInit</key>
+		<false/>
+	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
+		<key>AppleRTC</key>
+		<true/>
 		<key>KernelToPatch</key>
 		<array>
-		<dict>
+			<dict>
 				<key>Comment</key>
 				<string>Disable panic kext logging on 10.13 Release kernel</string>
 				<key>Disabled</key>
@@ -29,13 +175,13 @@
 				<false/>
 				<key>Find</key>
 				<data>
-				igKEwHRC
+				AIoChMB0
 				</data>
 				<key>MatchOS</key>
-				<string>10.14.x</string>
+				<string>10.14.4</string>
 				<key>Replace</key>
 				<data>
-				igKEwOtC
+				AIoChMDr
 				</data>
 			</dict>
 			<dict>
@@ -127,6 +273,28 @@
 				<data>
 				uB0AAIAx2zHJMdIPokGJxkGJ0YM9x/2MAAB0G0iNPdyJ
 				XwC+HQAAgDHAQYnIRInyidnoon5YAEGD/gQPgvQBAABF
+				MfbrBg8fAA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>xlnc - cpuid_set_cache_info - cpuid 0x8000001D instead 0</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				McAx2zHJMdIPokGJxkGJ0YM92gaNAAB0GEiNPRmWXwAx
+				9jHAQYnIRInyidnouIpYAEGD/gQPgvoBAABFMfbrDGYP
+				H4QAAAAAAA==
+				</data>
+				<key>MatchBuild</key>
+				<string>17G7024</string>
+				<key>MatchOS</key>
+				<string>10.13.6</string>
+				<key>Replace</key>
+				<data>
+				uB0AAIAx2zHJMdIPokGJxkGJ0YM91waNAAB0G0iNPRaW
+				XwC+HQAAgDHAQYnIRInyidnoaopYAEGD/gQPgvQBAABF
 				MfbrBg8fAA==
 				</data>
 			</dict>
@@ -305,6 +473,24 @@
 				<false/>
 				<key>Find</key>
 				<data>
+				MduAPagMjQAGdVw=
+				</data>
+				<key>MatchBuild</key>
+				<string>17G7024</string>
+				<key>MatchOS</key>
+				<string>10.13.6</string>
+				<key>Replace</key>
+				<data>
+				u7xP6njpXQAAAJA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>xlnc - cpuid_set_cpufamily - force CPUFAMILY_INTEL_PENRYN</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
 				MduAPZjzlwAGdVw=
 				</data>
 				<key>MatchOS</key>
@@ -343,6 +529,24 @@
 				</data>
 				<key>MatchBuild</key>
 				<string>17G6029,17G6030</string>
+				<key>MatchOS</key>
+				<string>10.13.6</string>
+				<key>Replace</key>
+				<data>
+				uAgAAIAx2zHJMdIPokGJzkEPtsb/wA8fAOtS
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>xlnc - cpuid_set_info - grab cores and logicals count from MSR</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				PbxP6nh1NosFuAuNAIkFegyNAIsNsAuNAOsW
+				</data>
+				<key>MatchBuild</key>
+				<string>17G7024</string>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
 				<key>Replace</key>
@@ -400,6 +604,24 @@
 				<key>Replace</key>
 				<data>
 				iQViAo0AiQUkA40AiQVaAo0AiQUcA40A
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>xlnc - cpuid_set_info - set cores and logicals count</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				iwVSC40AiQUUDI0AiwVKC40AiQUMDI0A
+				</data>
+				<key>MatchBuild</key>
+				<string>17G7024</string>
+				<key>MatchOS</key>
+				<string>10.13.6</string>
+				<key>Replace</key>
+				<data>
+				iQVSC40AiQUUDI0AiQVKC40AiQUMDI0A
 				</data>
 			</dict>
 			<dict>
@@ -483,6 +705,26 @@
 				<false/>
 				<key>Find</key>
 				<data>
+				uZgBAAAPMkGJ10SJ+MHoCIPgH0iJBSSphQBBwe8OQYPn
+				AUiNPYqPXgDoSAIAAEiJw0iJHRaphQA=
+				</data>
+				<key>MatchBuild</key>
+				<string>17G7024</string>
+				<key>MatchOS</key>
+				<string>10.13.6</string>
+				<key>Replace</key>
+				<data>
+				SI09b49eAOhqAgAASYnHSI09nY9eAOhbAgAASInDSIkd
+				KamFADHSTIn4SPfzSIkFCqmFAA8fQAA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>xlnc - tsc_init - replace penryn tsc</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
 				uZgBAAAPMkGJ1YnQwegIg+AfSIkFCmiQAEHB7Q5Bg+UB
 				SI09e2tmAOj2AgAASInDSIkF/GeQAA==
 				</data>
@@ -539,6 +781,24 @@
 				</data>
 				<key>MatchBuild</key>
 				<string>17G6029,17G6030</string>
+				<key>MatchOS</key>
+				<string>10.13.6</string>
+				<key>Replace</key>
+				<data>
+				60gPH4AAAAAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>xlnc - lapic_interrupt - skip checks and prevent panic</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				gz3UlXAAAHQK
+				</data>
+				<key>MatchBuild</key>
+				<string>17G7024</string>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
 				<key>Replace</key>
@@ -610,24 +870,68 @@
 				Q1BVRnJlcXVlbmN5AA==
 				</data>
 			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>algrey - fix tscfreq   #WIP</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				SIkF65+FAA==
-				</data>
-				<key>MatchOS</key>
-				<string>10.13.x</string>
-				<key>Replace</key>
-				<data>
-				TIkt65+FAA==
-				</data>
-			</dict>
-
 		</array>
+	</dict>
+	<key>RtVariables</key>
+	<dict>
+		<key>BooterConfig</key>
+		<string>0x28</string>
+		<key>CsrActiveConfig</key>
+		<string>0x67</string>
+		<key>ROM</key>
+		<string>UseMacAddr0</string>
+	</dict>
+	<key>SMBIOS</key>
+	<dict>
+		<key>BiosReleaseDate</key>
+		<string>12/19/2018</string>
+		<key>BiosVendor</key>
+		<string>Apple Inc.</string>
+		<key>BiosVersion</key>
+		<string>IM142.88Z.F000.B00.1812191208</string>
+		<key>Board-ID</key>
+		<string>Mac-27ADBB7B4CEE8E61</string>
+		<key>BoardManufacturer</key>
+		<string>Apple Inc.</string>
+		<key>BoardType</key>
+		<integer>10</integer>
+		<key>BoardVersion</key>
+		<string>1.0</string>
+		<key>ChassisAssetTag</key>
+		<string>iMac-Aluminum</string>
+		<key>ChassisManufacturer</key>
+		<string>Apple Inc.</string>
+		<key>ChassisType</key>
+		<string>0x0D</string>
+		<key>EfiVersion</key>
+		<string>134.0.0.0.0</string>
+		<key>Family</key>
+		<string>iMac</string>
+		<key>FirmwareFeatures</key>
+		<string>0xE00FE137</string>
+		<key>FirmwareFeaturesMask</key>
+		<string>0xFF1FFF3F</string>
+		<key>LocationInChassis</key>
+		<string>Part Component</string>
+		<key>Manufacturer</key>
+		<string>Apple Inc.</string>
+		<key>Mobile</key>
+		<false/>
+		<key>PlatformFeature</key>
+		<string>0x01</string>
+		<key>ProductName</key>
+		<string>iMac14,2</string>
+		<key>Trust</key>
+		<true/>
+		<key>Version</key>
+		<string>1.0</string>
+	</dict>
+	<key>SystemParameters</key>
+	<dict>
+		<key>InjectKexts</key>
+		<string>Yes</string>
+		<key>InjectSystemID</key>
+		<true/>
 	</dict>
 </dict>
 </plist>
