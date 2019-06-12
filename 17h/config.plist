@@ -339,6 +339,28 @@
 				<false/>
 				<key>Find</key>
 				<data>
+				McAx2zHJMdIPokGJxkGJ0YM92gaNAAB0GEiNPRmWXwAx
+				9jHAQYnIRInyidnouIpYAEGD/gQPgvoBAABFMfbrDGYP
+				H4QAAAAAAA==
+				</data>
+				<key>MatchBuild</key>
+				<string>17G7024</string>
+				<key>MatchOS</key>
+				<string>10.13.6</string>
+				<key>Replace</key>
+				<data>
+				uB0AAIAx2zHJMdIPokGJxkGJ0YM91waNAAB0G0iNPRaW
+				XwC+HQAAgDHAQYnIRInyidnosopYAEGD/gQPgvQBAABF
+				MfbrBg8fAA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>algrey - cpuid_set_cache_info - cpuid 0x8000001D instead 0</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
 				McAx2zHJMdIPokGJxkGJ0YM9+kGYAAB0GEiNPSvZZwAx
 				9jHAQYnIRInyidno2CxgAEGD/gQPgvsBAABFMfbrDGYP
 				H4QAAAAAAA==
@@ -585,6 +607,24 @@
 				<false/>
 				<key>Find</key>
 				<data>
+				MduAPagMjQAGdVw=
+				</data>
+				<key>MatchBuild</key>
+				<string>17G7024</string>
+				<key>MatchOS</key>
+				<string>10.13.6</string>
+				<key>Replace</key>
+				<data>
+				u58h/DfpXQAAAJA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>algrey - cpuid_set_cpufamily - force CPUFAMILY_INTEL_SKYLAKE </string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
 				MduAPehHmAAGdVw=
 				</data>
 				<key>MatchOS</key>
@@ -718,6 +758,32 @@
 				HgAAgDHbMckx0g+iQYnAQYnRZg8fhAAAAAAAD7bP/8Ex
 				0kSJ8PfxiQVtAo0ARIk1agKNAIM9JwONAAB1DYkFHwON
 				AESJNRwDjQA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>algrey - cpuid_set_info - ryzen cores and logicals count</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				PexeO1d0Gz28T+p4dTaLBbgLjQCJBXoMjQCLDbALjQDr
+				Frk1AAAADzIPt8jB6BCD4A+JBVwMjQCJDVoMjQCFwHVK
+				6zC5NQAAAA8ySMHiIInBSAnRuQEAAQAPRcgPt9GJyMHo
+				EIkFKgyNAIkVKAyNAIXAdRiLBVILjQCJBRQMjQCLBUoL
+				jQCJBQwMjQA=
+				</data>
+				<key>MatchBuild</key>
+				<string>17G7024</string>
+				<key>MatchOS</key>
+				<string>10.13.6</string>
+				<key>Replace</key>
+				<data>
+				uAgAAIAx2zHJMdIPokGJwEGJzkGJ0WYPH4QAAAAAAGYP
+				H4QAAAAAAGYPH4QAAAAAAGYPH4QAAAAAAEUPtvZB/8a4
+				HgAAgDHbMckx0g+iQYnAQYnRZg8fhAAAAAAAD7bP/8Ex
+				0kSJ8PfxiQVdC40ARIk1WguNAIM9FwyNAAB1DYkFDwyN
+				AESJNQwMjQA=
 				</data>
 			</dict>
 			<dict>
@@ -895,6 +961,30 @@
 				uWQAAcAPMg+2yInGwe4Ig+Y/RTH/MdJIichI9/ZIicZI
 				acYAwusLSAH2SIkFCqOFADHSSPf2SInDSIkdI6OFAEiJ
 				NQyjhQBmDx+EAAAAAABmDx+EAAAAAABmDx+EAAAAAABm
+				Dx+EAAAAAABmDx+EAAAAAABmDx+EAAAAAAA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>algrey - tsc_init - replace skylake with zen</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				RIug2AEAAIuY3AEAAEiNPd+QXgDo2gMAAEiFwLkANm4B
+				SA9FyEiJyEkPr8RFMf8x0kj380iJBWiqhQBIiQWJqoUA
+				SLrbNLbXgt4bQ0iJyEj34kjB6hJpwkBCDwApwUiNPZuQ
+				XgAxwInWicpMieFJidjorTJXAEiLHU6qhQA=
+				</data>
+				<key>MatchBuild</key>
+				<string>17G7024</string>
+				<key>MatchOS</key>
+				<string>10.13.6</string>
+				<key>Replace</key>
+				<data>
+				uWQAAcAPMg+2yInGwe4Ig+Y/RTH/MdJIichI9/ZIicZI
+				acYAwusLSAH2SIkFcqqFADHSSPf2SInDSIkdi6qFAEiJ
+				NXSqhQBmDx+EAAAAAABmDx+EAAAAAABmDx+EAAAAAABm
 				Dx+EAAAAAABmDx+EAAAAAABmDx+EAAAAAAA=
 				</data>
 			</dict>
@@ -1109,6 +1199,24 @@
 				</data>
 				<key>MatchBuild</key>
 				<string>17G6029,17G6030</string>
+				<key>MatchOS</key>
+				<string>10.13.6</string>
+				<key>Replace</key>
+				<data>
+				60gPH4AAAAAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>algrey - lapic_interrupt - skip checks and prevent panic</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				gz3UlXAAAHQK
+				</data>
+				<key>MatchBuild</key>
+				<string>17G7024</string>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
 				<key>Replace</key>
