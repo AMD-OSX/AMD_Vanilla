@@ -29,10 +29,26 @@
 				<false/>
 				<key>Find</key>
 				<data>
+				igKEwHRC
+				</data>
+				<key>MatchOS</key>
+				<string>10.14.0,10.14.1,10.14.2,10.14.3</string>
+				<key>Replace</key>
+				<data>
+				igKEwOtC
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Disable panic kext logging on 10.14 Release kernel</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
 				AIoChMB0
 				</data>
 				<key>MatchOS</key>
-				<string>10.14.4,10.14.5</string>
+				<string>10.14.4,10.14.5,10.14.6</string>
 				<key>Replace</key>
 				<data>
 				AIoChMDr
@@ -48,7 +64,7 @@
 				uaABAAAPMg==
 				</data>
 				<key>MatchOS</key>
-				<string>10.13.6,10.14.x</string>
+				<string>10.13.x,10.14.x</string>
 				<key>Replace</key>
 				<data>
 				Dx+AAAAAAA==
@@ -64,7 +80,7 @@
 				6Ar2//+c
 				</data>
 				<key>MatchOS</key>
-				<string>10.13.6</string>
+				<string>10.13.x</string>
 				<key>Replace</key>
 				<data>
 				Dx9EAACc
@@ -77,13 +93,13 @@
 				<false/>
 				<key>Find</key>
 				<data>
-				6Jn1//8=
+				6Jn1//+c
 				</data>
 				<key>MatchOS</key>
-				<string>10.14.4,10.14.5</string>
+				<string>10.14.x</string>
 				<key>Replace</key>
 				<data>
-				Dx9EAAA=
+				Dx9EAACc
 				</data>
 			</dict>
 			<dict>
@@ -194,6 +210,26 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>xlnc - cpuid_set_cache_info - cpuid 0x8000001D instead 0</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				McAx2zHJMdIPokGJxoM93W+YAAB0G0GJ0UiNPRnAZwAx
+				9jHAQYnIRInyidnoGBhgAEGD/gQPgvgBAABFMfbrDGYP
+				H4QAAAAAAA==
+				</data>
+				<key>MatchOS</key>
+				<string>10.14.6</string>
+				<key>Replace</key>
+				<data>
+				uB0AAIAx2zHJMdIPokGJxkGJ0YM912+YAAB0G0iNPRbA
+				ZwC+HQAAgDHAQYnIRInyidnoEhhgAEGD/gQPgvIBAABF
+				MfbrBg8fAA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>algrey - cpuid_set_cache_info - cpuid 0x8000001D instead 4</string>
 				<key>Disabled</key>
 				<false/>
@@ -202,7 +238,7 @@
 				uAQAAABEifFEiQ==
 				</data>
 				<key>MatchOS</key>
-				<string>10.13.6,10.14.x</string>
+				<string>10.13.x,10.14.x</string>
 				<key>Replace</key>
 				<data>
 				uB0AAIBEifFEiQ==
@@ -218,7 +254,7 @@
 				wega/8A=
 				</data>
 				<key>MatchOS</key>
-				<string>10.13.6,10.14.x</string>
+				<string>10.13.x,10.14.x</string>
 				<key>Replace</key>
 				<data>
 				Dx8A6wY=
@@ -234,7 +270,7 @@
 				uYsAAAAxwDHSDzA=
 				</data>
 				<key>MatchOS</key>
-				<string>10.13.6,10.14.x</string>
+				<string>10.13.x,10.14.x</string>
 				<key>Replace</key>
 				<data>
 				Zg8fhAAAAAAAZpA=
@@ -250,7 +286,7 @@
 				uYsAAAAPMg==
 				</data>
 				<key>MatchOS</key>
-				<string>10.13.6,10.14.x</string>
+				<string>10.13.x,10.14.x</string>
 				<key>Replace</key>
 				<data>
 				uroAAABmkA==
@@ -266,7 +302,7 @@
 				uRcAAAAPMsHqEoDiBw==
 				</data>
 				<key>MatchOS</key>
-				<string>10.13.6,10.14.x</string>
+				<string>10.13.x,10.14.x</string>
 				<key>Replace</key>
 				<data>
 				sgFmDx+EAAAAAABmkA==
@@ -282,7 +318,7 @@
 				ADoPgg==
 				</data>
 				<key>MatchOS</key>
-				<string>10.13.6,10.14.x</string>
+				<string>10.13.x,10.14.x</string>
 				<key>Replace</key>
 				<data>
 				AAAPgg==
@@ -298,7 +334,7 @@
 				R2VudWluZUludGVsAA==
 				</data>
 				<key>MatchOS</key>
-				<string>10.13.6,10.14.x</string>
+				<string>10.13.x,10.14.x</string>
 				<key>Replace</key>
 				<data>
 				QXV0aGVudGljQU1EAA==
@@ -392,6 +428,22 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>xlnc - cpuid_set_cpufamily - force CPUFAMILY_INTEL_PENRYN</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				MduAPUh5mAAGdVw=
+				</data>
+				<key>MatchOS</key>
+				<string>10.14.6</string>
+				<key>Replace</key>
+				<data>
+				u7xP6njpXQAAAJA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>xlnc - cpuid_set_info - grab cores and logicals count from MSR</string>
 				<key>Disabled</key>
 				<false/>
@@ -471,6 +523,22 @@
 				</data>
 				<key>MatchOS</key>
 				<string>10.14.5</string>
+				<key>Replace</key>
+				<data>
+				uAgAAIAx2zHJMdIPokGJzkEPtsb/wA8fAOtc
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>xlnc - cpuid_set_info - grab cores and logicals count from MSR</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				PbxP6nh1JosFV3iYAIkFGXmYAIsNT3iYAOs4
+				</data>
+				<key>MatchOS</key>
+				<string>10.14.6</string>
 				<key>Replace</key>
 				<data>
 				uAgAAIAx2zHJMdIPokGJzkEPtsb/wA8fAOtc
@@ -564,7 +632,23 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>algrey - i386_init - remove rdmsr</string>
+				<string>xlnc - cpuid_set_info - set cores and logicals count</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				SIsF5neYAEiJBad4mACBPa14mAC8T+p4
+				</data>
+				<key>MatchOS</key>
+				<string>10.14.6</string>
+				<key>Replace</key>
+				<data>
+				iQXnd5gAiQWpeJgAiQXfd5gAiQWheJgA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>algrey - 3 x i386_init - remove rdmsr </string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
@@ -573,7 +657,7 @@
 				WAIxBTHJRTHA
 				</data>
 				<key>MatchOS</key>
-				<string>10.13.6,10.14.x</string>
+				<string>10.13.x,10.14.x</string>
 				<key>Replace</key>
 				<data>
 				Zg8fhAAAAAAAZg8fhAAAAAAAZg8fhAAAAAAAZg8fhAAA
@@ -678,6 +762,24 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>xlnc - tsc_init - replace penryn tsc</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				uZgBAAAPMkGJ1YnQwegIg+AfSIkF29+QAEHB7Q5Bg+UB
+				SI0934JmAOgvAwAASInDSIkFzd+QAA==
+				</data>
+				<key>MatchOS</key>
+				<string>10.14.6</string>
+				<key>Replace</key>
+				<data>
+				SI09w4JmAOhQAwAASYnHSI098YJmAOhBAwAASInDSIkd
+				39+QADHSTIn4SPfzSIkFwN+QAA8fAA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>algrey - lapic_init - remove version check and panic</string>
 				<key>Disabled</key>
 				<false/>
@@ -686,7 +788,7 @@
 				JfwAAACD+BM=
 				</data>
 				<key>MatchOS</key>
-				<string>10.13.6,10.14.x</string>
+				<string>10.13.x,10.14.x</string>
 				<key>Replace</key>
 				<data>
 				JfAAAADrI5A=
@@ -780,7 +882,23 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>algrey - mtrr_update_action - fix PAT</string>
+				<string>xlnc - lapic_interrupt - skip checks and prevent panic</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				gz31zXsAAHQK
+				</data>
+				<key>MatchOS</key>
+				<string>10.14.6</string>
+				<key>Replace</key>
+				<data>
+				60gPH4AAAAAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>algrey - 2 x mtrr_update_action - fix PAT</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
@@ -788,7 +906,7 @@
 				icCB4v//8P+BygAAAQC5dwIAAA==
 				</data>
 				<key>MatchOS</key>
-				<string>10.13.6</string>
+				<string>10.13.x,10.14.1,10.14.3</string>
 				<key>Replace</key>
 				<data>
 				uXcCAAC4BgEHALoGAQcADx9AAA==
@@ -796,7 +914,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>xlnc - mtrr_update_action - fix PAT</string>
+				<string>xlnc - 2 x mtrr_update_action - fix PAT</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
@@ -804,7 +922,7 @@
 				icCB4v//AP+BygAAAQC5dwIAAA==
 				</data>
 				<key>MatchOS</key>
-				<string>10.14.4,10.14.5</string>
+				<string>10.14.4,10.14.5,10.14.6</string>
 				<key>Replace</key>
 				<data>
 				uXcCAAC4BgEHALoGAQcADx9AAA==
@@ -820,7 +938,7 @@
 				QVJURnJlcXVlbmN5AA==
 				</data>
 				<key>MatchOS</key>
-				<string>10.13.6,10.14.x</string>
+				<string>10.13.x,10.14.x</string>
 				<key>Replace</key>
 				<data>
 				Q1BVRnJlcXVlbmN5AA==
