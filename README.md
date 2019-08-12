@@ -4,50 +4,51 @@ AMD Vanilla
 Kernel binary patches to enable native AMD CPU support on macOS.
 
 ### Features
+
 - Enables macOS to run on AMD CPUs on the fly.
-- Enables iMessage, Siri, Facetime, etc.
-- Enables HandOff, Continuity etc.
-- Faster releases compared to open source kernel
+- Enables iMessage, Siri, Facetime, Continuity etc.
+- Stable compared to custom XNU kernel.
 
 ### Disadvantages
-- No 32-bit app support (i.e No OPEMU)
+- No 32-bit support (No OPEMU)
 
 ### Supported AMD CPU's
 | Family | Codename| Example |
 |--------|---------|----------|
 |   [15h](https://github.com/AMD-OSX/AMD_Vanilla/tree/master/15h_16h)  | Bulldozer | FX Series|
 |   [16h](https://github.com/AMD-OSX/AMD_Vanilla/tree/master/15h_16h)  | Jaguar | A Series |
-|   [17h](https://github.com/AMD-OSX/AMD_Vanilla/tree/master/17h) | Zen, Zen+, Zen 2 | Ryzen, Threadripper, Athlon 2xxGE | <br />
+|   [17h](https://github.com/AMD-OSX/AMD_Vanilla/tree/master/17h) | Zen  | Ryzen, Threadripper, Athlon 2xxGE | <br />
 
 ### Supported macOS versions
 
-**`For 15h_16h CPU's :`**
-
-- High Sierra 10.13.6 (17G65, 17G66, 17G6029, 17G6030, 17G7024)
-- Mojave 10.14.4 (18E226,18E227), 10.14.5 (18F132), 10.14.6 (18G84), 10.14.6 (18G87)
-
-**`For 17h CPU's :`**
-
-- High Sierra 10.13.6 (17G65, 17G66, 17G5019, 17G6029, 17G6030, 17G7024)
-- Mojave 10.14.1, 10.14.3, 10.14.4 (18E226,18E227), 10.14.5 (18F132), 10.14.6 (18G84), 10.14.6 (18G87)
-
+- High Sierra 10.13.6 (17G65, 17G66, 17G8030)
+- Mojave 10.14.6 (18G84, 18G87)
 
 ### Instructions
 
-#### Method I
+- Download macOS HighSierra or Mojave from Appstore.
+- Plug an empty USB drive.
+- Run the below command in your Terminal to prepare bootable macOS USB.
 
-`NOTE : Includes only patches.`
-- Grab the `patches.plist` file according to your CPU family model , provided in respective `15h_16h` or `17h` CPU family folders.
-- Open the `patches.plist` file with a text editor and copy the patches manually to your existing clover `config.plist` which is located in `EFI/EFI/CLOVER/`
-- Save and Done.
+```
+NOTE: Make sure to replace 'MyVolumeName' with your actual USB volume name in the below commands.
 
-#### Method II
+## HighSierra
+sudo /Applications/Install\ macOS\ High\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolumeName
 
-- Grab the generic `config.plist` file according to your CPU family model , provided in respective `15h_16h` or `17h` CPU family folders.
-- Open it with Text Editor and edit it according to your macOS system needs.
-- Save it in `EFI/EFI/CLOVER/` and Done.
+## Mojave
+sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolumeName
+```
+
+- Install Clover bootloader on your USB drive.
+- Place the `config.plist` provided , according to your CPU Family i.e `15h_16h` or `17h` in your USB EFI Clover folder `EFI/EFI/CLOVER/` and edit it as per your needs.
+
+NOTE : If your are making your own clover config then use `patches.plist` to copy the patches manually.
+
+- Place the required Kexts according to your system specs in your USB EFI kexts folder `EFI/EFI/CLOVER/kexts/Other/`
+- Done.
 
 ### Credits
 
 - [AlGrey](https://github.com/AlGreyy) for the idea and creating the patches.
-- [XLNC](https://github.com/XLNCs) for maintaining 15h_16h patches to various macOS versions.
+- [XLNC](https://github.com/XLNCs) for maintaining patches to various macOS versions.
