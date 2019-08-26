@@ -54,7 +54,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>-v npci=0x2000</string>
+		<string>-v npci=0x2000 debug=0x100 keepsyms=1</string>
 		<key>DefaultLoader</key>
 		<string>boot.efi</string>
 		<key>DefaultVolume</key>
@@ -298,6 +298,28 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>xlnc - cpuid_set_cache_info - cpuid 0x8000001D instead 0</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				McAx2zHJMdIPokGJxoM93V+YAAB0G0GJ0UiNPf2/ZwAx
+				9jHAQYnIRInyidnoWBtgAEGD/gQPgvgBAABFMfbrDGYP
+				H4QAAAAAAA==
+				</data>
+				<key>MatchBuild</key>
+				<string>18G95</string>
+				<key>MatchOS</key>
+				<string>10.14.6</string>
+				<key>Replace</key>
+				<data>
+				uB0AAIAx2zHJMdIPokGJxkGJ0YM912+YAAB0G0iNPfq/
+				ZwC+HQAAgDHAQYnIRInyidnoUhtgAEGD/gQPgvIBAABF
+				MfbrBg8fAA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>algrey - cpuid_set_cache_info - cpuid 0x8000001D instead 4</string>
 				<key>Disabled</key>
 				<false/>
@@ -462,6 +484,24 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>xlnc - cpuid_set_cpufamily - force CPUFAMILY_INTEL_PENRYN</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				MduAPUhpmAAGdVw=
+				</data>
+				<key>MatchBuild</key>
+				<string>18G95</string>
+				<key>MatchOS</key>
+				<string>10.14.6</string>
+				<key>Replace</key>
+				<data>
+				u7xP6njpXQAAAJA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>xlnc - cpuid_set_info - grab cores and logicals count from MSR</string>
 				<key>Disabled</key>
 				<false/>
@@ -505,6 +545,24 @@
 				<data>
 				PbxP6nh1JosFV3iYAIkFGXmYAIsNT3iYAOs4
 				</data>
+				<key>MatchOS</key>
+				<string>10.14.6</string>
+				<key>Replace</key>
+				<data>
+				uAgAAIAx2zHJMdIPokGJzkEPtsb/wA8fAOtc
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>xlnc - cpuid_set_info - grab cores and logicals count from MSR</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				PbxP6nh1JosFV2iYAIkFGWmYAIsNT2iYAOs4
+				</data>
+				<key>MatchBuild</key>
+				<string>18G95</string>
 				<key>MatchOS</key>
 				<string>10.14.6</string>
 				<key>Replace</key>
@@ -562,6 +620,24 @@
 				<key>Replace</key>
 				<data>
 				iQXnd5gAiQWpeJgAiQXfd5gAiQWheJgA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>xlnc - cpuid_set_info - set cores and logicals count</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				SIsF5meYAEiJBadomACBPa1omAC8T+p4
+				</data>
+				<key>MatchBuild</key>
+				<string>18G95</string>
+				<key>MatchOS</key>
+				<string>10.14.6</string>
+				<key>Replace</key>
+				<data>
+				iQXnZ5gAiQWpaJgAiQXfZ5gAiQWhaJgA
 				</data>
 			</dict>
 			<dict>
@@ -674,6 +750,26 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>xlnc - tsc_init - grab DID and FID from MSR</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				uZQBAAAPMonDuc4AAAAPMg+2zokNss+QAA+2xIkFrc+Q
+				AA==
+				</data>
+				<key>MatchBuild</key>
+				<string>18G95</string>
+				<key>MatchOS</key>
+				<string>10.14.6</string>
+				<key>Replace</key>
+				<data>
+				uXEAAcAPMonASInBSMHpBoPgP0iDwBCA4QdI0+hI0ehm
+				kA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>algrey - tsc_init - skip test and go get FSBFrequency</string>
 				<key>Disabled</key>
 				<false/>
@@ -722,6 +818,24 @@
 				<key>Replace</key>
 				<data>
 				SIkFht+QAGYPH0QAAOs=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>xlnc - tsc_init - skip test and go get FSBFrequency</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				SIkFhs+QAPfDAAABAHQ=
+				</data>
+				<key>MatchBuild</key>
+				<string>18G95</string>
+				<key>MatchOS</key>
+				<string>10.14.6</string>
+				<key>Replace</key>
+				<data>
+				SIkFhs+QAGYPH0QAAOs=
 				</data>
 			</dict>
 			<dict>
@@ -794,6 +908,24 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>xlnc - lapic_interrupt - skip checks and prevent panic</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				gz31vXsAAHQK
+				</data>
+				<key>MatchBuild</key>
+				<string>18G95</string>
+				<key>MatchOS</key>
+				<string>10.14.6</string>
+				<key>Replace</key>
+				<data>
+				60gPH4AAAAAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>algrey - mtrr_update_action - fix PAT (x2)</string>
 				<key>Disabled</key>
 				<false/>
@@ -838,13 +970,13 @@
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>12/19/2018</string>
+		<string>07/26/2019</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>IM142.88Z.F000.B00.1812191208</string>
+		<string>IMP11.88Z.F000.B00.1907261958</string>
 		<key>Board-ID</key>
-		<string>Mac-27ADBB7B4CEE8E61</string>
+		<string>Mac-7BA5B2D9E42DDD94</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardType</key>
@@ -852,19 +984,19 @@
 		<key>BoardVersion</key>
 		<string>1.0</string>
 		<key>ChassisAssetTag</key>
-		<string>iMac-Aluminum</string>
+		<string>iMacPro-Aluminum</string>
 		<key>ChassisManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>ChassisType</key>
-		<string>0x0D</string>
+		<string>0x09</string>
 		<key>EfiVersion</key>
-		<string>134.0.0.0.0</string>
+		<string>1037.0.39.151.1</string>
 		<key>Family</key>
-		<string>iMac</string>
+		<string>iMac Pro</string>
 		<key>FirmwareFeatures</key>
-		<string>0xE00FE137</string>
+		<string>0xFD8FF53F</string>
 		<key>FirmwareFeaturesMask</key>
-		<string>0xFF1FFF3F</string>
+		<string>0xFF9FFF3F</string>
 		<key>LocationInChassis</key>
 		<string>Part Component</string>
 		<key>Manufacturer</key>
@@ -872,9 +1004,9 @@
 		<key>Mobile</key>
 		<false/>
 		<key>PlatformFeature</key>
-		<string>0x01</string>
+		<string>0x00</string>
 		<key>ProductName</key>
-		<string>iMac14,2</string>
+		<string>iMacPro1,1</string>
 		<key>Trust</key>
 		<true/>
 		<key>Version</key>
