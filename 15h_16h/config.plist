@@ -128,7 +128,14 @@
 			<true/>
 		</dict>
 		<key>Scan</key>
-		<true/>
+		<dict>
+			<key>Entries</key>
+			<true/>
+			<key>Linux</key>
+			<true/>
+			<key>Tool</key>
+			<true/>
+		</dict>
 		<key>TextOnly</key>
 		<true/>
 		<key>Theme</key>
@@ -156,7 +163,7 @@
 				<key>Comment</key>
 				<string>Disable panic kext logging on 10.13.x Release kernel</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>
 				igKEwHRE
@@ -172,13 +179,13 @@
 				<key>Comment</key>
 				<string>Disable panic kext logging on 10.14.4+ Release kernel</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>
 				AIoChMB0
 				</data>
 				<key>MatchOS</key>
-				<string>10.14.x</string>
+				<string>10.14.x,10.15.x</string>
 				<key>Replace</key>
 				<data>
 				AIoChMDr
@@ -194,7 +201,7 @@
 				uaABAAAPMg==
 				</data>
 				<key>MatchOS</key>
-				<string>10.13.x,10.14.x</string>
+				<string>10.13.x,10.14.x,10.15.x</string>
 				<key>Replace</key>
 				<data>
 				Dx+AAAAAAA==
@@ -230,6 +237,22 @@
 				<key>Replace</key>
 				<data>
 				Dx9EAAA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>xlnc - cpu_topology_sort -disable _x86_validate_topology</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				6PT1//+c
+				</data>
+				<key>MatchOS</key>
+				<string>10.15.x</string>
+				<key>Replace</key>
+				<data>
+				Dx9EAACc
 				</data>
 			</dict>
 			<dict>
@@ -320,6 +343,22 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>xlnc - cpuid_set_cache_info - cpuid 0x8000001D instead 0</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				McAx2zHJMdIPokGJxoM95AygAAB0
+				</data>
+				<key>MatchOS</key>
+				<string>10.15.0</string>
+				<key>Replace</key>
+				<data>
+				uB0AAIAx2zHJMdIPokGJxg8fQADr
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>algrey - cpuid_set_cache_info - cpuid 0x8000001D instead 4</string>
 				<key>Disabled</key>
 				<false/>
@@ -328,7 +367,7 @@
 				uAQAAABEifFEiQ==
 				</data>
 				<key>MatchOS</key>
-				<string>10.13.x,10.14.x</string>
+				<string>10.13.x,10.14.x,10.15.x</string>
 				<key>Replace</key>
 				<data>
 				uB0AAIBEifFEiQ==
@@ -352,6 +391,38 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>xlnc - cpuid_set_cache_info - don't set cpuid_cores_per_package</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				weoa/8I=
+				</data>
+				<key>MatchOS</key>
+				<string>10.15.x</string>
+				<key>Replace</key>
+				<data>
+				Dx8A6wY=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>xlnc - cpuid_set_cache_info - skip cpuid_cores_per_package test</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				gz1rC6AAAA+EpgEAAItdvA==
+				</data>
+				<key>MatchOS</key>
+				<string>10.15.x</string>
+				<key>Replace</key>
+				<data>
+				gz1rC6AAAQ+EpgEAAItdvA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>algrey - cpuid_set_generic_info - remove wrmsr</string>
 				<key>Disabled</key>
 				<false/>
@@ -360,7 +431,7 @@
 				uYsAAAAxwDHSDzA=
 				</data>
 				<key>MatchOS</key>
-				<string>10.13.x,10.14.x</string>
+				<string>10.13.x,10.14.x,10.15.x</string>
 				<key>Replace</key>
 				<data>
 				Zg8fhAAAAAAAZpA=
@@ -376,7 +447,7 @@
 				uYsAAAAPMg==
 				</data>
 				<key>MatchOS</key>
-				<string>10.13.x,10.14.x</string>
+				<string>10.13.x,10.14.x,10.15.x</string>
 				<key>Replace</key>
 				<data>
 				uroAAABmkA==
@@ -392,7 +463,7 @@
 				uRcAAAAPMsHqEoDiBw==
 				</data>
 				<key>MatchOS</key>
-				<string>10.13.x,10.14.x</string>
+				<string>10.13.x,10.14.x,10.15.x</string>
 				<key>Replace</key>
 				<data>
 				sgFmDx+EAAAAAABmkA==
@@ -408,7 +479,7 @@
 				ADoPgg==
 				</data>
 				<key>MatchOS</key>
-				<string>10.13.x,10.14.x</string>
+				<string>10.13.x,10.14.x,10.15.x</string>
 				<key>Replace</key>
 				<data>
 				AAAPgg==
@@ -424,7 +495,7 @@
 				R2VudWluZUludGVsAA==
 				</data>
 				<key>MatchOS</key>
-				<string>10.13.x,10.14.x</string>
+				<string>10.13.x,10.14.x,10.15.x</string>
 				<key>Replace</key>
 				<data>
 				QXV0aGVudGljQU1EAA==
@@ -495,6 +566,22 @@
 				<string>18G95,18G103</string>
 				<key>MatchOS</key>
 				<string>10.14.6</string>
+				<key>Replace</key>
+				<data>
+				u7xP6njpXQAAAJA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>xlnc - cpuid_set_cpufamily - force CPUFAMILY_INTEL_PENRYN</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				MduAPWkWoAAGdVw=
+				</data>
+				<key>MatchOS</key>
+				<string>10.15.0</string>
 				<key>Replace</key>
 				<data>
 				u7xP6njpXQAAAJA=
@@ -642,6 +729,40 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>xlnc - cpuid_set_info - jmp to calculations and set cpuid_cores_per_package</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				dXHoRQYAAEiLBYYVoABIiQVHFqAA
+				</data>
+				<key>MatchOS</key>
+				<string>10.15.0</string>
+				<key>Replace</key>
+				<data>
+				dE7oRQYAAJCJDYYVoADpfgAAAGaQ
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>xlnc - cpuid_set_info - cores and threads calculations</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				uTUAAAAPMkjB4iCJwUgJ0bkBAAEAD0XID7fBwekQg+EP
+				6x65NQAAAA8ySMHiIInBSAnRuQEAAQAPRcgPt8HB6RA=
+				</data>
+				<key>MatchOS</key>
+				<string>10.15.0</string>
+				<key>Replace</key>
+				<data>
+				uAgAAIAx2zHJMdIPokGJzkUPtvZB/8ZEifFEifBmDx+E
+				AAAAAABmDx+EAAAAAAAPH4QAAAAAAOl8////Dx9EAAA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>algrey - i386_init - remove rdmsr (x3)</string>
 				<key>Disabled</key>
 				<false/>
@@ -651,7 +772,7 @@
 				WAIxBTHJRTHA
 				</data>
 				<key>MatchOS</key>
-				<string>10.13.x,10.14.x</string>
+				<string>10.13.x,10.14.x,10.15.x</string>
 				<key>Replace</key>
 				<data>
 				Zg8fhAAAAAAAZg8fhAAAAAAAZg8fhAAAAAAAZg8fhAAA
@@ -685,6 +806,22 @@
 				</data>
 				<key>MatchOS</key>
 				<string>10.14.6</string>
+				<key>Replace</key>
+				<data>
+				ZmZmDx+EAAAAAAA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>xlnc - tsc_init - remove Penryn check to execute default case</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				PbxP6ngPhNkBAAA=
+				</data>
+				<key>MatchOS</key>
+				<string>10.15.0</string>
 				<key>Replace</key>
 				<data>
 				ZmZmDx+EAAAAAAA=
@@ -770,6 +907,24 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>xlnc - tsc_init - grab DID and FID from MSR</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				uZQBAAAPMonDuc4AAAAPMg+2zokNYxiYAA+2xIkFXhiY
+				AA==
+				</data>
+				<key>MatchOS</key>
+				<string>10.15.0</string>
+				<key>Replace</key>
+				<data>
+				uXEAAcAPMonASInBSMHpBoPgP0iDwBCA4QdI0+hI0ehm
+				kA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>algrey - tsc_init - skip test and go get FSBFrequency</string>
 				<key>Disabled</key>
 				<false/>
@@ -840,6 +995,22 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>xlnc - tsc_init - skip test and go get FSBFrequency</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				98MAAAEAdA==
+				</data>
+				<key>MatchOS</key>
+				<string>10.15.0</string>
+				<key>Replace</key>
+				<data>
+				Zg8fRAAA6w==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>algrey - lapic_init - remove version check and panic</string>
 				<key>Disabled</key>
 				<false/>
@@ -852,6 +1023,22 @@
 				<key>Replace</key>
 				<data>
 				JfAAAADrI5A=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>xlnc - lapic_init - remove version check and panic</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				g/gTdl4=
+				</data>
+				<key>MatchOS</key>
+				<string>10.15.x</string>
+				<key>Replace</key>
+				<data>
+				Dx9EAAA=
 				</data>
 			</dict>
 			<dict>
@@ -926,6 +1113,22 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>xlnc - lapic_interrupt - skip checks and prevent panic</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				gz0I3Z8AAHQO
+				</data>
+				<key>MatchOS</key>
+				<string>10.15.0</string>
+				<key>Replace</key>
+				<data>
+				6zkPH4AAAAAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>algrey - mtrr_update_action - fix PAT (x2)</string>
 				<key>Disabled</key>
 				<false/>
@@ -950,13 +1153,15 @@
 				icCB4v//AP+BygAAAQC5dwIAAA==
 				</data>
 				<key>MatchOS</key>
-				<string>10.14.x</string>
+				<string>10.14.x,10.15.x</string>
 				<key>Replace</key>
 				<data>
 				uXcCAAC4BgEHALoGAQcADx9AAA==
 				</data>
 			</dict>
 		</array>
+		<key>PanicNoKextDump</key>
+		<true/>
 	</dict>
 	<key>RtVariables</key>
 	<dict>
