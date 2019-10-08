@@ -23,7 +23,7 @@ Kernel binary patches to enable native AMD CPU support on macOS.
 
 - High Sierra 10.13.6 (17G65, 17G66, 17G8030, 17G8037)
 - Mojave 10.14.6 (18G84, 18G87, 18G95, 18G103)
-- Catalina10.15.0(19A583)
+- Catalina 10.15.0 (19A583)
 
 ### Instructions
 
