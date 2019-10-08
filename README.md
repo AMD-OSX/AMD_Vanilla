@@ -27,9 +27,9 @@ Kernel binary patches to enable native AMD CPU support on macOS.
 
 ### Instructions
 
-- Download macOS HighSierra or Mojave from Appstore.
-- Plug an empty USB drive.
-- Run the below command in your Terminal to prepare bootable macOS USB.
+- Download macOS High Sierra, Mojave or Catalina from Appstore.
+- Plug in an empty USB drive.
+- Run one of the below commands in your Terminal to prepare the bootable macOS USB.
 
 ```
 NOTE: Make sure to replace 'MyVolumeName' with your actual USB volume name in the below commands.
