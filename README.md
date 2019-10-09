@@ -67,7 +67,7 @@ NOTE : If your are making your own clover config then use `patches.plist` to cop
     PNP0C09 to PNPFFFF    41D00C09     41D0FFFF
     ```
 
-  - If using SMBIOS ( MacPro6,1 , MacPro7,1 , iMacPro1,1 ) the AppleIntelMCEReporter.kext might panic. To prevent that you need to either use a different SMBIOS model or use a disabler kext from [here](./Extra/AppleMCEReporterDisabler.kext).
+  - If using SMBIOS ( MacPro6,1 , MacPro7,1 , iMacPro1,1 ) the AppleIntelMCEReporter.kext might panic. To prevent that you need to either use a different SMBIOS model or use a disabler kext from [here](./Extra/).
 
 ### Credits
 
