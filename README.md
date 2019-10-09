@@ -52,6 +52,23 @@ NOTE : If your are making your own clover config then use `patches.plist` to cop
 - Place the required Kexts according to your system specs in your USB EFI kexts folder `EFI/EFI/CLOVER/kexts/Other/`
 - Done.
 
+### Special Notes
+
+- For 15h_16h CPU family  users on macOS Mojave:
+  - Upon booting to macOS Mojave for first time, the system will reboot after Data & Privacy screen. To fix this issue follow the procedure mentioned [here](https://www.insanelymac.com/forum/topic/335877-amd-mojave-kernel-development-and-testing/?do=findComment&comment=2658085) under UPDATE-2 heading.
+
+  - On macOS Mojave certain webpages will crash upon loading (eg. brew.sh, facebook.com ). To fix this issue follow the procedure mentioned [here](https://www.insanelymac.com/forum/topic/335877-amd-mojave-kernel-development-and-testing/?do=findComment&comment=2661857) under UPDATE-5 heading.
+
+- To boot macOS catalina two things needs to be taken care of :
+  - If you have an EC device with name `PNP0C09` in your DSDT then your macOS might get stuck while booting at the initial stage . To fix that you need to make sure your EC device is disabled by making it return status Zero. You can use a custom [SSDT-EC0.aml](./Extra/SSDT-EC0.aml) to do that and if you want to see how it works then refer [here](https://github.com/acidanthera/OpenCorePkg/blob/5e020bb06b33f12fa8b404cc3d1effaa5fbc00ea/Docs/AcpiSamples/SSDT-EC.dsl#L33). <br> -or- <br> Use this DSDT rename method :
+
+    ```
+        Comment             Find        Replace
+    PNP0C09 to PNPFFFF    41D00C09     41D0FFFF
+    ```
+
+  - If using SMBIOS ( MacPro6,1 , MacPro7,1 , iMacPro1,1 ) the AppleIntelMCEReporter.kext might panic. To prevent that you need to either use a different SMBIOS model or use a disabler kext from [here](./Extra/AppleMCEReporterDisabler.kext).
+
 ### Credits
 
 - [AlGrey](https://github.com/AlGreyy) for the idea and creating the patches.
