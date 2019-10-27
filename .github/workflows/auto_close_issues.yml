@@ -1,7 +1,7 @@
 on:
   schedule:
-  - cron: 0 5 * * 3 
-name: Weekly Issue Closure
+  - cron: 0 1 * * *
+name: Daily Issue Closure
 jobs:
   cycle-weekly-close:
     runs-on: ubuntu-latest
