@@ -1,5 +1,5 @@
 
-AMD Vanilla
+AMD Vanilla Clover
 ==========
 Kernel binary patches to enable native AMD CPU support on macOS.
 
@@ -52,8 +52,6 @@ NOTE : If your are making your own clover config then use `patches.plist` to cop
 - Place the required Kexts according to your system specs in your USB EFI kexts folder `EFI/EFI/CLOVER/kexts/Other/`
 - Done.
 
-- OpenCore: No default config is provided, only the required kernel patches. Please read the docs for OpenCore. Patches support version 0.5.2 here, https://files.amd-osx.com/OpenCore-0.5.2-RELEASE.zip
-- Read the Docs. Visit the Discord for support or read [this](https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/) tutorial.
 
 ### Special Notes
 
