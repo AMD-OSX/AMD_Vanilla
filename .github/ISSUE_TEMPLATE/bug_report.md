@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Report a bug with the patches
+about: Report a bug with the patches. NOT for support questions.
 title: ''
 labels: ''
 assignees: ''
