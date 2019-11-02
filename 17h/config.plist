@@ -249,11 +249,23 @@
 				6PT1//+c
 				</data>
 				<key>MatchOS</key>
-				<string>10.15.x</string>
+				<string>10.15.0</string>
 				<key>Replace</key>
 				<data>
 				Dx9EAACc
 				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>idk who to credit - cpu_topology_sort -disable _x86_validate_topology</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>6JP///9Z</data>
+				<key>MatchOS</key>
+				<string>10.15.1</string>
+				<key>Replace</key>
+				<data>Dx9EAABZ</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -359,6 +371,18 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>idk who to create - cpuid_set_cache_info - cpuid 0x8000001D instead 0</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>McAx2zHJMdIPokGJxoM9lIagAAB0</data>
+				<key>MatchOS</key>
+				<string>10.15.1</string>
+				<key>Replace</key>
+				<data>uB0AAIAx2zHJMdIPokGJxg8fQADr</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>algrey - cpuid_set_cache_info - cpuid 0x8000001D instead 4</string>
 				<key>Disabled</key>
 				<false/>
@@ -415,11 +439,23 @@
 				gz1rC6AAAA+EpgEAAItdvA==
 				</data>
 				<key>MatchOS</key>
-				<string>10.15.x</string>
+				<string>10.15.0</string>
 				<key>Replace</key>
 				<data>
 				gz1rC6AAAQ+EpgEAAItdvA==
 				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>idk who to credit - cpuid_set_cache_info - skip cpuid_cores_per_package test</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>gz0bhaAAAA+EpgEAAItdvA==</data>
+				<key>MatchOS</key>
+				<string>10.15.1</string>
+				<key>Replace</key>
+				<data>gz0bhaAAAQ+EpgEAAItdvA==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -589,6 +625,18 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>idk who to credit - cpuid_set_cpufamily - force CPUFAMILY_INTEL_PENRYN</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>MduAPbmQoAAGdVw=</data>
+				<key>MatchOS</key>
+				<string>10.15.1</string>
+				<key>Replace</key>
+				<data>u7xP6njpXQAAAJA=</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>algrey - cpuid_set_info - ryzen cores and logicals count</string>
 				<key>Disabled</key>
 				<false/>
@@ -703,16 +751,29 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>idk who to credit - cpuid_set_info - jmp to calculations and set cpuid_cores_per_package</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>dXHo5QYAAEiLBdaPoABIiQWXkKAA</data>
+				<key>MatchOS</key>
+				<string>10.15.1</string>
+				<key>Replace</key>
+				<data>dE7o5QYAAJCJDdaPoADpfgAAAGaQ</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>xlnc - cpuid_set_info - cores and threads calculations</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
 				uTUAAAAPMkjB4iCJwUgJ0bkBAAEAD0XID7fBwekQg+EP
+				
 				6x65NQAAAA8ySMHiIInBSAnRuQEAAQAPRcgPt8HB6RA=
 				</data>
 				<key>MatchOS</key>
-				<string>10.15.0</string>
+				<string>10.15.x</string>
 				<key>Replace</key>
 				<data>
 				uAgAAIAx2zHJMdIPokGJzkUPtvZB/8a4HgAAgDHbMckx
@@ -779,7 +840,7 @@
 				PbxP6ngPhNkBAAA=
 				</data>
 				<key>MatchOS</key>
-				<string>10.15.0</string>
+				<string>10.15.x</string>
 				<key>Replace</key>
 				<data>
 				ZmZmDx+EAAAAAAA=
@@ -883,6 +944,18 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>idk who to credit - tsc_init - grab DID and VID from MSR</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>uZQBAAAPMonDuc4AAAAPMg+2zokNk3SYAA+2xIkFjnSYAA==</data>
+				<key>MatchOS</key>
+				<string>10.15.1</string>
+				<key>Replace</key>
+				<data>uWQAAcAPMg+2yInGwe4Ig+Y/RTH/MdJIichI9/ZIAcBmkA==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>algrey - tsc_init - skip test and go get FSBFrequency</string>
 				<key>Disabled</key>
 				<false/>
@@ -966,6 +1039,18 @@
 				<data>
 				Zg8fRAAA6w==
 				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>idk who to credit - tsc_init - skip test and go get FSBFrequency</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>98MAAAEAdBYP</data>
+				<key>MatchOS</key>
+				<string>10.15.1</string>
+				<key>Replace</key>
+				<data>Zg8fRAAA6xYP</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1084,6 +1169,18 @@
 				<data>
 				6zkPH4AAAAAA
 				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>idk who to credit - lapic_interrupt - skip checks and prevent panic</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>gz3mJpkAAHQO</data>
+				<key>MatchOS</key>
+				<string>10.15.1</string>
+				<key>Replace</key>
+				<data>6zkPH4AAAAAA</data>
 			</dict>
 			<dict>
 				<key>Comment</key>

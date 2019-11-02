@@ -1,7 +1,8 @@
-
+# THESE ARE EXPERIMENTAL PATCHES. DO NOT USE ON ANY OS INSTALL THAT MATTERS, AND/OR WITH ANY DATA THAT MATTERS. THESE PATCHES HAVE HAD LITTLE OR NO TESTING.
+# YOU HAVE BEEN WARNED.
 AMD Vanilla Clover
 ==========
-Kernel binary patches to enable native AMD CPU support on macOS.
+Experimental kernel binary patches to enable native AMD CPU support on macOS.
 
 ### Features
 - Enables macOS to run on AMD CPUs on the fly.
