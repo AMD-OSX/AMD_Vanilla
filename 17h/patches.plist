@@ -202,6 +202,30 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>gettoset - cpuid_set_info - ryzen cores and logicals count</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				PexeO1d0Gz28T+p4dSaLBUdZmACJBQlamACLDT9ZmADr
+				OLk1AAAADzIPt8jB6BCD4A/rILk1AAAADzJIweIgicFI
+				CdG6AQABAA9F0A+3yonQwegQiQXJWZgAiQ3HWZgAhcB0
+				Gg==
+				</data>
+				<key>MatchBuild</key>
+				<string>18G1012</string>
+				<key>MatchOS</key>
+				<string>10.14.6</string>
+				<key>Replace</key>
+				<data>
+				uAgAAIAx2zHJMdIPokGJwEGJzkGJ0UUPtvZB/8a4HgAA
+				gDHbMckx0g+iQYnAQYnRDx9EAAAPts//wTHSRInw9/GJ
+				BRRZmABEiTURWZgAgz3OWZgAAHU1iQXGWZgARIk1w1mY
+				AA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>xlnc - cpuid_set_cache_info - cpuid 0x8000001D instead 0</string>
 				<key>Disabled</key>
 				<false/>
@@ -456,6 +480,24 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>gettoset - cpuid_set_cpufamily - force CPUFAMILY_INTEL_PENRYN</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				MduAPThamAAGdVw=
+				</data>
+				<key>MatchBuild</key>
+				<string>18G1012</string>
+				<key>MatchOS</key>
+				<string>10.14.6</string>
+				<key>Replace</key>
+				<data>
+				u7xP6njrYA8fQAA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>xlnc - cpuid_set_cpufamily - force CPUFAMILY_INTEL_PENRYN</string>
 				<key>Disabled</key>
 				<false/>
@@ -577,6 +619,30 @@
 				uAgAAIAx2zHJMdIPokGJwEGJzkGJ0UUPtvZB/8a4HgAA
 				gDHbMckx0g+iQYnAQYnRDx9EAAAPts//wTHSRInw9/GJ
 				BSRomABEiTUhaJgAgz3eaJgAAHUNiQXWaJgARIk102iY
+				AA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>gettoset - cpuid_set_info - ryzen cores and logicals count</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				PexeO1d0Gz28T+p4dSaLBUdZmACJBQlamACLDT9ZmADr
+				OLk1AAAADzIPt8jB6BCD4A/rILk1AAAADzJIweIgicFI
+				CdG6AQABAA9F0A+3yonQwegQiQXJWZgAiQ3HWZgAhcB0
+				Gg==
+				</data>
+				<key>MatchBuild</key>
+				<string>18G1012</string>
+				<key>MatchOS</key>
+				<string>10.14.6</string>
+				<key>Replace</key>
+				<data>
+				uAgAAIAx2zHJMdIPokGJwEGJzkGJ0UUPtvZB/8a4HgAA
+				gDHbMckx0g+iQYnAQYnRDx9EAAAPts//wTHSRInw9/GJ
+				BRRZmABEiTURWZgAgz3OWZgAAHU1iQXGWZgARIk1w1mY
 				AA==
 				</data>
 			</dict>
@@ -773,6 +839,26 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>gettoset - tsc_init - grab DID and VID from MSR</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				uZQBAAAPMonDuc4AAAAPMg+2zokN0sCQAA+2xIkFzcCQ
+				AA==
+				</data>
+				<key>MatchBuild</key>
+				<string>18G1012</string>
+				<key>MatchOS</key>
+				<string>10.14.6</string>
+				<key>Replace</key>
+				<data>
+				uWQAAcAPMg+2yInGwe4Ig+Y/RTH/MdJIichI9/ZIAcBm
+				kA==
+				</data>
+			</dict>	
+			<dict>
+				<key>Comment</key>
 				<string>xlnc - tsc_init - grab DID and VID from MSR</string>
 				<key>Disabled</key>
 				<false/>
@@ -869,6 +955,24 @@
 				<key>Replace</key>
 				<data>
 				SIkFhs+QAGYPH0QAAOs=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>gettoset - tsc_init - skip test and go get FSBFrequency</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				SIkFpsCQAPfDAAABAHQ=
+				</data>
+				<key>MatchBuild</key>
+				<string>18G1012</string>
+				<key>MatchOS</key>
+				<string>10.14.6</string>
+				<key>Replace</key>
+				<data>
+				SIkFpsCQAGYPH0QAAOs=
 				</data>
 			</dict>
 			<dict>
@@ -999,6 +1103,27 @@
 				<key>Replace</key>
 				<data>
 				60gPH4AAAAAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>gettoset - lapic_interrupt - skip checks and prevent panic</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				gz0Vr3sAAHQK
+				</data>
+				<key>MatchBuild</key>
+				<string>18G1012</string>
+				<key>MatchOS</key>
+				<string>10.14.6</string>
+				<key>Replace</key>
+				<data>
+				uAgAAIAx2zHJMdIPokGJwEGJzkGJ0UUPtvZB/8a4HgAA
+				gDHbMckx0g+iQYnAQYnRDx9EAAAPts//wTHSRInw9/GJ
+				BRRZmABEiTURWZgAgz3OWZgAAHU1iQXGWZgARIk1w1mY
+				AA==
 				</data>
 			</dict>
 			<dict>
