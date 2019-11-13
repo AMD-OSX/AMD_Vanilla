@@ -206,6 +206,22 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>xlnc - cpuid_set_cache_info - cpuid 0x8000001D instead 0</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				McAx2zHJMdIPokGJxoM9lIagAAB0
+				</data>
+				<key>MatchOS</key>
+				<string>10.15.1</string>
+				<key>Replace</key>
+				<data>
+				uB0AAIAx2zHJMdIPokGJxg8fQADr
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>algrey - cpuid_set_cache_info - cpuid 0x8000001D instead 4</string>
 				<key>Disabled</key>
 				<false/>
@@ -436,6 +452,22 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>xlnc - cpuid_set_cpufamily - force CPUFAMILY_INTEL_PENRYN</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				MduAPbmQoAAGdVw=
+				</data>
+				<key>MatchOS</key>
+				<string>10.15.1</string>
+				<key>Replace</key>
+				<data>
+				u7xP6njpXQAAAJA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>xlnc - cpuid_set_info - grab cores and logicals count from MSR</string>
 				<key>Disabled</key>
 				<false/>
@@ -592,6 +624,22 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>xlnc - cpuid_set_info - jmp to calculations and set cpuid_cores_per_package</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				dXHo5QYAAEiLBdaPoABIiQWXkKAA
+				</data>
+				<key>MatchOS</key>
+				<string>10.15.1</string>
+				<key>Replace</key>
+				<data>
+				dE7o5QYAAJCJDdaPoADpfgAAAGaQ
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>xlnc - cpuid_set_info - cores and threads calculations</string>
 				<key>Disabled</key>
 				<false/>
@@ -601,7 +649,7 @@
 				6x65NQAAAA8ySMHiIInBSAnRuQEAAQAPRcgPt8HB6RA=
 				</data>
 				<key>MatchOS</key>
-				<string>10.15.0</string>
+				<string>10.15.0,10.15.1</string>
 				<key>Replace</key>
 				<data>
 				uAgAAIAx2zHJMdIPokGJzkUPtvZB/8ZEifFEifBmDx+E
@@ -669,6 +717,22 @@
 				</data>
 				<key>MatchOS</key>
 				<string>10.15.0</string>
+				<key>Replace</key>
+				<data>
+				ZmZmDx+EAAAAAAA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>xlnc - tsc_init - remove Penryn check to execute default case</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				PbxP6ngPhNkBAAA=
+				</data>
+				<key>MatchOS</key>
+				<string>10.15.1</string>
 				<key>Replace</key>
 				<data>
 				ZmZmDx+EAAAAAAA=
@@ -772,6 +836,24 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>xlnc - tsc_init - grab DID and FID from MSR</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				uZQBAAAPMonDuc4AAAAPMg+2zokNk3SYAA+2xIkFjnSY
+				AA==
+				</data>
+				<key>MatchOS</key>
+				<string>10.15.1</string>
+				<key>Replace</key>
+				<data>
+				uXEAAcAPMonASInBSMHpBoPgP0iDwBCA4QdI0+hI0ehm
+				kA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>algrey - tsc_init - skip test and go get FSBFrequency</string>
 				<key>Disabled</key>
 				<false/>
@@ -850,7 +932,7 @@
 				98MAAAEAdA==
 				</data>
 				<key>MatchOS</key>
-				<string>10.15.0</string>
+				<string>10.15.0,10.15.1</string>
 				<key>Replace</key>
 				<data>
 				Zg8fRAAA6w==
@@ -969,6 +1051,22 @@
 				</data>
 				<key>MatchOS</key>
 				<string>10.15.0</string>
+				<key>Replace</key>
+				<data>
+				6zkPH4AAAAAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>xlnc - lapic_interrupt - skip checks and prevent panic</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				gz04WaAAAHQO
+				</data>
+				<key>MatchOS</key>
+				<string>10.15.1</string>
 				<key>Replace</key>
 				<data>
 				6zkPH4AAAAAA

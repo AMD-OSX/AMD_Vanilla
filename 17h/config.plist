@@ -35,6 +35,23 @@
 			</dict>
 			<key>Name</key>
 			<string>DSDT.aml</string>
+			<key>Patches</key>
+			<array>
+				<dict>
+					<key>Comment</key>
+					<string>change PNP0C09 to PNPFFFF (prevent EC)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					QdAMCQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					QdD//w==
+					</data>
+				</dict>
+			</array>
 		</dict>
 		<key>HaltEnabler</key>
 		<true/>
@@ -359,6 +376,22 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>xlnc - cpuid_set_cache_info - cpuid 0x8000001D instead 0</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				McAx2zHJMdIPokGJxoM9lIagAAB0
+				</data>
+				<key>MatchOS</key>
+				<string>10.15.1</string>
+				<key>Replace</key>
+				<data>
+				uB0AAIAx2zHJMdIPokGJxg8fQADr
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>algrey - cpuid_set_cache_info - cpuid 0x8000001D instead 4</string>
 				<key>Disabled</key>
 				<false/>
@@ -589,6 +622,22 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>xlnc - cpuid_set_cpufamily - force CPUFAMILY_INTEL_PENRYN</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				MduAPbmQoAAGdVw=
+				</data>
+				<key>MatchOS</key>
+				<string>10.15.1</string>
+				<key>Replace</key>
+				<data>
+				u7xP6njpXQAAAJA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>algrey - cpuid_set_info - ryzen cores and logicals count</string>
 				<key>Disabled</key>
 				<false/>
@@ -703,6 +752,22 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>xlnc - cpuid_set_info - jmp to calculations and set cpuid_cores_per_package</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				dXHo5QYAAEiLBdaPoABIiQWXkKAA
+				</data>
+				<key>MatchOS</key>
+				<string>10.15.1</string>
+				<key>Replace</key>
+				<data>
+				dE7o5QYAAJCJDdaPoADpfgAAAGaQ
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>xlnc - cpuid_set_info - cores and threads calculations</string>
 				<key>Disabled</key>
 				<false/>
@@ -712,7 +777,7 @@
 				6x65NQAAAA8ySMHiIInBSAnRuQEAAQAPRcgPt8HB6RA=
 				</data>
 				<key>MatchOS</key>
-				<string>10.15.0</string>
+				<string>10.15.0,10.15.1</string>
 				<key>Replace</key>
 				<data>
 				uAgAAIAx2zHJMdIPokGJzkUPtvZB/8a4HgAAgDHbMckx
@@ -780,6 +845,22 @@
 				</data>
 				<key>MatchOS</key>
 				<string>10.15.0</string>
+				<key>Replace</key>
+				<data>
+				ZmZmDx+EAAAAAAA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>xlnc - tsc_init - remove Penryn check to execute default case</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				PbxP6ngPhNkBAAA=
+				</data>
+				<key>MatchOS</key>
+				<string>10.15.1</string>
 				<key>Replace</key>
 				<data>
 				ZmZmDx+EAAAAAAA=
@@ -883,6 +964,24 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>xlnc - tsc_init - grab DID and VID from MSR</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				uZQBAAAPMonDuc4AAAAPMg+2zokNk3SYAA+2xIkFjnSY
+				AA==
+				</data>
+				<key>MatchOS</key>
+				<string>10.15.1</string>
+				<key>Replace</key>
+				<data>
+				uWQAAcAPMg+2yInGwe4Ig+Y/RTH/MdJIichI9/ZIAcBm
+				kA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>algrey - tsc_init - skip test and go get FSBFrequency</string>
 				<key>Disabled</key>
 				<false/>
@@ -961,7 +1060,7 @@
 				98MAAAEAdA==
 				</data>
 				<key>MatchOS</key>
-				<string>10.15.0</string>
+				<string>10.15.0,10.15.1</string>
 				<key>Replace</key>
 				<data>
 				Zg8fRAAA6w==
@@ -1087,6 +1186,22 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>xlnc - lapic_interrupt - skip checks and prevent panic</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				gz04WaAAAHQO
+				</data>
+				<key>MatchOS</key>
+				<string>10.15.1</string>
+				<key>Replace</key>
+				<data>
+				6zkPH4AAAAAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>algrey - mtrr_update_action - fix PAT</string>
 				<key>Disabled</key>
 				<false/>
@@ -1133,11 +1248,11 @@
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>07/26/2019</string>
+		<string>10/17/2019</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>IMP11.88Z.F000.B00.1907261958</string>
+		<string>IMP11.88Z.F000.B00.1910172120</string>
 		<key>Board-ID</key>
 		<string>Mac-7BA5B2D9E42DDD94</string>
 		<key>BoardManufacturer</key>
@@ -1153,7 +1268,7 @@
 		<key>ChassisType</key>
 		<string>0x09</string>
 		<key>EfiVersion</key>
-		<string>1037.0.39.151.1</string>
+		<string>1037.40.124.0.0</string>
 		<key>Family</key>
 		<string>iMac Pro</string>
 		<key>FirmwareFeatures</key>
