@@ -42,7 +42,7 @@ sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstall
 ```
 - Install Clover on your USB drive.
 - Place the `config.plist` provided, according to your CPU family (i.e `15h_16h` or `17h`) in your USB EFI Clover folder `EFI/EFI/CLOVER/` and edit it as per your needs.
-  Note: If your are making your own Clover config, use `patches.plist` and merge the patches manually.
+  Note: If you are making your own Clover config, use `patches.plist` and merge the patches manually.
 - Place the required kext according to your system in your USB EFI kexts folder `EFI/EFI/CLOVER/kexts/Other/`.
 
 ### Special Notes
