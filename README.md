@@ -2,7 +2,7 @@
 AMD Vanilla OpenCore
 ==========
 ## If you are looking for Clover, go [here](https://github.com/AMD-OSX/AMD_Vanilla/).
-Kernel binary patches to enable native AMD CPU support on macOS.
+Kernel binary patches to enable almost native AMD CPU support on macOS.
 
 ### Features
 - Enables macOS to run on AMD CPUs on the fly.
@@ -16,15 +16,13 @@ Kernel binary patches to enable native AMD CPU support on macOS.
 | Family | Codename| Example |
 |--------|---------|----------|
 |   [15h](https://github.com/AMD-OSX/AMD_Vanilla/tree/opencore/15h_16h)  | Bulldozer | FX Series|
-|   [16h](https://github.com/AMD-OSX/AMD_Vanilla/tree/opencore/15h_16h)  | Jaguar | A Series |
+|   [16h](https://github.com/AMD-OSX/AMD_Vanilla/tree/opencore/15h_16h)  | Jaguar | A Series (including AM4 A-Series) |
 |   [17h](https://github.com/AMD-OSX/AMD_Vanilla/tree/opencore/17h) | Zen | Ryzen, Threadripper, Athlon 2xxGE | <br />
 
 ### Supported macOS versions
 - High Sierra 10.13.x
 - Mojave 10.14.x
 - Catalina 10.15.x
-
-10.13.x onwards supported thanks to mask patching.
 
 ### Instructions
 - Download macOS High Sierra, Mojave or Catalina from the App Store.
@@ -58,7 +56,7 @@ sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstall
         Comment             Find        Replace
     PNP0C09 to PNPFFFF    41D00C09     41D0FFFF
     ```
-  - If using SMBIOS `MacPro6,1`, `MacPro7,1`, or `iMacPro1,1`, `AppleIntelMCEReporter.kext` might panic. To prevent that you need to either use a different SMBIOS model or use a disabler kext from [here](./Extra/).
+  - When using the SMBIOSes `MacPro6,1`, `MacPro7,1`, or `iMacPro1,1`, `AppleIntelMCEReporter.kext` macOS might panic. To prevent this you need to either use a different SMBIOS or use a disabler kext from [here](./Extra/).
 
 ### Credits
 - [AlGrey](https://github.com/AlGreyy) for the idea and creating the patches.
