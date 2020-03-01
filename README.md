@@ -1,7 +1,6 @@
 <p align="center">
 AMD Vanilla OpenCore
-  
-==========
+======
 </p>
 
 ## Languages: English (current), [Russian](languages/README_RUS.md)
