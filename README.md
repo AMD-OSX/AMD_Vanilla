@@ -42,8 +42,8 @@ sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstallme
 ## Catalina
 sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolumeName
 ```
-- Install OpenCore on your USB drive. (Precompiled OpenCore 0.5.2 - https://files.amd-osx.com/OpenCore-0.5.2-RELEASE.zip)
-- Read the OpenCore Documentaion for `config.plist` setup. A default config will not be provided.
+- Install OpenCore on your USB drive. (For OpenCore releases see: https://github.com/acidanthera/OpenCorePkg/releases)
+- Read the [OpenCore Documentaion](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Configuration.pdf) for `config.plist` setup. A default config will not be provided.
 - Merge the patches provided, according to your CPU family (i.e `15h_16h` or `17h`) into your OpenCore `config.plist` and edit it as per your needs.
 
 ### Special Notes
@@ -51,9 +51,9 @@ sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstall
 - For support creating OpenCore config read the docs and visit [this](https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/) guide or the Discord server.
 - For 15h_16h CPU family users on macOS Mojave:
   - Upon booting to macOS Mojave for first time, the system will reboot after the Data & Privacy screen. To fix this issue follow the procedure mentioned [here](https://www.insanelymac.com/forum/topic/335877-amd-mojave-kernel-development-and-testing/?do=findComment&comment=2658085) under UPDATE-2 heading.
-  - On macOS Mojave certain webpages will crash upon loading (eg. brew.sh, facebook.com). To fix this issue follow the procedure mentioned [here](https://www.insanelymac.com/forum/topic/335877-amd-mojave-kernel-development-and-testing/?do=findComment&comment=2661857) under UPDATE-5 heading.
+  - On macOS Mojave certain webpages will crash upon loading (eg. brew.sh, facebook.com). To fix this issue follow the procedure mentioned [here](https://www.insanelymac.com/forum/topic/335877-amd-mojave-kernel-development-and-testing/?do=findComment&comment=2661857) under the UPDATE-5 heading.
 - To boot 10.15 two things needs to be taken care of:
-  - If you have an EC device with ID `PNP0C09` in your DSDT then macOS might get stuck while booting at the initial stage. To fix that you need to make sure your EC device is disabled by making it return status `Zero`. You can use a custom [SSDT-EC0.aml](./Extra/SSDT-EC0.aml) to do that and if you want to see how it works then refer [here](https://github.com/acidanthera/OpenCorePkg/blob/5e020bb06b33f12fa8b404cc3d1effaa5fbc00ea/Docs/AcpiSamples/SSDT-EC.dsl#L33). <br> -or- <br> You can change the ID of the EC device. Use this ACPI patch:
+  - If you have an EC device with ID `PNP0C09` in your DSDT then macOS might get stuck while booting at the initial stage. To fix that you need to make sure your EC device is disabled by making it return status `Zero`. You can use a custom [SSDT-EC0.aml](./Extra/SSDT-EC0.aml) to do that and if you want to see how it works you can refer to [here](https://github.com/acidanthera/OpenCorePkg/blob/5e020bb06b33f12fa8b404cc3d1effaa5fbc00ea/Docs/AcpiSamples/SSDT-EC.dsl#L33). <br> -or- <br> You can change the ID of the EC device. Using this ACPI patch:
     ```
         Comment             Find        Replace
     PNP0C09 to PNPFFFF    41D00C09     41D0FFFF
