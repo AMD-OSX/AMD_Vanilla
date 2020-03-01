@@ -1,8 +1,6 @@
-
-<p align="center">
-AMD Vanilla OpenCore
-==========
-</p>
+<span align="center">
+<h1>AMD Vanilla OpenCore</h1>
+</span>
 
 ## Доступные языки (Languages): [English](../README.md), Russian (текущий)
 Бинарные патчи ядра для включения практически нативной поддержки процессоров от AMD в macOS.
