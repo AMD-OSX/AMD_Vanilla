@@ -1,7 +1,8 @@
+<span align="center">
+<h1>AMD Vanilla OpenCore</h1>
+</span>
 
-AMD Vanilla OpenCore
-==========
-## If you are looking for Clover, go [here](https://github.com/AMD-OSX/AMD_Vanilla/).
+## Languages: English (current), [Russian](languages/README_RUS.md)
 Kernel binary patches to enable almost native AMD CPU support on macOS.
 
 ### Features
