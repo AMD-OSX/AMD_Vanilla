@@ -1,7 +1,6 @@
-<p align="center">
-AMD Vanilla OpenCore
-======
-</p>
+<span align="center">
+<h1>AMD Vanilla OpenCore</h1>
+</span>
 
 ## Languages: English (current), [Russian](languages/README_RUS.md)
 Kernel binary patches to enable almost native AMD CPU support on macOS.
