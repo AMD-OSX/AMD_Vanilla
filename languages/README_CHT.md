@@ -52,7 +52,7 @@ sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstall
   - 在第一次啟動 macOS Mojave 時，系統會在「資料及隱私權」畫面重新啟動。到[這裡\(UPDATE-2 標題下方\)](https://www.insanelymac.com/forum/topic/335877-amd-mojave-kernel-development-and-testing/?do=findComment&comment=2658085)去解決問題
   - 在 macOS Mojave 中，某些網站可能會在加載時壞掉 (例如 brew.sh, facebook.com 等). 到[這裡\(UPDATE-5 標題下方\)](https://www.insanelymac.com/forum/topic/335877-amd-mojave-kernel-development-and-testing/?do=findComment&comment=2661857)去解決問題
 - 啟動 10.15 需要注意以下兩個事項：
-  - 如果在你的 DSDT 中，有 ID 為 `PNP0C09` 的 EC 裝置，macOS 可能在初始啟動時卡住。請確保把 EC 裝置傳回狀態 0 已關閉它，你可以使用一個定制的 [SSDT-EC0.aml](../Extra/SSDT-EC0.aml) 達到以上的效果。如果你想知道這是如何運作的，你可以到[這裡](https://github.com/acidanthera/OpenCorePkg/blob/5e020bb06b33f12fa8b404cc3d1effaa5fbc00ea/Docs/AcpiSamples/SSDT-EC.dsl#L33). <br> -或- <br> 使用以下 ACPI 補丁以更改 EC 裝置的 ID:
+  - 如果在你的 DSDT 中，有 ID 為 `PNP0C09` 的 EC 裝置，macOS 可能在初始啟動時卡住。請確保把 EC 裝置傳回狀態 `Zero` 以關閉它，你可以使用一個定制的 [SSDT-EC0.aml](../Extra/SSDT-EC0.aml) 達到以上的效果。如果你想知道這是如何運作的，你可以到[這裡](https://github.com/acidanthera/OpenCorePkg/blob/5e020bb06b33f12fa8b404cc3d1effaa5fbc00ea/Docs/AcpiSamples/SSDT-EC.dsl#L33). <br> -或- <br> 使用以下 ACPI 補丁以更改 EC 裝置的 ID:
     ```
         Comment             Find        Replace
     PNP0C09 to PNPFFFF    41D00C09     41D0FFFF
