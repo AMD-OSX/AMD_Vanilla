@@ -47,7 +47,7 @@ sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstall
 
 ### 特別 Notes
 - 這些補丁需要 OpenCore 0.5.2 或以上，在 0.5.1 或以下的版本不能使用
-- 如果你在設定 OpenCore config 時需要協助，閱讀 OpenCore 的官方文件和[這個教學](https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/) guide or the Discord server.
+- 如果你在設定 OpenCore config 時需要協助，閱讀 OpenCore 的官方文件和[這個教學](https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/) 或加入 Discord 伺服器
 - 對於在 macOS Mojave 的 15h_16h 處理器家族
   - 在第一次啟動 macOS Mojave 時，系統會在「資料及隱私權」畫面重新啟動。到[這裡\(UPDATE-2 標題下方\)](https://www.insanelymac.com/forum/topic/335877-amd-mojave-kernel-development-and-testing/?do=findComment&comment=2658085)去解決問題
   - 在 macOS Mojave 中，某些網站可能會在加載時壞掉 (例如 brew.sh, facebook.com 等). 到[這裡\(UPDATE-5 標題下方\)](https://www.insanelymac.com/forum/topic/335877-amd-mojave-kernel-development-and-testing/?do=findComment&comment=2661857)去解決問題
