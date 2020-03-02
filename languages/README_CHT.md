@@ -2,7 +2,7 @@
 <h1>AMD Vanilla OpenCore</h1>
 </span>
 
-### 語言（Languages）: [English](../README.md), [Russian](languages/README_RUS.md), 繁中(已選)
+### 語言（Languages）: [English](../README.md), [Russian](./README_RUS.md), 繁中(已選)
 用於在 macOS 中啟用*差不多*原生的 AMD 處理器支援的內核補丁
 
 ### 功能
@@ -57,7 +57,7 @@ sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstall
         Comment             Find        Replace
     PNP0C09 to PNPFFFF    41D00C09     41D0FFFF
     ```
-  - 當使用 SMBIOSes `MacPro6,1`, `MacPro7,1`, or `iMacPro1,1` 時， `AppleIntelMCEReporter.kext` 可能會崩潰。你可以使用其他的 SMBIOS 或到[這裡](./Extra/)下載並使用可關閉它的 kext.
+  - 當使用 SMBIOSes `MacPro6,1`, `MacPro7,1`, or `iMacPro1,1` 時， `AppleIntelMCEReporter.kext` 可能會崩潰。你可以使用其他的 SMBIOS 或到[這裡](../Extra/)下載並使用可關閉它的 kext.
 
 ### 鳴謝
 - [AlGrey](https://github.com/AlGreyy) - 想法及製作這些補丁
