@@ -64,3 +64,4 @@ sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstall
 - [AlGrey](https://github.com/AlGreyy) за идею и создание патчей.
 - [XLNC](https://github.com/XLNCs) за поддержание актуальности патчей к различным версиям macOS и поколениям процессоров.
 - Sinetek, Andy Vandijck, spakk, Bronya, Tora Chi Yo, Shaneee и многих других за то, что они поделелились своими идеями и знаниями в области XNU & AMD.
+- [0xD81CF](https://github.com/0xD81CF) и [doesprintfwork](https://github.com/doesprintfworok) за перевод и адаптацию README.
