@@ -6,7 +6,7 @@
 用於在 macOS 中啟用*差不多*原生的 AMD 處理器支援的內核補丁
 
 ### 功能
-- 讓macOS可在AMD處理器上運行
+- 讓 macOS 可在 AMD 處理器上運行
 - 啟用 iMessage, Siri, FaceTime, 接續互通等
 - 較定制的 XNU kernel 穩定
 
@@ -42,8 +42,8 @@ sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstallme
 sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolumeName
 ```
 - 安裝 OpenCore 到你的 USB 上（若要 OpenCore release，請到: https://github.com/acidanthera/OpenCorePkg/releases)
-- 閱讀 [OpenCore Documentaion](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Configuration.pdf) 以製作 `config.plist`. **沒有**預設 config
-- 跟據你的 CPU 家族和需要，在 config 中合併以上提供的補丁和更改你需要的設定
+- 根據 [OpenCore Documentaion](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Configuration.pdf) 製作 `config.plist`. **沒有**預設 config
+- 根據你的 CPU 家族和需要，在 config 中合併以上提供的補丁和更改你需要的設定
 
 ### 特別 Notes
 - 這些補丁需要 OpenCore 0.5.2 或以上，在 0.5.1 或以下的版本不能使用
