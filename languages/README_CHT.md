@@ -63,4 +63,4 @@ sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstall
 - [AlGrey](https://github.com/AlGreyy) - 想法及製作這些補丁
 - [XLNC](https://github.com/XLNCs) - 加入更多 macOS 版本
 - Sinetek, Andy Vandijck, spakk, Bronya, Tora Chi Yo, Shaneee 和更多人 - 分享他們對 AMD/XNU 內核的知識
-- [0xD81CF](https://github.com/0xD81CF) - 俄語的 README 翻譯
+- [0xD81CF](https://github.com/0xD81CF) 和 [doesprintfwork](https://github.com/doesprintfworok) - README 翻譯
