@@ -41,7 +41,7 @@ sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstallme
 ## Catalina
 sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolumeName
 ```
-- 安裝 OpenCore 到你的 USB 上（若要 OpenCore release，請到: https://github.com/acidanthera/OpenCorePkg/releases）
+- 安裝 OpenCore 到你的 USB 上（若要 OpenCore release，請到: [https://github.com/acidanthera/OpenCorePkg/releases](https://github.com/acidanthera/OpenCorePkg/releases)）
 - 根據 [OpenCore Documentaion](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Configuration.pdf) 製作 `config.plist`. **沒有**預設 config
 - 根據你的 CPU 家族和需要，在 config 中合併以上提供的補丁和更改你需要的設定
 
