@@ -56,7 +56,7 @@ sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstall
         Comment             Find        Replace
     PNP0C09 to PNPFFFF    41D00C09     41D0FFFF
     ```
-  - 当使用这些 SMBIOSes `MacPro6,1`, `MacPro7,1`, 或者 `iMacPro1,1`, `AppleIntelMCEReporter.kext` macOS 可能会 panic. 为了防止这种情况，您需要使用其他SMBIOS或使用 [此kext](./Extra/) 来关闭它.
+  - 当使用这些 SMBIOSes `MacPro6,1`, `MacPro7,1`, 或者 `iMacPro1,1`, `AppleIntelMCEReporter.kext` macOS 可能会 panic. 为了防止这种情况，您需要使用其他SMBIOS或使用 [此kext](../Extra/) 来关闭它.
 
 ### 鸣谢
 - [AlGrey](https://github.com/AlGreyy) 提出想法并制作补丁
