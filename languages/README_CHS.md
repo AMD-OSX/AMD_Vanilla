@@ -49,7 +49,7 @@ sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstall
 - 如果你在设定 OpenCore config 时需要协助，阅读 OpenCore 的官方文件和[这个教学](https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/)或加入 Discord 伺服器
 - 对于安装 macOS Mojave 的 15h_16h CPU 系列用户：
   - 在第一次启动 macOS Mojave 时，系统会在「资料及隐私权」画面重新启动。到[这里](https://www.insanelymac.com/forum/topic/335877-amd-mojave-kernel-development-and-testing/?do=findComment&comment=2658085) （UPDATE-2 标题下方）去阅读解决方法
-  - 在macOS Mojave 中，某些网站（例如brew.sh, facebook.com 等）可能会在加载时出现错误. 到[这里](https://www.insanelymac.com/forum /topic/335877-amd-mojave-kernel-development-and-testing/?do=findComment&comment=2661857) （UPDATE-5 标题下方）去阅读解决方法
+  - 在macOS Mojave 中，某些网站（例如brew.sh, facebook.com 等）可能会在加载时出现错误。到[这里](https://www.insanelymac.com/) （UPDATE-5 标题下方）去阅读解决方法
 - 要启动10.15，需要注意两点：
   - 如果在你的 DSDT 中，有 ID 为 `PNP0C09` 的 EC 装置，macOS 可能在初始启动时卡住。请确保把 EC 装置传回状态 `Zero` 以关闭它，你可以使用一个定制的 [SSDT-EC0.aml](../Extra/SSDT-EC0.aml) 达到以上的效果。如果你想知道这是如何运作的，你可以到[这里](https://github.com/acidanthera/OpenCorePkg/blob/5e020bb06b33f12fa8b404cc3d1effaa5fbc00ea/Docs/AcpiSamples/SSDT-EC.dsl#L33). <br> -或- <br> 使用以下ACPI 补丁以更改EC 装置的ID:
     ```
