@@ -2,7 +2,7 @@
 <h1>AMD Vanilla OpenCore</h1>
 </span>
 
-### 语言: [English](../README.md), [俄语](./README_RUS.md), [繁体中文](./README_CHT.md), [简体中文](current)
+### 语言: [English](../README.md), [俄语](./README_RUS.md), [繁体中文](./README_CHT.md), 简体中文(当前)
 内核二进制修补程序，在 macOS 上启用 AMD CPU 支持。
 ### 功能
 - 让 macOS 可在 AMD 处理器上运行
