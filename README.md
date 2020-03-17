@@ -1,7 +1,7 @@
 
 AMD Vanilla Clover
 
-# As of Wednesday February 26th Clover support has been depracated. 
+# As of Wednesday February 26th Clover support has been deprecated. 
 ## Support might return when/if working mask patching is implemented in Clover.
 
 ==========
