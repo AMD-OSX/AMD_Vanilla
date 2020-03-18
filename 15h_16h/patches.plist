@@ -467,7 +467,7 @@
 				<true/>
 				<key>Find</key>
 				<data>
-				MduAPQAAAAAGdVw=
+				MduAPQAAAAAGdQA=
 				</data>
 				<key>Identifier</key>
 				<string>kernel</string>
@@ -475,7 +475,7 @@
 				<integer>0</integer>
 				<key>Mask</key>
 				<data>
-				/////wAAAP////8=
+				/////wAAAP///wA=
 				</data>
 				<key>MaxKernel</key>
 				<string>19.99.99</string>
