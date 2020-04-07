@@ -2,7 +2,7 @@
 <h1>AMD Vanilla OpenCore</h1>
 </span>
 
-### 語言（Languages）: [English](../README.md), [Russian](./README_RUS.md), 繁中（已選）
+### 語言（Languages）: [English](../README.md), [Russian](./README_RUS.md), 繁中（已選）, [Spanish](languages/README_ES.md)
 用於在 macOS 中啟用*差不多*原生的 AMD 處理器支援的內核補丁
 
 ### 功能
@@ -63,4 +63,4 @@ sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstall
 - [AlGrey](https://github.com/AlGreyy) - 想法及製作這些補丁
 - [XLNC](https://github.com/XLNCs) - 加入更多 macOS 版本
 - Sinetek, Andy Vandijck, spakk, Bronya, Tora Chi Yo, Shaneee 和更多人 - 分享他們對 AMD/XNU 內核的知識
-- [0xD81CF](https://github.com/0xD81CF) 和 [doesprintfwork](https://github.com/doesprintfwork) - README 翻譯
+- [0xD81CF](https://github.com/0xD81CF), [doesprintfwork](https://github.com/doesprintfwork) 和 [erikjara](https://github.com/erikjara) - README 翻譯
