@@ -2,7 +2,7 @@
 <h1>AMD Vanilla OpenCore</h1>
 </span>
 
-### Languages: English (current), [Russian](languages/README_RUS.md), [Traditional Chinese](languages/README_CHT.md), [Spanish](languages/README_ES.md)
+### Languages: English (current), [Russian](languages/README_RUS.md), [Traditional Chinese](languages/README_CHT.md), [Spanish](languages/README_ES.md), [Simplified Chinese](languages/README_CHS.md)
 Kernel binary patches to enable almost native AMD CPU support on macOS.
 
 ### Features
@@ -63,4 +63,4 @@ sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstall
 - [AlGrey](https://github.com/AlGreyy) for the idea and creating the patches.
 - [XLNC](https://github.com/XLNCs) for maintaining patches to various macOS versions.
 - Sinetek, Andy Vandijck, spakk, Bronya, Tora Chi Yo, Shaneee and many others for sharing their AMD/XNU kernel knowledge
-- [0xD81CF](https://github.com/0xD81CF), [doesprintfwork](https://github.com/doesprintfwork) and [erikjara](https://github.com/erikjara) for readme translations.
+- [0xD81CF](https://github.com/0xD81CF), [doesprintfwork](https://github.com/doesprintfwork), [erikjara](https://github.com/erikjara) and [Sukka](https://github.com/SukkaW) for readme translations.

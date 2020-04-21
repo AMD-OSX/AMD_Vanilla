@@ -2,7 +2,7 @@
 <h1>AMD Vanilla OpenCore</h1>
 </span>
 
-### Доступные языки (Languages): [English](../README.md), Russian (текущий), [Traditional Chinese](./README_CHT), [Spanish](languages/README_ES.md)
+### Доступные языки (Languages): [English](../README.md), Russian (текущий), [Traditional Chinese](./README_CHT), [Spanish](languages/README_ES.md), [Simplified Chinese](languages/README_CHS.md)
 Бинарные патчи ядра для включения практически нативной поддержки процессоров от AMD в macOS.
 
 ### Особенности
@@ -64,4 +64,4 @@ sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstall
 - [AlGrey](https://github.com/AlGreyy) за идею и создание патчей.
 - [XLNC](https://github.com/XLNCs) за поддержание актуальности патчей к различным версиям macOS и поколениям процессоров.
 - Sinetek, Andy Vandijck, spakk, Bronya, Tora Chi Yo, Shaneee и многих других за то, что они поделелились своими идеями и знаниями в области XNU & AMD.
-- [0xD81CF](https://github.com/0xD81CF),  [doesprintfwork](https://github.com/doesprintfwork) и [erikjara](https://github.com/erikjara) за перевод и адаптацию README.
+- [0xD81CF](https://github.com/0xD81CF),  [doesprintfwork](https://github.com/doesprintfwork),  [erikjara](https://github.com/erikjara) и [Sukka](https://github.com/SukkaW) за перевод и адаптацию README.
