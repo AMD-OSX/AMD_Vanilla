@@ -1,8 +1,11 @@
+# THIS ARE EXPERIMENTAL PATCHES
+# THEY COME WITH *NO* SUPPORT OR GUARANTEE OF STABILITY
+# ANY REQUEST FOR HELP SHALL BE IGNORED
+# USE AT YOUR OWN RISK
+
 <span align="center">
 <h1>AMD Vanilla OpenCore</h1>
 </span>
-
-### Languages: English (current), [Russian](languages/README_RUS.md), [Traditional Chinese](languages/README_CHT.md), [Spanish](languages/README_ES.md)
 Kernel binary patches to enable almost native AMD CPU support on macOS.
 
 ### Features
@@ -24,6 +27,7 @@ Kernel binary patches to enable almost native AMD CPU support on macOS.
 - High Sierra 10.13.x
 - Mojave 10.14.x
 - Catalina 10.15.x
+- Big Sur 10.16.x/11.0
 
 ### Instructions
 - Download macOS High Sierra, Mojave or Catalina from the App Store.
@@ -61,6 +65,6 @@ sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstall
 
 ### Credits
 - [AlGrey](https://github.com/AlGreyy) for the idea and creating the patches.
-- [XLNC](https://github.com/XLNCs) for maintaining patches to various macOS versions.
+- [XLNC](https://github.com/XLNCs) and [NoOne](https://github.com/IOIIIO) for maintaining patches to various macOS versions.
 - Sinetek, Andy Vandijck, spakk, Bronya, Tora Chi Yo, Shaneee and many others for sharing their AMD/XNU kernel knowledge
 - [0xD81CF](https://github.com/0xD81CF), [doesprintfwork](https://github.com/doesprintfwork) and [erikjara](https://github.com/erikjara) for readme translations.
