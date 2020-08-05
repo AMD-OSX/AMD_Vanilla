@@ -67,7 +67,7 @@ sudo /Applications/Install\ macOS\ Big\ Sur\ Beta.app/Contents/Resources/createi
     PNP0C09 to PNPFFFF    41D00C09     41D0FFFF
     ```
   - When using the SMBIOSes `MacPro6,1`, `MacPro7,1`, or `iMacPro1,1`, `AppleIntelMCEReporter.kext` macOS might panic. To prevent this you need to either use a different SMBIOS or use a disabler kext from [here](./Extra/).
-- macOS 10.16/11.0 Big Sur beta requires OpenCore 0.6 (not yet officially released) or later.
+- macOS 10.16/11.0 Big Sur beta requires OpenCore 0.6 or later.
 
 ### Credits
 - [AlGrey](https://github.com/AlGreyy) for the idea and creating the patches.
