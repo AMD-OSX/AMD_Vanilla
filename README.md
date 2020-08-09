@@ -46,6 +46,9 @@ sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstallme
 
 ## Catalina
 sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolumeName
+
+## Big Sur
+sudo /Applications/Install\ macOS\ Big\ Sur\ Beta.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolumeName
 ```
 - Install OpenCore on your USB drive. (For OpenCore releases see: https://github.com/acidanthera/OpenCorePkg/releases)
 - Read the [OpenCore Documentaion](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Configuration.pdf) for `config.plist` setup. A default config will not be provided.
@@ -64,6 +67,7 @@ sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstall
     PNP0C09 to PNPFFFF    41D00C09     41D0FFFF
     ```
   - When using the SMBIOSes `MacPro6,1`, `MacPro7,1`, or `iMacPro1,1`, `AppleIntelMCEReporter.kext` macOS might panic. To prevent this you need to either use a different SMBIOS or use a disabler kext from [here](./Extra/).
+- macOS 10.16/11.0 Big Sur beta requires OpenCore 0.6 or later.
 
 ### Credits
 - [AlGrey](https://github.com/AlGreyy) for the idea and creating the patches.
