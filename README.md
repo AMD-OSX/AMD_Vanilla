@@ -18,7 +18,8 @@ Kernel binary patches to enable almost native AMD CPU support on macOS.
 |--------|---------|----------|
 |   [15h](https://github.com/AMD-OSX/AMD_Vanilla/tree/opencore/15h_16h)  | Bulldozer | FX Series|
 |   [16h](https://github.com/AMD-OSX/AMD_Vanilla/tree/opencore/15h_16h)  | Jaguar | A Series (including AM4 A-Series) |
-|   [17h](https://github.com/AMD-OSX/AMD_Vanilla/tree/opencore/17h) | Zen | Ryzen, Threadripper, Athlon 2xxGE | <br />
+|   [17h](https://github.com/AMD-OSX/AMD_Vanilla/tree/opencore/Ryzen_17h) | Zen | Ryzen, 1st & 2nd Gen Threadripper, Athlon 2xxGE |
+|   [3rd Gen ThreadRipper](https://github.com/AMD-OSX/AMD_Vanilla/tree/opencore/ThreadRipper_Gen3_17h)  | Zen | 3rd Gen Threadripper  | <br />
 
 ### Supported macOS versions
 - High Sierra 10.13.x
