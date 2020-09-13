@@ -32,7 +32,7 @@ Kernel binary patches to enable almost native AMD CPU support on macOS.
 - Big Sur 10.16.x/11.0
 
 ### Instructions
-- Download macOS High Sierra, Mojave or Catalina from the App Store.
+- Download macOS High Sierra, Mojave or Catalina from the App Store or Big Sur with your Apple Developer ID or Apple Public Beta Tester ID.
 - Plug in an empty USB drive.
 - Run one of the below commands in your Terminal to prepare the bootable macOS USB.
 ```
@@ -67,7 +67,7 @@ sudo /Applications/Install\ macOS\ Big\ Sur\ Beta.app/Contents/Resources/createi
     PNP0C09 to PNPFFFF    41D00C09     41D0FFFF
     ```
   - When using the SMBIOSes `MacPro6,1`, `MacPro7,1`, or `iMacPro1,1`, `AppleIntelMCEReporter.kext` macOS might panic. To prevent this you need to either use a different SMBIOS or use a disabler kext from [here](./Extra/).
-- macOS 10.16/11.0 Big Sur beta requires OpenCore 0.6 or later.
+- macOS 10.16/11.0 Big Sur beta requires OpenCore 0.6.0 or later.
 
 ### Credits
 - [AlGrey](https://github.com/AlGreyy) for the idea and creating the patches.
