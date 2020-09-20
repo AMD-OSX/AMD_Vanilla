@@ -586,8 +586,8 @@
 				<string>19.0.0</string>
 				<key>Replace</key>
 				<data>
-				uAgAAIAx2zHJMdIPokGJzkUPtvZB/8ZEifFEifBmDx+E
-				AAAAAABmDx+EAAAAAAAPH4QAAAAAAOl8////Dx9EAAA=
+				uAgAAIAx2zHJMdIPokGJzkUPtvZB/8a4HgAAgDHbMckx
+				0g+iD7b3/8ZEifEx0onI9/aJwUSJ8Ol8////Dx9EAAA=
 				</data>
 				<key>ReplaceMask</key>
 				<data>
@@ -601,7 +601,7 @@
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>algrey - cpuid_set_info - cores and logicals count - part 1 - 10.13</string>
+				<string>algrey - cpuid_set_info - ryzen cores and logicals count - part 1 - 10.13</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -637,7 +637,7 @@
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>algrey - cpuid_set_info - cores and logicals count - part 1 - 10.14</string>
+				<string>algrey - cpuid_set_info - ryzen cores and logicals count - part 1 - 10.14</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -673,7 +673,7 @@
 				<key>Base</key>
 				<string>_cpuid_set_info</string>
 				<key>Comment</key>
-				<string>algrey - cpuid_set_info - cores and logicals count - part 2</string>
+				<string>algrey - cpuid_set_info - ryzen cores and logicals count - part 2</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -696,7 +696,7 @@
 				<string>17.0.0</string>
 				<key>Replace</key>
 				<data>
-				ichmDx+EAAAAAABmDx+EAAAAAABmDx+EAAAAAAAPHwA=
+				QYnOuB4AAIAx2zHJMdIPog+29//GRInxMdKJyPf2ZpA=
 				</data>
 				<key>ReplaceMask</key>
 				<data>
@@ -710,7 +710,7 @@
 				<key>Base</key>
 				<string>_cpuid_set_info</string>
 				<key>Comment</key>
-				<string>algrey - cpuid_set_info - cores and logicals count - part 3 - 10.13</string>
+				<string>algrey - cpuid_set_info - ryzen cores and logicals count - part 3 - 10.13</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -747,7 +747,7 @@
 				<key>Base</key>
 				<string>_cpuid_set_info</string>
 				<key>Comment</key>
-				<string>algrey - cpuid_set_info - cores and logicals count - part 3 - 10.14</string>
+				<string>algrey - cpuid_set_info - ryzen cores and logicals count - part 3 - 10.14</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -783,7 +783,7 @@
 				<key>Base</key>
 				<string>_cpuid_set_info</string>
 				<key>Comment</key>
-				<string>algrey - cpuid_set_info - cores and logicals count - part 4 - 10.13</string>
+				<string>algrey - cpuid_set_info - ryzen cores and logicals count - part 4 - 10.13</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -821,7 +821,7 @@
 				<key>Base</key>
 				<string>_cpuid_set_info</string>
 				<key>Comment</key>
-				<string>algrey - cpuid_set_info - cores and logicals count - part 4 - 10.14</string>
+				<string>algrey - cpuid_set_info - ryzen cores and logicals count - part 4 - 10.14</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -970,7 +970,7 @@
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>algrey - tsc_init - grab DID and FID from MSR</string>
+				<string>algrey - tsc_init - grab DID and VID from MSR</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -995,8 +995,8 @@
 				<string>17.0.0</string>
 				<key>Replace</key>
 				<data>
-				uXEAAcAPMonASInBSMHpBoPgP0iDwBCA4QdI0+gPH0QA
-				AA==
+				uWQAAcAPMg+2yInGwe4Ig+Y/RTH/MdJIichI9/ZIAcBm
+				kA==
 				</data>
 				<key>ReplaceMask</key>
 				<data>
