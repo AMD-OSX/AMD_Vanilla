@@ -2,7 +2,7 @@
 <h1>AMD Vanilla OpenCore</h1>
 </span>
 
-### Мови: [English](../README.md), Ukrainian (поточна), [Russian](languages/README_RUS.md), [Traditional Chinese](languages/README_CHT.md), [Spanish](languages/README_ES.md)
+### Мови: [English](../README.md), Ukrainian (поточна), [Russian](languages/README_RUS.md), [Traditional Chinese](languages/README_CHT.md), [Spanish](languages/README_ES.md), [Simplified Chinese](languages/README_CHS.md)
 Двійкові правки до ядра macOS, які дають змогу отримати близьку до нативної підтримку процесорів AMD в операційній системі macOS.
 
 ### Можливості
