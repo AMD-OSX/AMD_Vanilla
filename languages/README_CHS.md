@@ -2,7 +2,7 @@
 <h1>AMD Vanilla OpenCore</h1>
 </span>
 
-### 语言: [English](../README.md), [Russian](./README_RUS.md), [Traditional Chinese](languages/README_CHT.md), [Spanish](languages/README_ES.md), 简体中文(当前选中)
+### 语言: [English](../README.md), [Ukrainian](languages/README_UA.md), [Russian](./README_RUS.md), [Traditional Chinese](languages/README_CHT.md), [Spanish](languages/README_ES.md), 简体中文(当前选中)
 内核二进制补丁，使macOS近乎原生支持AMD CPU
 
 ### 功能
@@ -18,7 +18,10 @@
 |--------|---------|----------|
 |   [15h](https://github.com/AMD-OSX/AMD_Vanilla/tree/opencore/15h_16h)  | 推土机 | FX系列 |
 |   [16h](https://github.com/AMD-OSX/AMD_Vanilla/tree/opencore/15h_16h)  | Jaguar | A系列（包括AM4 A系列） |
-|   [17h](https://github.com/AMD-OSX/AMD_Vanilla/tree/opencore/17h) | Zen | Ryzen, Threadripper, Athlon 2xxGE | <br />
+|   [17h](https://github.com/AMD-OSX/AMD_Vanilla/tree/opencore/17h) | Zen | Ryzen, 1st, 2nd + 3rd Gen Threadripper, Athlon 2xxGE |<br />
+
+### 关于 TRX40 的说明
+在一些测试过的系统上，禁用`mtrr_update_action - fix PAT`补丁后GPU性能有所提高。如果你想测试这个功能，建议先在带有OpenCore的USB上进行测试，以确保其工作。不同的主板/GPU组合可能会有我们不知道的问题。请自行承担风险
 
 ### 支持的macOS版本
 - High Sierra 10.13.x
@@ -46,7 +49,7 @@ sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstall
 - 根据你的CPU系列(即`15h_16h`或`17h`)，将提供的补丁合并到你的OpenCore `config.plist` 中，并根据你的需要进行编辑
 
 ### 特别说明
-- 这些补丁需要OpenCore 0.5.2及以上版本,它们无法在0.5.1及以下版本中使用
+- 这些补丁需要OpenCore 0.6.1及以上版本
 - 在 OpenCore 配置时需要支持，请阅读文档并访问 [这里](https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/) 指南或 Discord 服务器
 - 对于macOS Mojave上的15h_16h CPU系列用户
   - 第一次启动到macOS Mojave时，系统会在数据和隐私屏幕后重启。要解决这个问题，请按照UPDATE-2标题下[这里](https://www.insanelymac.com/forum/topic/335877-amd-mojave-kernel-development-and-testing/?do=findComment&comment=2658085)提到的步骤进行
