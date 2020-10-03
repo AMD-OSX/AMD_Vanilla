@@ -44,7 +44,7 @@ sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstallme
 ## Catalina
 sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolumeName
 ```
-- Cài OpenCore vào USB. (For OpenCore releases see: https://github.com/acidanthera/OpenCorePkg/releases)
+- Cài OpenCore vào USB. (Lấy các bản release OpenCore ở đây: https://github.com/acidanthera/OpenCorePkg/releases)
 - Đọc [Tài liệu về OpenCore](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Configuration.pdf) để sửa file `config.plist`. Có file config mẫu có sẵn trong bộ cài.
 - Cài đặt bản vá vào file config `config.plist`, tuỳ vào đời CPU (i.e `15h_16h` or `17h`) để chọn vàn vá phù hợp và sửa file config tuỳ mong muốn của bạn.
 
