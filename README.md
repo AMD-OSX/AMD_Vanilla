@@ -1,4 +1,4 @@
-# THIS ARE EXPERIMENTAL PATCHES
+# THESE ARE EXPERIMENTAL PATCHES
 # THEY COME WITH *NO* SUPPORT OR GUARANTEE OF STABILITY
 # ANY REQUEST FOR HELP SHALL BE IGNORED
 # USE AT YOUR OWN RISK
@@ -59,7 +59,7 @@ sudo /Applications/Install\ macOS\ Big\ Sur\ Beta.app/Contents/Resources/createi
 
 ### Special Notes
 - These patches require OpenCore 0.5.2 and above. They will not work with 0.5.1 and below.
-- For support creating OpenCore config read the docs and visit [this](https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/) guide or the Discord server.
+- For support creating OpenCore config read the docs and visit [this](https://dortania.github.io/OpenCore-Install-Guide/) guide or the Discord server.
 - For 15h_16h CPU family users on macOS Mojave:
   - Upon booting to macOS Mojave for first time, the system will reboot after the Data & Privacy screen. To fix this issue follow the procedure mentioned [here](https://www.insanelymac.com/forum/topic/335877-amd-mojave-kernel-development-and-testing/?do=findComment&comment=2658085) under UPDATE-2 heading.
   - On macOS Mojave certain webpages will crash upon loading (eg. brew.sh, facebook.com). To fix this issue follow the procedure mentioned [here](https://www.insanelymac.com/forum/topic/335877-amd-mojave-kernel-development-and-testing/?do=findComment&comment=2661857) under the UPDATE-5 heading.
