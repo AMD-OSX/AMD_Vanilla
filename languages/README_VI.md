@@ -2,7 +2,7 @@
 <h1>AMD Vanilla OpenCore</h1>
 </span>
 
-### Ngôn ngữ (Languages): [Tiếng Anh (English)](../README.md), [Tiếng Nga (Russian)](./README_RUS.md), [Tiếng Trung Phồn thể (Traditional Chinese)](./README_CHT.md), [Tiếng Tây Ban Nha (Spanish)](./README_ES.md), [Tiếng Trung Giản thể (Simplified Chinese)](./README_CHS.md), [Tiếng Việt (Vietnamese)](./README_VI.md)
+### Ngôn ngữ (Languages): [Tiếng Anh (English)](../README.md), [Tiếng Nga (Russian)](./README_RUS.md), [Tiếng Trung Phồn thể (Traditional Chinese)](./README_CHT.md), [Tiếng Tây Ban Nha (Spanish)](./README_ES.md), [Tiếng Trung Giản thể (Simplified Chinese)](./README_CHS.md), Tiếng Việt (Vietnamese)
 Bản vá nhân macOS gần như native dành cho CPU AMD.
 
 ### Đặc trưng:
