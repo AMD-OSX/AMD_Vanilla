@@ -21,7 +21,7 @@ Bản vá nhân macOS gần như native dành cho CPU AMD.
 |   [17h](https://github.com/AMD-OSX/AMD_Vanilla/tree/opencore/17h) | Zen | Ryzen, 1st, 2nd + 3rd Gen Threadripper, Athlon 2xxGE |<br />
 
 ### Lưu ý với các máy dùng chipset TRX40:
-Tắt `mtrr_update_action - fix PAT` có thể làm tăng hiệu năng GPU trên một số máy. Nếu bạn muôn thử, hãy thử bằng OpenCore trên một USB rơi trước. Có thể có một vài vấn đề với combo mainboard/GPU mà chúng tôi không thể lường trước được. Chúng tôi không chiu trách nhiệm trước bất cứ hỏng hóc nào.
+Tắt `mtrr_update_action - fix PAT` có thể làm tăng hiệu năng GPU trên một số máy. Nếu bạn muôn thử, hãy thử bằng OpenCore trên một USB rời trước. Có thể có một vài vấn đề với combo mainboard/GPU mà chúng tôi không thể lường trước được. Chúng tôi không chiu trách nhiệm trước bất cứ hỏng hóc nào.
 
 ### Phiên bản macOS được hỗ trợ
 - High Sierra 10.13.x
