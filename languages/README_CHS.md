@@ -2,7 +2,7 @@
 <h1>AMD Vanilla OpenCore</h1>
 </span>
 
-### 语言: [English](../README.md), [Ukrainian](languages/README_UA.md), [Russian](./README_RUS.md), [Traditional Chinese](languages/README_CHT.md), [Spanish](languages/README_ES.md), 简体中文(当前选中)
+### 语言: [English](../README.md), [Ukrainian](./README_UA.md), [Russian](./README_RUS.md), [Traditional Chinese](./README_CHT.md), [Spanish](./README_ES.md), 简体中文(当前选中), [Vietnamese](./README_VI.md)
 内核二进制补丁，使macOS近乎原生支持AMD CPU
 
 ### 功能
