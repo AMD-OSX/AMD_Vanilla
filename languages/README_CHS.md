@@ -2,7 +2,7 @@
 <h1>AMD Vanilla OpenCore</h1>
 </span>
 
-### 语言: [English](../README.md), [Ukrainian](languages/README_UA.md), [Russian](./README_RUS.md), [Traditional Chinese](languages/README_CHT.md), [Spanish](languages/README_ES.md), 简体中文(当前选中)
+### 语言: [English](../README.md), [Ukrainian](./README_UA.md), [Russian](./README_RUS.md), [Traditional Chinese](./README_CHT.md), [Spanish](./README_ES.md), 简体中文(当前选中), [Vietnamese](./README_VI.md)
 内核二进制补丁，使macOS近乎原生支持AMD CPU
 
 ### 功能
@@ -50,7 +50,7 @@ sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstall
 
 ### 特别说明
 - 这些补丁需要OpenCore 0.6.1及以上版本
-- 在 OpenCore 配置时需要支持，请阅读文档并访问 [这里](https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/) 指南或 Discord 服务器
+- 在 OpenCore 配置时需要支持，请阅读文档并访问 [这里](https://dortania.github.io/OpenCore-Install-Guide/) 指南或 Discord 服务器
 - 对于macOS Mojave上的15h_16h CPU系列用户
   - 第一次启动到macOS Mojave时，系统会在数据和隐私屏幕后重启。要解决这个问题，请按照UPDATE-2标题下[这里](https://www.insanelymac.com/forum/topic/335877-amd-mojave-kernel-development-and-testing/?do=findComment&comment=2658085)提到的步骤进行
   - 在macOS Mojave上，某些网页在加载后会崩溃（例如：brew.sh，facebook.com）。要解决这个问题，请按照UPDATE-5标题下提到的[这里](https://www.insanelymac.com/forum/topic/335877-amd-mojave-kernel-development-and-testing/?do=findComment&comment=2661857)的程序进行
