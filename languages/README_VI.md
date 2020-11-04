@@ -6,7 +6,7 @@
 Bản vá nhân macOS gần như native dành cho CPU AMD.
 
 ### Đặc trưng:
-- Giúp macOS có thể chạy trơn tru trên chip AMD.
+- Giúp macOS có thể chạy trực tiếp và trơn tru trên chip AMD.
 - Dùng được iMessage, Siri, FaceTime, Continuity, vân vân.
 - Ổn định hơn nhân XNU tự điều chế.
 
@@ -17,8 +17,8 @@ Bản vá nhân macOS gần như native dành cho CPU AMD.
 | Mã đời | Tên đời | Ví dụ |
 |--------|---------|----------|
 |   [15h](https://github.com/AMD-OSX/AMD_Vanilla/tree/opencore/15h_16h)  | Bulldozer | FX Series|
-|   [16h](https://github.com/AMD-OSX/AMD_Vanilla/tree/opencore/15h_16h)  | Jaguar | A Series (including AM4 A-Series) |
-|   [17h](https://github.com/AMD-OSX/AMD_Vanilla/tree/opencore/17h) | Zen | Ryzen, 1st, 2nd + 3rd Gen Threadripper, Athlon 2xxGE |<br />
+|   [16h](https://github.com/AMD-OSX/AMD_Vanilla/tree/opencore/15h_16h)  | Jaguar | Sê-ri A (bao gồm AM4 A Sê-ri) |
+|   [17h](https://github.com/AMD-OSX/AMD_Vanilla/tree/opencore/17h) | Zen | Ryzen, Threadripper thế hệ 1, 2 hoặc 3, Athlon 2xxGE |<br />
 
 ### Lưu ý với các máy dùng chipset TRX40:
 Tắt `mtrr_update_action - fix PAT` có thể làm tăng hiệu năng GPU trên một số máy. Nếu bạn muôn thử, hãy thử bằng OpenCore trên một USB rời trước. Có thể có một vài vấn đề với combo mainboard/GPU mà chúng tôi không thể lường trước được. Chúng tôi không chiu trách nhiệm trước bất cứ hỏng hóc nào.
@@ -52,17 +52,17 @@ sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstall
 - Các bản vá này yêu cầu OpenCore 0.6.1 trở lên.
 - Để được hỗ trợ tạo file `config.plist`, vào [trang này](https://dortania.github.io/OpenCore-Install-Guide/) hoặc vào Discord server.
 - Với CPU đời 15h_16h muốn cai macOS Mojave:
-  - Lúc bôt vào macOS Mojave làn đầu, máy sẽ bị khởi động lại ngay sau màn hình Data & Privacy screen. Để khăc phuc vui lòng làm theo [hướng dẫn này](https://www.insanelymac.com/forum/topic/335877-amd-mojave-kernel-development-and-testing/?do=findComment&comment=2658085), ở mục UPDATE-2.
-  - Một vài trang web nhất định trên macOS Mojave sẽ crash khi loading (vd. brew.sh, facebook.com). Để khăc phuc vui lòng làm theo [hướng dẫn này](https://www.insanelymac.com/forum/topic/335877-amd-mojave-kernel-development-and-testing/?do=findComment&comment=2661857), ơ mục UPDATE-.
-- Để boot vào macOS 10.15, có hai điêu cần lưu ý:
-  - Nếu máy bạn có thiết bị EC (Embedded Controller) với ID `PNP0C09` (thấy trong DSDT), nó có thể sẽ khiến macOS không thể boot tiếp. Để sửa ban cân phải phải tắt thiết bị EC nay đi bằng cách return `Zero`. Ban có the sử dụng [SSDT-EC0.aml](./Extra/SSDT-EC0.aml) để làm việc đó. Nếu ban muốn xem cách nó hoạt động, vui lòng vào [trang này](https://github.com/acidanthera/OpenCorePkg/blob/5e020bb06b33f12fa8b404cc3d1effaa5fbc00ea/Docs/AcpiSamples/SSDT-EC.dsl#L33). <br> -hoặc- <br> Bạn có thể tha đổi ID của thiết bị EC bằng cach sử dụng ACPI patch này:
+  - Lúc bôt vào macOS Mojave làn đầu, máy sẽ bị khởi động lại ngay sau màn hình Data & Privacy (Dữ Liệu & Quyển Riêng Tư). Để khăc phuc vui lòng làm theo [hướng dẫn này](https://www.insanelymac.com/forum/topic/335877-amd-mojave-kernel-development-and-testing/?do=findComment&comment=2658085), ở mục UPDATE-2.
+  - Một vài trang web nhất định trên macOS Mojave sẽ lỗi khi tải (vd. brew.sh, facebook.com). Để khăc phuc vui lòng làm theo [hướng dẫn này](https://www.insanelymac.com/forum/topic/335877-amd-mojave-kernel-development-and-testing/?do=findComment&comment=2661857), ơ mục UPDATE-5.
+- Để khởi động macOS 10.15, có hai điêu cần lưu ý:
+  - Nếu máy bạn có thiết bị EC (Embedded Controller) với ID `PNP0C09` (thấy trong DSDT), nó có thể sẽ khiến macOS không thể khởi động được. Để sửa ban cân phải phải tắt thiết bị EC nay đi bằng cách trả về `Không`. Ban có the sử dụng [SSDT-EC0.aml](./Extra/SSDT-EC0.aml) để làm việc đó. Nếu ban muốn xem cách nó hoạt động, vui lòng vào [trang này](https://github.com/acidanthera/OpenCorePkg/blob/5e020bb06b33f12fa8b404cc3d1effaa5fbc00ea/Docs/AcpiSamples/SSDT-EC.dsl#L33). <br> -hoặc- <br> Bạn có thể thay đổi ID của thiết bị EC bằng cach sử dụng ACPI patch này:
     ```
         Comment             Find        Replace
     PNP0C09 to PNPFFFF    41D00C09     41D0FFFF
     ```
-  - Khi sử dụng các SMBIOS `MacPro6,1`, `MacPro7,1`, hoặc `iMacPro1,1`, `AppleIntelMCEReporter.kext` macOS có thể gây kernel panic. Để khăc phục bạn có thể dùng SMBIOS khác hoặc tắt kext đó [ở đây](../Extra/).
+  - Khi sử dụng các SMBIOS `MacPro6,1`, `MacPro7,1`, hoặc `iMacPro1,1`, `AppleIntelMCEReporter.kext` macOS có thể gây lỗi. Để khăc phục bạn có thể dùng SMBIOS khác hoặc tắt kext đó [ở đây](../Extra/AppleMCEReporterDisabler.kext.zip).
 
-### Credits:
+### Người đóng góp:
 - [AlGrey](https://github.com/AlGreyy) về ý tưởng và bản vá.
 - [XLNC](https://github.com/XLNCs) vì đã/đang bảo trì bản vá cho nhiều bản macOS khác nhau.
 - Sinetek, Andy Vandijck, spakk, Bronya, Tora Chi Yo, Shaneee và rất nhiều người khác đã chia sẻ kiến thức bản thân về AMD/XNU
