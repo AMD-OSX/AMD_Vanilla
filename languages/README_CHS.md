@@ -70,3 +70,9 @@ sudo /Applications/Install\ macOS\ Big\ Sur\ Beta.app/Contents/Resources/createi
     PNP0C09 to PNPFFFF    41D00C09     41D0FFFF
     ```
   - 当使用这些SMBIOS: `MacPro6,1`, `MacPro7,1`, 或`iMacPro1,1`, `AppleIntelMCEReporter.kext` 时，macOS可能会崩溃。为了防止这种情况，你需要使用不同的SMBIOS或使用[这里](./Extra/)的disabler kext
+  
+### 鸣谢
+- [AlGrey](https://github.com/AlGreyy)，感谢他的创意和创建补丁
+- [XLNC](https://github.com/XLNCs)，感谢他维护各种macOS版本的补丁
+- Sinetek、Andy Vandijck、spakk、Bronya、Tora Chi Yo、Shaneee和其他许多分享AMD/XNU内核知识的人
+- [0xD81CF](https://github.com/0xD81CF), [dosprintfwork](https://github.com/doesprintfwork)，[erikjara](https://github.com/erikjara)，[kumakichi](https://github.com/kumakichi) 和[wangliuyu666](https://github.com/WangLiuyu)的readme翻译
