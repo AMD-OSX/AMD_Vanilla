@@ -2,7 +2,7 @@
 <h1>AMD Vanilla OpenCore</h1>
 </span>
 
-### Languages: English (current), [Ukrainian](languages/README_UA.md), [Russian](languages/README_RUS.md), [Traditional Chinese](languages/README_CHT.md), [Spanish](languages/README_ES.md), [Simplified Chinese](languages/README_CHS.md), [Vietnamese](languages/README_VI.md), [German](languages/README_DE.md)
+### Sprachen: English (../README.md), [Ukrainian](languages/README_UA.md), [Russian](languages/README_RUS.md), [Traditional Chinese](languages/README_CHT.md), [Spanish](languages/README_ES.md), [Simplified Chinese](languages/README_CHS.md), [Vietnamese](languages/README_VI.md), [German](ausgewählt)
 Kernel Binärpatches zur Aktivierung von fast nativer AMD-CPU-Unterstützung unter macOS.
 
 ### Features
