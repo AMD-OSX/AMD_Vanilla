@@ -32,6 +32,7 @@ Disabling the `mtrr_update_action - fix PAT` patch has shown an improvement in G
 - High Sierra 10.13.x
 - Mojave 10.14.x
 - Catalina 10.15.x
+- Big Sur 11.x
 
 ### Instructions
 - Download macOS High Sierra, Mojave or Catalina from the App Store.
