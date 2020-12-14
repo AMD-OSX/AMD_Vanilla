@@ -18,7 +18,7 @@
 |--------|---------|----------|
 |   [15h](https://github.com/AMD-OSX/AMD_Vanilla/tree/opencore/15h_16h)  | Bulldozer | FX Series|
 |   [16h](https://github.com/AMD-OSX/AMD_Vanilla/tree/opencore/15h_16h)  | Jaguar | A Series (включая AM4 A-Series) |
-|   [17h и 19h](https://github.com/AMD-OSX/AMD_Vanilla/tree/opencore/17h) | Zen | Ryzen, 1st, 2nd + 3rd Gen Threadripper, Athlon 2xxGE | <br />
+|   [17h и 19h](https://github.com/AMD-OSX/AMD_Vanilla/tree/opencore/17h_19h) | Zen | Ryzen, 1st, 2nd + 3rd Gen Threadripper, Athlon 2xxGE | <br />
 
 ### Информация о патче PAT fix
 Включенный патч по умолчанию - является оригинальным патчем от Algrey. Он будет работать на всех GPU и не влияет на звук, но и не улучшает производительность.
