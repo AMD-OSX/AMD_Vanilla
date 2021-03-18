@@ -2,7 +2,7 @@
 <h1>AMD Vanilla OpenCore</h1>
 </span>
 
-### Diller (Languages): [English](README.md), [Ukrainian](languages/README_UA.md), [Russian](languages/README_RUS.md), [Traditional Chinese](languages/README_CHT.md), [Spanish](languages/README_ES.md), [Simplified Chinese](languages/README_CHS.md), [Vietnamese](languages/README_VI.md), Türkçe (mevcut)
+### Diller (Languages): [English](../README.md), [Ukrainian](./README_UA.md), [Russian](./README_RUS.md), [Traditional Chinese](./README_CHT.md), [Spanish](./README_ES.md), [Simplified Chinese](./README_CHS.md), [Vietnamese](./README_VI.md), Türkçe (mevcut)
 MacOS'da neredeyse native olarak AMD işlemci desteğini kazandıran binary kernel yamaları.
 
 ### Özellikler
