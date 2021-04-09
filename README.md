@@ -35,7 +35,7 @@ Disabling the `mtrr_update_action - fix PAT` patch has shown an improvement in G
 - Big Sur 11.x
 
 ### Instructions
-- Download macOS High Sierra, Mojave or Catalina from the App Store.
+- Download macOS High Sierra, Mojave, Catalina, or Big Sur from the App Store.
 - Plug in an empty USB drive.
 - Run one of the below commands in your Terminal to prepare the bootable macOS USB.
 ```
