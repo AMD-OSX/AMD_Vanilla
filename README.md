@@ -2,8 +2,13 @@
 <h1>AMD Vanilla OpenCore</h1>
 </span>
 
+## macOS Monterey Beta patches only support 12.0 Beta 1. Beta 2 does not work!
+## Patches for Beta versions are provided but **no support** is given until the OS is released.
+## Try these patches at your own risk and always have a backup EFI to boot.
+
 ### Languages: English (current), [Ukrainian](languages/README_UA.md), [Russian](languages/README_RUS.md), [Traditional Chinese](languages/README_CHT.md), [Spanish](languages/README_ES.md), [Simplified Chinese](languages/README_CHS.md), [Vietnamese](languages/README_VI.md)
-Kernel binary patches to enable almost native AMD CPU support on macOS.
+
+### Kernel binary patches to enable almost native AMD CPU support on macOS.
 
 ### Features
 - Enables macOS to run on AMD CPUs on the fly.
@@ -33,11 +38,13 @@ Disabling the `mtrr_update_action - fix PAT` patch has shown an improvement in G
 - Mojave 10.14.x
 - Catalina 10.15.x
 - Big Sur 11.x
+- Monterey 12.x Beta 1 ( No Support until OS Release )
 
 ### Instructions
-- Download macOS High Sierra, Mojave or Catalina from the App Store.
+- Download macOS High Sierra, Mojave, Catalina, Big Sur or Monterey from the App Store.
 - Plug in an empty USB drive.
 - Run one of the below commands in your Terminal to prepare the bootable macOS USB.
+
 ```
 NOTE: Make sure to replace 'MyVolumeName' with your actual USB volume name in the below commands.
 
@@ -52,10 +59,14 @@ sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstall
 
 ## Big Sur
 sudo /Applications/Install\ macOS\ Big\ Sur.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolumeName
+
+## Monterey
+sudo /Applications/Install\ macOS\ 12\ Beta.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolumeName
 ```
+
 - Install OpenCore on your USB drive. (For OpenCore releases see: https://github.com/acidanthera/OpenCorePkg/releases)
 - Read the [OpenCore Documentaion](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Configuration.pdf) for `config.plist` setup. A default config will not be provided.
-- Merge the patches provided, according to your CPU family (i.e `15h_16h` or `17h`) into your OpenCore `config.plist` and edit it as per your needs.
+- Merge the patches provided, according to your CPU family (i.e `15h_16h` or `17h_19h`) into your OpenCore `config.plist` and edit it as per your needs.
 
 ### Special Notes
 - These patches require OpenCore 0.6.1 and above.
@@ -69,7 +80,7 @@ sudo /Applications/Install\ macOS\ Big\ Sur.app/Contents/Resources/createinstall
         Comment             Find        Replace
     PNP0C09 to PNPFFFF    41D00C09     41D0FFFF
     ```
-  - When using the SMBIOSes `MacPro6,1`, `MacPro7,1`, or `iMacPro1,1`, `AppleIntelMCEReporter.kext` macOS might panic. To prevent this you need to either use a different SMBIOS or use a disabler kext from [here](./Extra/).
+  - When using these SMBIOS profiles `MacPro6,1`, `MacPro7,1`, or `iMacPro1,1`, `AppleIntelMCEReporter.kext` macOS might panic. To prevent this you need to either use a different SMBIOS or use a disabler kext from [here](./Extra/).
 
 ### Credits
 - [AlGrey](https://github.com/AlGreyy) for the idea and creating the patches.
