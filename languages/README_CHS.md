@@ -18,7 +18,14 @@
 |--------|---------|----------|
 |   [15h](https://github.com/AMD-OSX/AMD_Vanilla/tree/opencore/15h_16h)  | 推土机 | FX系列 |
 |   [16h](https://github.com/AMD-OSX/AMD_Vanilla/tree/opencore/15h_16h)  | Jaguar | A系列（包括AM4 A系列） |
-|   [17h](https://github.com/AMD-OSX/AMD_Vanilla/tree/opencore/17h) | Zen | Ryzen, 1st, 2nd + 3rd Gen Threadripper, Athlon 2xxGE |<br />
+|   [17h and 19h](https://github.com/AMD-OSX/AMD_Vanilla/tree/opencore/17h_19h) | Zen | Ryzen, 1st, 2nd + 3rd Gen Threadripper, Athlon 2xxGE |<br />
+
+### 关于PAT修复补丁的信息
+默认启用的补丁是Algrey的原始补丁。它适用于所有的GPU，不影响音频，但不会提高性能。
+
+另一个选择是Shaneee的补丁，它将提高AMD GPU的性能，但可能导致Nvidia GPU不能启动。当使用HDMI和DP音频时，也会导致音频问题。
+
+请自己选择使用哪个补丁。但请不要试图同时使用它们。
 
 ### 关于 TRX40 的说明
 在一些测试过的系统上，禁用`mtrr_update_action - fix PAT`补丁后GPU性能有所提高。如果你想测试这个功能，建议先在带有OpenCore的USB上进行测试，以确保其工作。不同的主板/GPU组合可能会有我们不知道的问题。请自行承担风险
@@ -27,6 +34,7 @@
 - High Sierra 10.13.x
 - Mojave 10.14.x
 - Catalina 10.15.x
+- Big Sur 11.x
 
 ### 说明
 - 从App Store下载MacOS High Sierra、Mojave或Catalina
@@ -43,6 +51,9 @@ sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstallme
 
 ## Catalina
 sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolumeName
+
+## Big Sur
+sudo /Applications/Install\ macOS\ Big\ Sur.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolumeName
 ```
 - 将OpenCore安装到您的USB驱动器上(OpenCore的版本见：https://github.com/acidanthera/OpenCorePkg/releases)
 - 请阅读[OpenCore Documentaion](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Configuration.pdf)中关于`config.plist`的设置，我们不会提供默认的配置
