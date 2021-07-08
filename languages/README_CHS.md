@@ -18,7 +18,7 @@
 |--------|---------|----------|
 |   [15h](https://github.com/AMD-OSX/AMD_Vanilla/tree/opencore/15h_16h)  | 推土机 | FX系列 |
 |   [16h](https://github.com/AMD-OSX/AMD_Vanilla/tree/opencore/15h_16h)  | Jaguar | A系列（包括AM4 A系列） |
-|   [17h](https://github.com/AMD-OSX/AMD_Vanilla/tree/opencore/17h) | Zen | Ryzen, 1st, 2nd + 3rd Gen Threadripper, Athlon 2xxGE |<br />
+|   [17h_19h](https://github.com/AMD-OSX/AMD_Vanilla/tree/opencore/17h_19h) | Zen | Ryzen, 1st, 2nd + 3rd Gen Threadripper, Athlon 2xxGE |<br />
 
 ### 关于 TRX40 的说明
 在一些测试过的系统上，禁用`mtrr_update_action - fix PAT`补丁后GPU性能有所提高。如果你想测试这个功能，建议先在带有OpenCore的USB上进行测试，以确保其工作。不同的主板/GPU组合可能会有我们不知道的问题。请自行承担风险
