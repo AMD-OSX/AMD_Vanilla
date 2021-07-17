@@ -2,7 +2,7 @@
 <h1>AMD Vanilla OpenCore</h1>
 </span>
 
-### 語言（Languages）: [English](../README.md), [Russian](./README_RUS.md), 繁中（已選）, [Spanish](languages/README_ES.md)
+### 語言（Languages）: [English](../README.md), [Ukrainian](./README_UA.md), [Russian](./README_RUS.md), 繁體中文（已選）, [简体中文](./README_CHS.md), [Spanish](./README_ES.md), [Vietnamese](./README_VI.md)
 用於在 macOS 中啟用*差不多*原生的 AMD 處理器支援的內核補丁
 
 ### 功能
@@ -18,12 +18,13 @@
 |--------|---------|----------|
 |   [15h](https://github.com/AMD-OSX/AMD_Vanilla/tree/opencore/15h_16h)  | Bulldozer | FX 系列 |
 |   [16h](https://github.com/AMD-OSX/AMD_Vanilla/tree/opencore/15h_16h)  | Jaguar | A 系列（含 AM4 的 A 系列） |
-|   [17h](https://github.com/AMD-OSX/AMD_Vanilla/tree/opencore/17h) | Zen | Ryzen, Threadripper, Athlon 2xxGE | <br />
+|   [17h and 19h](https://github.com/AMD-OSX/AMD_Vanilla/tree/opencore/17h_19h) | Zen | Ryzen, 1st, 2nd + 3rd Gen Threadripper, Athlon 2xxGE |<br />
 
 ### 支援的 macOS 版本
 - High Sierra 10.13.x
 - Mojave 10.14.x
 - Catalina 10.15.x
+- Big Sur 11.x
 
 ### 指引
 - 從 App Store 中下載 macOS High Sierra, Mojave 或 Catalina
