@@ -23,7 +23,7 @@ Patches are now universal across 15h, 16h, 17h and 19h by utilizing the OpenCore
 
 Make sure to ****enable**** this quirk or the system ****won't boot****.
 
-This quirks provides the kernel with the CPU frequencies for macOS to boo
+This quirks provides the kernel with the CPU frequencies for macOS to boot
 
   
 
