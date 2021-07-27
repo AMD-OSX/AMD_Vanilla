@@ -35,7 +35,7 @@ Changing `B8000000 0000`/`BA000000 0000`/`BA060000 0090`* to `B8 <CoreCount> 000
 
 See the table below for the values matching your CPU Core Count.
 
-| CoreCount | Hexidecimal|
+| CoreCount | Hexadecimal|
 |--------|---------|
 |   6 Core  | `06` |
 |   8 Core  | `08` |
