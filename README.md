@@ -45,6 +45,10 @@ See the table below for the values matching your CPU Core Count.
 
   So for example a 6 Core 5600X Replace value would result in these replace values, `B8 06 0000 0000`/`BA 06 0000 0000`/`BA 06 0000 0090`
 
+---
+
+Note: MacOS Monterey installation requires `Misc -> Security -> SecureBootModel` to be disabled in the config.<br />Also TPM nneds to be disabled in the BIOS. Both can be enabled after install. 
+
 ___
 
   
