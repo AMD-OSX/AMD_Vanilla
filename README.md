@@ -19,15 +19,15 @@ Binary Kernel patches to enable almost native AMD CPU support on macOS.
 
 # Read Me First!
 
-Patches are now universal across 15h, 16h, 17h and 19h by utilizing the OpenCore Kenerl Quirk `ProvideCurrentCpuInfo`
+Patches are now universal across 15h, 16h, 17h and 19h by utilizing the OpenCore Kernel Quirk `ProvideCurrentCpuInfo`.
 
 Make sure to ****enable**** this quirk or the system ****won't boot****.
 
-This quirks provides the kernel with the CPU frequencies for macOS to boot
+This quirk provides the kernel with the CPU frequencies for macOS to boot.
 
   
 
-Core Count patch needs modified to boot your system. Find the three `algrey - Force cpuid_cores_per_package` patches and alter the `Replace` value only.
+Core Count patch needs to be modified to boot your system. Find the three `algrey - Force cpuid_cores_per_package` patches and alter the `Replace` value only.
 
 Changing `B8000000 0000`/`BA000000 0000`/`BA060000 0090`* to `B8 <CoreCount> 0000 0000`/`BA <CoreCount> 0000 0000`/`BA <CoreCount> 0000 0090`* substituting `<CoreCount>` with the hexideciamal value matching your physical core count.
 
@@ -47,7 +47,7 @@ See the table below for the values matching your CPU Core Count.
 
 ---
 
-Note: MacOS Monterey installation requires `Misc -> Security -> SecureBootModel` to be disabled in the config.<br />Also TPM nneds to be disabled in the BIOS. Both can be enabled after install. 
+Note: MacOS Monterey installation requires `Misc -> Security -> SecureBootModel` to be disabled in the config.<br />Also TPM needs to be disabled in the BIOS. Both can be enabled after install. 
 
 ___
 
