@@ -23,7 +23,7 @@ Patches are now universal across 15h, 16h, 17h and 19h.
 
 Core Count patch needs to be modified to boot your system. Find the three `algrey - Force cpuid_cores_per_package` patches and alter the `Replace` value only.
 
-Changing `B8000000 0000`/`BA000000 0000`/`BA060000 0090`* _to_ `_B8_ <CoreCount> _0000 0000_`_/_`_BA_ <CoreCount> _0000 0000_`_/_`_BA_ <CoreCount> _0000 0090`_* substituting `<CoreCount>` with the hexideciamal value matching your physical core count.
+Changing `B8000000 0000`/`BA000000 0000`/`BA000000 0090`* _to_ `_B8_ <CoreCount> _0000 0000_`_/_`_BA_ <CoreCount> _0000 0000_`_/_`_BA_ <CoreCount> _0000 0090`* substituting `<CoreCount>` with the hexadecimal value matching your physical core count.
 
 ****Note:**** *_The three different values reflect the patch for different versions of macOS. Be sure to change all three if you boot macOS 10.13 to macOS 12_*
 
