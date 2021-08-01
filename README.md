@@ -130,6 +130,6 @@ PNP0C09 to PNPFFFF  41D00C09 41D0FFFF
 
 - [XLNC](https://github.com/XLNCs) for maintaining patches to various macOS versions.
 
-- [macOS86.it](https://www.macos86.it) team for maintaining Clover Patches. [fabiosun](https://github.com/fabiosun), [iGPU](https://github.com/iGPU), [carlo67](https://github.com/carlo67) and [Tomnic](https://github.com/Tomnic)
+- [macOS86.it](https://www.macos86.it) team for maintaining Clover Patches. [fabiosun](https://www.macos86.it/profile/13-fabiosun), [iGPU](https://www.macos86.it/profile/1303-igpu), [carlo67](https://www.macos86.it/profile/17-carlo_67) and [Tomnic](https://www.macos86.it/profile/69-tomnic)
 
 - Sinetek, Andy Vandijck, spakk, Bronya, Tora Chi Yo, [Shaneee](https://github.com/Shaneee) and many others for sharing their AMD/XNU kernel knowledge
