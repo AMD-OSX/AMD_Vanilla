@@ -125,6 +125,37 @@
 		</dict>
 		<dict>
 			<key>Comment</key>
+			<string>algrey - _cpuid_set_cpufamily - Force CPUFAMILY_INTEL_PENRYN - 10.13/10.14/10.15/11.2</string>
+			<key>Count</key>
+			<integer>1</integer>
+			<key>Disabled</key>
+			<false/>
+			<key>Find</key>
+			<data>
+			MduAPQAAAAAGdQA=
+			</data>
+			<key>MaskFind</key>
+			<data>
+			/////wAAAP///wA=
+			</data>
+			<key>MaskReplace</key>
+			<data>
+			</data>
+			<key>MatchOS</key>
+			<string>10.13.x,10.14.x,10.15.x,11.1,11.2</string>
+			<key>Procedure</key>
+			<string></string>
+			<key>RangeFind</key>
+			<integer>0</integer>
+			<key>Replace</key>
+			<data>
+			u7xP6njpXQAAAJA=
+			</data>
+			<key>Skip</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>Comment</key>
 			<string>algrey - _cpuid_set_cpufamily - Force CPUFAMILY_INTEL_PENRYN - 11.3 + / 12.0</string>
 			<key>Count</key>
 			<integer>1</integer>
@@ -142,7 +173,7 @@
 			<data>
 			</data>
 			<key>MatchOS</key>
-			<string>11.x,12.x</string>
+			<string>11.3,11.4,11.5,12.x</string>
 			<key>Procedure</key>
 			<string>_cpuid_set_info</string>
 			<key>Replace</key>
@@ -406,37 +437,6 @@
 			<key>Replace</key>
 			<data>
 			QXV0aGVudGljQU1EAA==
-			</data>
-			<key>Skip</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>Comment</key>
-			<string>algrey - _cpuid_set_cpufamily - Force CPUFAMILY_INTEL_PENRYN - 10.13/10.14/10.15/11.3</string>
-			<key>Count</key>
-			<integer>1</integer>
-			<key>Disabled</key>
-			<false/>
-			<key>Find</key>
-			<data>
-			MduAPQAAAAAGdQA=
-			</data>
-			<key>MaskFind</key>
-			<data>
-			/////wAAAP///wA=
-			</data>
-			<key>MaskReplace</key>
-			<data>
-			</data>
-			<key>MatchOS</key>
-			<string>10.13.x,10.14.x,10.15.x,11.1,11.2,11.3</string>
-			<key>Procedure</key>
-			<string></string>
-			<key>RangeFind</key>
-			<integer>0</integer>
-			<key>Replace</key>
-			<data>
-			u7xP6njpXQAAAJA=
 			</data>
 			<key>Skip</key>
 			<integer>0</integer>
