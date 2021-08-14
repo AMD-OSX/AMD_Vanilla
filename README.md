@@ -37,6 +37,7 @@ See the table below for the values matching your CPU Core Count.
 
 | CoreCount | Hexadecimal|
 |--------|---------|
+|   4 Core  | `04` |
 |   6 Core  | `06` |
 |   8 Core  | `08` |
 |   12 Core | `0C` |
