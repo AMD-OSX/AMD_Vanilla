@@ -19,6 +19,8 @@ Kernel binary patches to enable native AMD CPU support on macOS.
 # Read Me First!
 ### Do not use the Clover Configurator Application. It will remove sections from the kernel patches breaking them!
 
+### Resize bar BIOS option (C.A.M in some x299 bios) is not supported in Clover Bootloader. DO NOT USE otherwise system hangs
+
 Patches are now universal across 15h, 16h, 17h and 19h.
 
 Core Count patch needs to be modified to boot your system. Find the three `algrey - Force cpuid_cores_per_package` patches and alter the `Replace` value only.
