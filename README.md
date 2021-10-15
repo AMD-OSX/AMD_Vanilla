@@ -19,6 +19,8 @@ Binary Kernel patches to enable almost native AMD CPU support on macOS.
 
 # Read Me First!
 
+Resize bar bios Option (C.A.M in some x299 bios) is not supported in Clover Bootloader. DO NOT USE otherwise system hangs
+
 Patches are now universal across 15h, 16h, 17h and 19h by utilizing the OpenCore Kernel Quirk `ProvideCurrentCpuInfo`. OpenCore 0.7.1 or newer is required.
 
 Make sure to ****enable**** this quirk or the system ****won't boot****.
