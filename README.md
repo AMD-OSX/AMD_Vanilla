@@ -20,17 +20,11 @@ Binary Kernel patches to enable almost native AMD CPU support on macOS.
 # Read Me First!
 
 
-Patches are now universal across 15h, 16h, 17h and 19h by utilizing the OpenCore Kernel Quirk `ProvideCurrentCpuInfo`. OpenCore 0.7.1 or newer is required.
+Patches are now universal across 15h, 16h, 17h and 19h.
 
 ### Do not use the Clover Configurator Application. It will remove sections from the kernel patches breaking them!
 
 ### Resize bar bios Option (C.A.M in some x299 bios) is now supported in Clover Bootloader, use it from master, commit b624e4d1e. 
-
-Make sure to ****enable**** this quirk or the system ****won't boot****.
-
-This quirk provides the kernel with the CPU frequencies for macOS to boot.
-
-Patches are now universal across 15h, 16h, 17h and 19h.
 
 Core Count patch needs to be modified to boot your system. Find the three `algrey - Force cpuid_cores_per_package` patches and alter the `Replace` value only.
 
