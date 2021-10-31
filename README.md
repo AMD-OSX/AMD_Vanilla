@@ -153,7 +153,7 @@ sudo /Applications/Install\ macOS\ Big\ Sur.app/Contents/Resources/createinstall
 
 ## Monterey
 
-sudo /Applications/Install\ macOS\ Monterey\ Beta.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolumeName
+sudo /Applications/Install\ macOS\ Monterey.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolumeName
 
 ```
 
