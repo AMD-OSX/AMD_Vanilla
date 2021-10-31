@@ -1,6 +1,6 @@
 <span align="center">
 
-<h1>AMD Vanilla Clover</h1>
+<h1>AMD Vanilla Opencore</h1>
 
 </span>
 
@@ -21,8 +21,6 @@ Binary Kernel patches to enable almost native AMD CPU support on macOS.
 
 
 Patches are now universal across 15h, 16h, 17h and 19h by utilizing the OpenCore Kernel Quirk `ProvideCurrentCpuInfo`. OpenCore 0.7.1 or newer is required.
-
-Resize bar bios Option (C.A.M in some x299 bios) is now supported in Clover Bootloader, use it from master, commit b624e4d1e. 
 
 Make sure to ****enable**** this quirk or the system ****won't boot****.
 
@@ -163,7 +161,7 @@ sudo /Applications/Install\ macOS\ Monterey\ Beta.app/Contents/Resources/createi
 
 - Install OpenCore on your USB drive. (For OpenCore releases see: https://github.com/acidanthera/OpenCorePkg/releases)
 
-- Read the [OpenCore Documentaion](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Configuration.pdf) for `config.plist` setup. A default config will not be provided.
+- Read the [OpenCore Documentation](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Configuration.pdf) for `config.plist` setup. A default config will not be provided.
 
 - Merge the patches provided into your OpenCore `config.plist` and edit it as per your needs.
 
