@@ -107,7 +107,7 @@ Disabling the `mtrr_update_action - fix PAT` patch has shown an improvement in G
 
 - Big Sur 11.x
 
-- Monterey 12.x ( No Support until OS Release )
+- Monterey 12.x
 
   
 
