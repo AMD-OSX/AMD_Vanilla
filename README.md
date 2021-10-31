@@ -28,9 +28,6 @@ Make sure to ****enable**** this quirk or the system ****won't boot****.
 
 This quirk provides the kernel with the CPU frequencies for macOS to boot.
 
-# Read Me First!
-### Do not use the Clover Configurator Application. It will remove sections from the kernel patches breaking them!
-
 Patches are now universal across 15h, 16h, 17h and 19h.
 
 Core Count patch needs to be modified to boot your system. Find the three `algrey - Force cpuid_cores_per_package` patches and alter the `Replace` value only.
