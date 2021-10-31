@@ -1,20 +1,32 @@
 <span align="center">
+
 <h1>AMD Vanilla Clover</h1>
+
 </span>
 
-### ~~As of Wednesday, February 26th Clover support has been deprecated.<br /> Support might return when/if working mask patching is implemented in Clover.~~
----
-### Patches are currently maintained by the [macOS86.it](https://www.macos86.it) team. Support thread is [here](https://www.macos86.it/topic/4913-amd-clover-vanilla-patches/)
----
-### If you are looking for OpenCore, go [here](https://github.com/AMD-OSX/AMD_Vanilla/tree/master).
 
----
+### Patches for Beta versions are provided but no support is given until the OS is released. <br /><br />Try these patches at your own risk and always have a backup EFI to boot.
 
-### Patches for Beta versions are provided but no support is given until the OS is released.
+  
 
-### Try these patches at your own risk and always have a backup EFI to boot.
+### Languages: English (current)
 
-Kernel binary patches to enable native AMD CPU support on macOS.
+  
+
+Binary Kernel patches to enable almost native AMD CPU support on macOS.
+
+  
+
+# Read Me First!
+
+
+Patches are now universal across 15h, 16h, 17h and 19h by utilizing the OpenCore Kernel Quirk `ProvideCurrentCpuInfo`. OpenCore 0.7.1 or newer is required.
+
+Resize bar bios Option (C.A.M in some x299 bios) is now supported in Clover Bootloader, use it from master, commit b624e4d1e. 
+
+Make sure to ****enable**** this quirk or the system ****won't boot****.
+
+This quirk provides the kernel with the CPU frequencies for macOS to boot.
 
 # Read Me First!
 ### Do not use the Clover Configurator Application. It will remove sections from the kernel patches breaking them!
