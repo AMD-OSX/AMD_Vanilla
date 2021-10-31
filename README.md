@@ -84,7 +84,7 @@ Disabling the `mtrr_update_action - fix PAT` patch has shown an improvement in G
 - Mojave 10.14.x
 - Catalina 10.15.x
 - Big Sur 11.x
-- Monterey 12.x ( No Support until OS Release )
+- Monterey 12.x
 
 ### Instructions
 - Download macOS High Sierra, Mojave, Catalina, Big Sur or Monterey from the App Store.
@@ -109,7 +109,11 @@ sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstall
 sudo /Applications/Install\ macOS\ Big\ Sur.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolumeName
 
 ## Monterey
-sudo /Applications/Install\ macOS\ Monterey\ Beta.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolumeName
+sudo /Applications/Install\ macOS\ Monterey.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolumeName
+
+Try these patches at your own risk and always have a backup EFI to boot.
+
+Languages: English (current)
 ```
 - Install Clover on your USB drive.
 
