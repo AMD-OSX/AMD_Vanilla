@@ -1,27 +1,32 @@
 <span align="center">
+
 <h1>AMD Vanilla Clover</h1>
+
 </span>
 
-### ~~As of Wednesday, February 26th Clover support has been deprecated.<br /> Support might return when/if working mask patching is implemented in Clover.~~
----
-### Patches are currently maintained by the [macOS86.it](https://www.macos86.it) team. Support thread is [here](https://www.macos86.it/topic/4913-amd-clover-vanilla-patches/)
----
-### If you are looking for OpenCore, go [here](https://github.com/AMD-OSX/AMD_Vanilla/tree/master).
 
----
+### Patches for Beta versions are provided but no support is given until the OS is released. <br /><br />Try these patches at your own risk and always have a backup EFI to boot.
 
-### Patches for Beta versions are provided but no support is given until the OS is released.
+  
 
-### Try these patches at your own risk and always have a backup EFI to boot.
+### Languages: English (current)
 
-Kernel binary patches to enable native AMD CPU support on macOS.
+  
+
+Binary Kernel patches to enable almost native AMD CPU support on macOS.
+
+  
 
 # Read Me First!
-### Do not use the Clover Configurator Application. It will remove sections from the kernel patches breaking them!
+
 
 ### Resize bar BIOS option (C.A.M in some x299 bios) is not supported in Clover Bootloader. DO NOT USE otherwise system hangs
 
 Patches are now universal across 15h, 16h, 17h and 19h.
+
+### Do not use the Clover Configurator Application. It will remove sections from the kernel patches breaking them!
+
+### Resize bar bios Option (C.A.M in some x299 bios) is now supported in Clover Bootloader, use it from master, commit b624e4d1e. 
 
 Core Count patch needs to be modified to boot your system. Find the three `algrey - Force cpuid_cores_per_package` patches and alter the `Replace` value only.
 
@@ -33,11 +38,13 @@ See the table below for the values matching your CPU Core Count.
 
 | CoreCount | Hexadecimal|
 |--------|---------|
-| 6 Core  | `06` |
-| 8 Core  | `08` |
-| 12 Core | `0C` |
-| 16 Core | `10` |
-| 32 Core | `20` |
+|   4 Core  | `04` |
+|   6 Core  | `06` |
+|   8 Core  | `08` |
+|   12 Core | `0C` |
+|   16 Core | `10` |
+|   24 Core | `18` |
+|   32 Core | `20` |
 
   
 So for example a 6 Core 5600X Replace value would result in these replace values, `B8 06 0000 0000`/`BA 06 0000 0000`/`BA 06 0000 0090`
@@ -77,7 +84,7 @@ Disabling the `mtrr_update_action - fix PAT` patch has shown an improvement in G
 - Mojave 10.14.x
 - Catalina 10.15.x
 - Big Sur 11.x
-- Monterey 12.x ( No Support until OS Release )
+- Monterey 12.x
 
 ### Instructions
 - Download macOS High Sierra, Mojave, Catalina, Big Sur or Monterey from the App Store.
@@ -102,7 +109,11 @@ sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstall
 sudo /Applications/Install\ macOS\ Big\ Sur.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolumeName
 
 ## Monterey
-sudo /Applications/Install\ macOS\ Monterey\ Beta.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolumeName
+sudo /Applications/Install\ macOS\ Monterey.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolumeName
+
+Try these patches at your own risk and always have a backup EFI to boot.
+
+Languages: English (current)
 ```
 - Install Clover on your USB drive.
 
