@@ -9,7 +9,7 @@
 
   
 
-### Languages: English (current)
+### Languages: English (current), [Italian](README_IT.md)
 
   
 
@@ -46,7 +46,7 @@ See the table below for the values matching your CPU Core Count.
 |   24 Core | `18` |
 |   32 Core | `20` |
 
-  
+
 So for example a 6 Core 5600X Replace value would result in these replace values, `B8 06 0000 0000`/`BA 06 0000 0000`/`BA 06 0000 0090`
 
 #### Some users may require to add in the `algrey - cpu_topology_sort -disable _x86_validate_topology` patch. Simply enable it in the config if required. 
