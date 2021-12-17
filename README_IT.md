@@ -7,7 +7,7 @@
 
 ### Non c'e' nessun supporto per sistemi operativi beta. <br /><br />Provate le patches a vostro rischio e pericolo, fate un backup prima della vostra EFI funzionante.  
 
-### Lingue: [English] (README.md), Italian (Attuale)
+### Lingue: [English](README.md), Italian (Attuale)
 
 Patches per il Kernel che abilitano il supporto nativo di CPU AMD su macOS.
   
