@@ -48,11 +48,6 @@ See the table below for the values matching your CPU Core Count.
   So for example a 6 Core 5600X Replace value would result in these replace values, `B8 06 0000 0000`/`BA 06 0000 0000`/`BA 06 0000 0090`
 
 ---
-
-Note: MacOS Monterey installation requires `Misc -> Security -> SecureBootModel` to be disabled in the config.<br />Also TPM needs to be disabled in the BIOS. Both can be enabled after install. 
-
-___
-
   
 
 ## Features
@@ -108,65 +103,14 @@ Disabling the `mtrr_update_action - fix PAT` patch has shown an improvement in G
 
 - Big Sur 11.x
 
-- Monterey 12.x ( No Support until OS Release )
+- Monterey 12.x
 
   
 
 ## Instructions
 
-- Download macOS High Sierra, Mojave, Catalina, Big Sur or Monterey from the App Store.
+Follow the [Dortania OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/) for instruction on how to create the installer USB and setup the config file with these patches.
 
-- Plug in an empty USB drive.
-
-- Run one of the below commands in your Terminal to prepare the bootable macOS USB.
-
-  
-
-```
-
-NOTE: Make sure to replace 'MyVolumeName' with your actual USB volume name in the below commands.
-
-  
-
-## High Sierra
-
-sudo /Applications/Install\ macOS\ High\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolumeName
-
-  
-
-## Mojave
-
-sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolumeName
-
-  
-
-## Catalina
-
-sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolumeName
-
-  
-
-## Big Sur
-
-sudo /Applications/Install\ macOS\ Big\ Sur.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolumeName
-
-  
-
-## Monterey
-
-sudo /Applications/Install\ macOS\ Monterey\ Beta.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolumeName
-
-```
-
-  
-
-- Install OpenCore on your USB drive. (For OpenCore releases see: https://github.com/acidanthera/OpenCorePkg/releases)
-
-- Read the [OpenCore Documentaion](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Configuration.pdf) for `config.plist` setup. A default config will not be provided.
-
-- Merge the patches provided into your OpenCore `config.plist` and edit it as per your needs.
-
-  
 
 ## Special Notes
 
@@ -180,21 +124,8 @@ sudo /Applications/Install\ macOS\ Monterey\ Beta.app/Contents/Resources/createi
 
 - On macOS Mojave certain webpages will crash upon loading (eg. brew.sh, facebook.com). To fix this issue follow the procedure mentioned [here](https://www.insanelymac.com/forum/topic/335877-amd-mojave-kernel-development-and-testing/?do=findComment&comment=2661857) under the UPDATE-5 heading.
 
-- To boot 10.15 two things needs to be taken care of:
-
-- If you have an EC device with ID `PNP0C09` in your DSDT then macOS might get stuck while booting at the initial stage. To fix that you need to make sure your EC device is disabled by making it return status `Zero`. You can use a custom [SSDT-EC0.aml](./Extra/SSDT-EC0.aml) to do that and if you want to see how it works you can refer to [here](https://github.com/acidanthera/OpenCorePkg/blob/5e020bb06b33f12fa8b404cc3d1effaa5fbc00ea/Docs/AcpiSamples/SSDT-EC.dsl#L33). <br> -or- <br> You can change the ID of the EC device. Using this ACPI patch:
-
 ```
 
-Comment Find  Replace
-
-PNP0C09 to PNPFFFF  41D00C09 41D0FFFF
-
-```
-
-- When using these SMBIOS profiles `MacPro6,1`, `MacPro7,1`, or `iMacPro1,1`, `AppleIntelMCEReporter.kext` macOS might panic. To prevent this you need to either use a different SMBIOS or use a disabler kext from [here](./Extra/).
-
-  
 
 ## Credits
 
