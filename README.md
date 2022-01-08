@@ -5,7 +5,7 @@
 </span>
 
 
-### Patches for Beta versions are provided but no support is given until the OS is released. <br /><br />Try these patches at your own risk and always have a backup EFI to boot.
+### Patches for Beta versions are provided but no support is given until the OS is released. <br/><br/>Try these patches at your own risk and always have a backup EFI to boot.
 
   
 
@@ -109,14 +109,14 @@ Disabling the `mtrr_update_action - fix PAT` patch has shown an improvement in G
 
 ## Instructions
 
-Follow the [Dortania OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/) for instruction on how to create the installer USB and setup the config file with these patches.
+Follow the [Dortania OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/) for instructions on how to create the installer USB and setup the config file with these patches.
 
 
 ## Special Notes
 
-- Use the latest Release of OpenCore to avoid incompatibles. Find the latest release [here](https://github.com/acidanthera/OpenCorePkg/releases/latest).
+- Use the latest Release of OpenCore to avoid incompatibilities. Find the latest release [here](https://github.com/acidanthera/OpenCorePkg/releases/latest).
 
-- For support creating OpenCore config read the docs and visit [this](https://dortania.github.io/OpenCore-Install-Guide/) guide or the Discord server.
+- For support creating OpenCore config read the docs and visit [this](https://dortania.github.io/OpenCore-Install-Guide/) guide or the [Discord server](https://discord.gg/EfCYAJW).
 
 - For 15h_16h CPU family users on macOS Mojave:
 
