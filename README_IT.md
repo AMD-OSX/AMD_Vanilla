@@ -10,15 +10,26 @@
 ### Lingue: [English](README.md), Italian (Attuale)
 
 Patches per il Kernel che abilitano il supporto nativo di CPU AMD su macOS.
-  
-# Leggere con attenzione!
 
+# Leggere con attenzione!
+### Clover 5144 aggiunge il quirk *ProvideCurrentCpuInfo* , questo quirk permette agli utenti di cpu AMD di non usare alcune patches del kernel:
+-algrey - cpu_topology_sort -disable _x86_validate_topology
+
+-algrey - Get DID and VID from MSR - 10.13/10.14/10.15/11.0/12.0
+
+-algrey - Remove Penryn check to execute default case
+
+Alcune vecchie cpu FX potrebbero avere ancora bisogno di utilizzare questa patch *algrey - cpu_topology_sort -disable _x86_validate_topology*
+
+Le tre vecchie patch rimangono nel plist, ma sono ora disabilitate.
+
+Usate ProvideCurrentCpuInfo e se non funziona nel vostro pc , abilitate insieme al quirk solo *algrey - cpu_topology_sort -disable _x86_validate_topology*
 
 
 Le patch sono ora universali per le piattaforme 15h, 16h, 17h e 19h.
 
 ### Non usate l'applicazione Clover Configurator. Potrebbe rimuovere parti importanti del vostro config nella sezione Kernel Patches!
-### L'opzione Resize Bar nei bios (C.A.M in alcuni bios x299) e' ora supportata a partire dal commit b624e4d1e del master di Clover. 
+### L'opzione Resize Bar nei bios (C.A.M in alcuni bios x299) e' ora supportata a partire dal commit b624e4d1e del master di Clover.
 
 La patch Core Count necessita di essere modificata per il tuo sistema. Cerca le tre patch `algrey - Force cpuid_cores_per_package`e modifica solo il valore di Replace.
 
@@ -38,7 +49,7 @@ Verifica i valori dalla tabella qui sotto in base al numero di core della tua CP
 |   24 Core | `18` |
 |   32 Core | `20` |
 
-  
+
 Quindi, per una CPU con 6 core come il 5600X, sostituire i valori come in questo esempio `B8 06 0000 0000`/`BA 06 0000 0000`/`BA 06 0000 0090`
 
 #### Alcuni utenti potrebbero avere la necessità di utilizzare la patch `algrey - cpu_topology_sort -disable _x86_validate_topology`. Se necessaria, abilitarla nel config
