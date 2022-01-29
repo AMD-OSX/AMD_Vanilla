@@ -7,26 +7,37 @@
 
 ### Patches for Beta versions are provided but no support is given until the OS is released. <br /><br />Try these patches at your own risk and always have a backup EFI to boot.
 
-  
+
 
 ### Languages: English (current), [Italian](README_IT.md)
 
-  
+
 
 Binary Kernel patches to enable almost native AMD CPU support on macOS.
 
-  
+
 
 # Read Me First!
 
+### Latest Released Clover 5144 adds *ProvideCurrentCpuInfo* , this quirk allows to AMD users to skip some old Kernel Patches:
+-algrey - cpu_topology_sort -disable _x86_validate_topology
 
-### Resize bar BIOS option (C.A.M in some x299 bios) is not supported in Clover Bootloader. DO NOT USE otherwise system hangs
+-algrey - Get DID and VID from MSR - 10.13/10.14/10.15/11.0/12.0
+
+-algrey - Remove Penryn check to execute default case
+
+Some old FX CPU could have need to use old *algrey - cpu_topology_sort -disable _x86_validate_topology*
+
+In patches plist all these 3 patches are now disabled
+
+Use ProvideCurrentCpuInfo and if it does not works for you , enable only *algrey - cpu_topology_sort -disable _x86_validate_topology*
+
+### Resize bar bios Option (C.A.M in some x299 bios) is now supported in Clover Bootloader, use it from master, commit b624e4d1e.
 
 Patches are now universal across 15h, 16h, 17h and 19h.
 
 ### Do not use the Clover Configurator Application. It will remove sections from the kernel patches breaking them!
 
-### Resize bar bios Option (C.A.M in some x299 bios) is now supported in Clover Bootloader, use it from master, commit b624e4d1e. 
 
 Core Count patch needs to be modified to boot your system. Find the three `algrey - Force cpuid_cores_per_package` patches and alter the `Replace` value only.
 
@@ -49,7 +60,7 @@ See the table below for the values matching your CPU Core Count.
 
 So for example a 6 Core 5600X Replace value would result in these replace values, `B8 06 0000 0000`/`BA 06 0000 0000`/`BA 06 0000 0090`
 
-#### Some users may require to add in the `algrey - cpu_topology_sort -disable _x86_validate_topology` patch. Simply enable it in the config if required. 
+#### Some users may require to add in the `algrey - cpu_topology_sort -disable _x86_validate_topology` patch. Simply enable it in the config if required.
 ___
 
 
