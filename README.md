@@ -19,24 +19,24 @@ Binary Kernel patches to enable almost native AMD CPU support on macOS.
 
 # Read Me First!
 
-### Latest Released Clover 5144 adds *ProvideCurrentCpuInfo* , this quirk allows to AMD users to skip some old Kernel Patches:
--algrey - cpu_topology_sort -disable _x86_validate_topology
+### Latest Released Clover 5144 adds `ProvideCurrentCpuInfo`, this quirk allows to AMD users to skip some old kernel patches:
+-`algrey - cpu_topology_sort -disable _x86_validate_topology`
 
--algrey - Get DID and VID from MSR - 10.13/10.14/10.15/11.0/12.0
+-`algrey - Get DID and VID from MSR - 10.13/10.14/10.15/11.0/12.0`
 
--algrey - Remove Penryn check to execute default case
+-`algrey - Remove Penryn check to execute default case`
 
-Some old FX CPU could have need to use old *algrey - cpu_topology_sort -disable _x86_validate_topology*
+Some old FX CPUs may need to use the old `algrey - cpu_topology_sort -disable _x86_validate_topology` patch.
 
-In patches plist all these 3 patches are now disabled
+All three of these patches are now disabled in the `patches.plist` file.
 
-Use ProvideCurrentCpuInfo and if it does not works for you , enable only *algrey - cpu_topology_sort -disable _x86_validate_topology*
+If `ProvideCurrentCpuInfo` does not work for you , enable only `algrey - cpu_topology_sort -disable _x86_validate_topology`.
 
-### Resize bar bios Option (C.A.M in some x299 bios) is now supported in Clover Bootloader, use it from master, commit b624e4d1e.
+### Resizable BAR BIOS option (S.A.M. in some X299 bios) is now supported in the Clover bootloader, use it from master commit `b624e4d1e`.
 
 Patches are now universal across 15h, 16h, 17h and 19h.
 
-### Do not use the Clover Configurator Application. It will remove sections from the kernel patches breaking them!
+### Do not use the Clover Configurator application. It will remove sections from the kernel patches, which will break them!
 
 
 Core Count patch needs to be modified to boot your system. Find the three `algrey - Force cpuid_cores_per_package` patches and alter the `Replace` value only.
