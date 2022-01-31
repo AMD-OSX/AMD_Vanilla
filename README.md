@@ -89,7 +89,8 @@ The choice is yours on which patch to use. Please don't try to use them both at 
 
 ## Note on TRX40 Systems
 
-Disabling the `mtrr_update_action - fix PAT` patch has shown an improvement in GPU performance on some systems that have tested. If you wish to test this it is recommended to do so on a USB with OpenCore to ensure it works first. There may be issues with different motherboard/GPU combos that we aren't aware of. Proceed at your own risk.
+`mtrr_update_action - fix PAT` patch is not required for every TRX40 tested system (Asus, AsRock, Msi, Gigabyte etc.). 
+**Do not use it**
 
   
 
