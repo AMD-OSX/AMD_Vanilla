@@ -89,10 +89,7 @@ The choice is yours on which patch to use. Please don't try to use them both at 
 
 ## Note on TRX40 Systems
 
-`mtrr_update_action - fix PAT` patch is not required for every TRX40 tested system (Asus, AsRock, Msi, Gigabyte etc.). 
-**Do not use it**
-
-  
+`mtrr_update_action - fix PAT` patch is not required for TRX40 systems. Disabling it will result in GPU performance improvements. Test this configuration on a USB drive first in preparation for the unlikely event that something goes wrong. Proceed at your own risk.
 
 ## Supported macOS versions
 
