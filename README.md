@@ -87,8 +87,8 @@ The other choice is Shaneee's patch which will increase GPU performance on AMD G
 
 The choice is yours on which patch to use. Please don't try to use them both at the same time.
 
-## Note on TRX40 Systems
-Disabling the `mtrr_update_action - fix PAT` patch has shown an improvement in GPU performance on some systems that have tested. If you wish to test this it is recommended to do so on a USB with OpenCore to ensure it works first. There may be issues with different motherboard/GPU combos that we aren't aware of. Proceed at your own risk.
+## Note on TRX40 Systems about PAT fix patch
+This patch is not required for TRX40 systems (Asus, AsRock, Msi, Gigabyte etc.)
 
 ### Supported macOS versions
 - High Sierra 10.13.x
