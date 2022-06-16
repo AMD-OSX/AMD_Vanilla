@@ -5,7 +5,7 @@
 </span>
 
 
-### Patches for Beta versions are provided but no support is given until the OS is released. <br/><br/>Try these patches at your own risk and always have a backup EFI to boot.
+## Patches for Beta versions are provided but no support is given until the OS is released. <br/><br/>Try these patches at your own risk and always have a backup EFI to boot.
 
   
 
@@ -48,7 +48,7 @@ See the table below for the values matching your CPU Core Count.
   So for example a 6 Core 5600X Replace value would result in these replace values, `B8 06 0000 0000`/`BA 06 0000 0000`/`BA 06 0000 0090`
 
 ---
-  
+
 
 ## Features
 
@@ -102,6 +102,8 @@ The choice is yours on which patch to use. Please don't try to use them both at 
 - Big Sur 11.x
 
 - Monterey 12.x
+
+- Ventura 13.x ( Patches provided but **No*** support for beta versions. )
 
   
 
