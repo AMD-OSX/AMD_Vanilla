@@ -124,7 +124,6 @@ Follow the [Dortania OpenCore Install Guide](https://dortania.github.io/OpenCore
 
 - On macOS Mojave certain webpages will crash upon loading (eg. brew.sh, facebook.com). To fix this issue follow the procedure mentioned [here](https://www.insanelymac.com/forum/topic/335877-amd-mojave-kernel-development-and-testing/?do=findComment&comment=2661857) under the UPDATE-5 heading.
 
-```
 
 
 ## Credits
