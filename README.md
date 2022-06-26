@@ -19,6 +19,8 @@ Binary Kernel patches to enable almost native AMD CPU support on macOS.
 
 # Read Me First!
 
+### Added a preliminary support for macOS Ventura 13.0 (use algrey - _cpuid_set_generic_info - Disable check to allow leaf7)
+
 
 ### Latest Released Clover 5144 adds `ProvideCurrentCpuInfo`, this quirk allows to AMD users to skip some old kernel patches:
 -`algrey - cpu_topology_sort -disable _x86_validate_topology`
@@ -97,6 +99,7 @@ This patch is not required for TRX40 systems (Asus, AsRock, Msi, Gigabyte etc.)
 - Catalina 10.15.x
 - Big Sur 11.x
 - Monterey 12.x
+- Ventura 13.0 (beta 1 and beta 2 preliminary support)
 
 ### Instructions
 - Download macOS High Sierra, Mojave, Catalina, Big Sur or Monterey from the App Store.
