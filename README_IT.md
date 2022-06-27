@@ -12,6 +12,9 @@
 Patches per il Kernel che abilitano il supporto nativo di CPU AMD su macOS.
 
 # Leggere con attenzione!
+### Aggiunto il supporto preliminare per macOS Ventura 13.0 (beta 1 e 2), aggiunta algrey - _cpuid_set_generic_info - Disable check to allow leaf7
+### Puo' essere necessario utilizzare Smbios come iMacpro1.1 o 19.2
+### Utilizzare i kext aggiornati (lilu, VirtualSMC e altri se li utilizzate)
 ### Clover 5144 aggiunge il quirk *ProvideCurrentCpuInfo* , questo quirk permette agli utenti di cpu AMD di non usare alcune patches del kernel:
 -algrey - cpu_topology_sort -disable _x86_validate_topology
 

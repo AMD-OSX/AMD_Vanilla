@@ -19,6 +19,8 @@ Binary Kernel patches to enable almost native AMD CPU support on macOS.
 
 # Read Me First!
 
+### Added preliminary support for macOS Ventura 13.0 (Beta 1 and 2), added algrey - _cpuid_set_generic_info - Disable check to allow leaf7 
+
 ### Latest Released Clover 5144 adds `ProvideCurrentCpuInfo`, this quirk allows to AMD users to skip some old kernel patches:
 -`algrey - cpu_topology_sort -disable _x86_validate_topology`
 
@@ -88,7 +90,7 @@ The other choice is Shaneee's patch which will increase GPU performance on AMD G
 The choice is yours on which patch to use. Please don't try to use them both at the same time.
 
 ## Note on TRX40 Systems
-Disabling the `mtrr_update_action - fix PAT` patch has shown an improvement in GPU performance on some systems that have tested. If you wish to test this it is recommended to do so on a USB with OpenCore to ensure it works first. There may be issues with different motherboard/GPU combos that we aren't aware of. Proceed at your own risk.
+Trx40 systems **does not need** of this patch (in any form). 
 
 ### Supported macOS versions
 - High Sierra 10.13.x
@@ -121,6 +123,10 @@ sudo /Applications/Install\ macOS\ Big\ Sur.app/Contents/Resources/createinstall
 
 ## Monterey
 sudo /Applications/Install\ macOS\ Monterey.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolumeName
+
+## Ventura*
+sudo /Applications/Install\ macOS\ Ventura.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolumeName
+*check create install media app path in your full macOS Ventura beta app
 
 Try these patches at your own risk and always have a backup EFI to boot.
 
