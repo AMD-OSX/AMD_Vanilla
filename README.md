@@ -5,13 +5,9 @@
 </span>
 
 
-### Patches for Beta versions are provided but no support is given until the OS is released. <br /><br />Try these patches at your own risk and always have a backup EFI to boot.
+## Patches for Beta versions are provided but no support is given until the OS is released. <br /><br />Try these patches at your own risk and always have a backup EFI to boot.
 
-
-
-### Languages: English (current), [Italian](README_IT.md)
-
-
+## Languages: English (current), [Italian](README_IT.md)
 
 Binary Kernel patches to enable almost native AMD CPU support on macOS.
 
@@ -19,9 +15,10 @@ Binary Kernel patches to enable almost native AMD CPU support on macOS.
 
 # Read Me First!
 
-### Added preliminary support for macOS Ventura 13.0 (Beta 1 and 2), added algrey - _cpuid_set_generic_info - Disable check to allow leaf7 
+## Added preliminary support for macOS Ventura 13.0 (Beta 1,2 and 3), added algrey - _cpuid_set_generic_info - Disable check to allow leaf7 
+## Use Clover R5147 or greater
 
-### Latest Released Clover 5144 adds `ProvideCurrentCpuInfo`, this quirk allows to AMD users to skip some old kernel patches:
+## Latest Released Clover 5144 adds `ProvideCurrentCpuInfo`, this quirk allows to AMD users to skip some old kernel patches:
 -`algrey - cpu_topology_sort -disable _x86_validate_topology`
 
 -`algrey - Get DID and VID from MSR - 10.13/10.14/10.15/11.0/12.0`
@@ -34,11 +31,11 @@ All three of these patches are now disabled in the `patches.plist` file.
 
 If `ProvideCurrentCpuInfo` does not work for you , enable only `algrey - cpu_topology_sort -disable _x86_validate_topology`.
 
-### Resizable BAR BIOS option (S.A.M. in some X299 bios) is now supported in the Clover bootloader, use it from master commit `b624e4d1e`.
+## Resizable BAR BIOS option (S.A.M. in some X299 bios) is now supported in the Clover bootloader, use it from master commit `b624e4d1e`.
 
 Patches are now universal across 15h, 16h, 17h and 19h.
 
-### Do not use the Clover Configurator application. It will remove sections from the kernel patches, which will break them!
+## Do not use the Clover Configurator application. It will remove sections from the kernel patches, which will break them!
 
 
 Core Count patch needs to be modified to boot your system. Find the three `algrey - Force cpuid_cores_per_package` patches and alter the `Replace` value only.
@@ -98,9 +95,10 @@ Trx40 systems **does not need** of this patch (in any form).
 - Catalina 10.15.x
 - Big Sur 11.x
 - Monterey 12.x
+- Ventura 13.0 B1,2,3
 
 ### Instructions
-- Download macOS High Sierra, Mojave, Catalina, Big Sur or Monterey from the App Store.
+- Download macOS High Sierra, Mojave, Catalina, Big Sur, Monterey or Ventura OS from the App Store.
 
 - Plug in an empty USB drive.
 
