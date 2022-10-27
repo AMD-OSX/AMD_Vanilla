@@ -5,7 +5,7 @@
 </span>
 
 
-## Patches for Beta versions are provided but no support is given until the OS is released. <br/><br/>Try these patches at your own risk and always have a backup EFI to boot.
+### Patches for beta versions are provided, but no support is given until the OS is released.<br/><br/>Try these patches at your own risk, and always keep an EFI backup.
 
   
 
@@ -13,108 +13,95 @@
 
   
 
-Binary Kernel patches to enable almost native AMD CPU support on macOS.
+Binary kernel patches to enable almost native AMD CPU support on macOS.
 
   
 
-# Read Me First!
+# Read me first!
 
-Patches are now universal across 15h, 16h, 17h and 19h by utilizing the OpenCore Kernel Quirk `ProvideCurrentCpuInfo`. OpenCore 0.7.1 or newer is required.
+Patches are now universal across 15h, 16h, 17h, and 19h by utilizing the OpenCore kernel Quirk `ProvideCurrentCpuInfo`. OpenCore 0.7.1 or newer is required.
 
 Make sure to ****enable**** this quirk or the system ****won't boot****.
 
-This quirk provides the kernel with the CPU frequencies for macOS to boot.
-
-  
+**Note for Zen 4:** Zen 4 (Ryzen 7000) has issues that have not been sorted out. You are on your own if you have a Zen 4 system.
 
 Core Count patch needs to be modified to boot your system. Find the three `algrey - Force cpuid_cores_per_package` patches and alter the `Replace` value only.
 
-Changing `B8000000 0000`/`BA000000 0000`/`BA000000 0090`* to `B8 <CoreCount> 0000 0000`/`BA <CoreCount> 0000 0000`/`BA <CoreCount> 0000 0090`* substituting `<CoreCount>` with the hexadecimal value matching your physical core count.
+Change `B8000000 0000`/`BA000000 0000`/`BA000000 0090`* to `B8 <Core Count> 0000 0000`/`BA <Core Count> 0000 0000`/`BA <Core Count> 0000 0090`*, substituting `<Core Count>` with the hexadecimal value matching your physical core count. Do not use your CPU's thread count.
 
 **Note:** *The three different values reflect the patch for different versions of macOS. Be sure to change all three if you boot macOS 10.13 to macOS 12*
 
-See the table below for the values matching your CPU Core Count.
+See the table below for the values matching your CPU core count.
 
-| CoreCount | Hexadecimal|
-|--------|---------|
-|   4 Core  | `04` |
-|   6 Core  | `06` |
-|   8 Core  | `08` |
-|   12 Core | `0C` |
-|   16 Core | `10` |
-|   24 Core | `18` |
-|   32 Core | `20` |
+| Core Count | Hexadecimal |
+|------------|-------------|
+|   4 Core   |     `04`    |
+|   6 Core   |     `06`    |
+|   8 Core   |     `08`    |
+|   12 Core  |     `0C`    |
+|   16 Core  |     `10`    |
+|   24 Core  |     `18`    |
+|   32 Core  |     `20`    |
 
-  So for example a 6 Core 5600X Replace value would result in these replace values, `B8 06 0000 0000`/`BA 06 0000 0000`/`BA 06 0000 0090`
+So for example, a user with a 6-core processor should use these `Replace` values: `B8 06 0000 0000`/`BA 06 0000 0000`/`BA 06 0000 0090`
 
 ---
-
 
 ## Features
 
 - Enables macOS to run on AMD CPUs on the fly.
 
-- Enables iMessage, Siri, FaceTime, Continuity etc.
+- Enables iMessage, Siri, FaceTime, Continuity, etc.
 
 - Stable compared to custom XNU kernel.
-
-  
 
 ## Disadvantages
 
 - No 32-bit support (OPEMU) in 10.14 and lower
 
-  
+## Supported AMD CPUs
 
-## Supported AMD CPU's
+|     Family    |  Codename |              Example              |
+|---------------|-----------|-----------------------------------|
+|      15h      | Bulldozer |             FX Series             |
+|      16h      |   Jaguar  | A Series (including AM4 A-Series) |
+|  17h and 19h  |    Zen    | Ryzen, Threadripper, Athlon 2xxGE |<br />
 
+## Information on the fix PAT patch
 
-| Family | Codename| Example |
-|--------|---------|----------|
-|   15h  | Bulldozer | FX Series|
-|   16h  | Jaguar | A Series (including AM4 A-Series) |
-|   17h and 19h | Zen | Ryzen, 1st, 2nd + 3rd Gen Threadripper, Athlon 2xxGE |<br />
+The default enabled patch is Algrey's original patch. This will work for all GPUs and doesn't affect audio but doesn't improve performance.
 
-  
+The other choice is Shaneee's patch which will increase GPU performance on AMD GPUs but can stop NVIDIA GPUs from booting. It also causes audio issues when using HDMI or DisplayPort audio.
 
-## Information on the PAT fix patch
+The choice is yours. Don't try to use them both at the same time.
 
-The default enabled patch is Algrey's original patch. This will work for all GPUs and doesn't affect audio but doesn't improve the performance.
+## Note on TRX40 systems
 
-The other choice is Shaneee's patch which will increase GPU performance on AMD GPUs but can stop Nvidia GPUs booting. It also causes audio issues when using HDMI and DP audio.
-
-The choice is yours on which patch to use. Please don't try to use them both at the same time.
-
-  
-
-## Note on TRX40 Systems
-
-`mtrr_update_action - fix PAT` patch is not required for TRX40 systems. Disabling it will result in GPU performance improvements. Test this configuration on a USB drive first in preparation for the unlikely event that something goes wrong. Proceed at your own risk.
+Both `mtrr_update_action - fix PAT` patches are not required on TRX40 systems. Disabling them will result in GPU performance improvements. Test this configuration on a USB drive first in preparation for the unlikely event that something goes wrong. Proceed at your own risk.
 
 ## Supported macOS versions
 
-- High Sierra 10.13.x
+- macOS High Sierra (10.13)
 
-- Mojave 10.14.x
+- macOS Mojave (10.14)
 
-- Catalina 10.15.x
+- macOS Catalina (10.15)
 
-- Big Sur 11.x
+- macOS Big Sur (11)
 
-- Monterey 12.x
+- macOS Monterey (12)
 
-- Ventura 13.x ( Patches provided but **No*** support for beta versions. )
-
-  
+- macOS Ventura (13)
 
 ## Instructions
 
 Follow the [Dortania OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/) for instructions on how to create the installer USB and setup the config file with these patches.
 
+Do not ask for support on GitHub.
 
-## Special Notes
+## Special notes
 
-- Use the latest Release of OpenCore to avoid incompatibilities. Find the latest release [here](https://github.com/acidanthera/OpenCorePkg/releases/latest).
+- Use the latest release of OpenCore to avoid incompatibilities. Find the latest release [here](https://github.com/acidanthera/OpenCorePkg/releases/latest).
 
 - For support creating OpenCore config read the docs and visit [this](https://dortania.github.io/OpenCore-Install-Guide/) guide or the [Discord server](https://discord.gg/EfCYAJW).
 
@@ -122,7 +109,7 @@ Follow the [Dortania OpenCore Install Guide](https://dortania.github.io/OpenCore
 
 - Upon booting to macOS Mojave for first time, the system will reboot after the Data & Privacy screen. To fix this issue follow the procedure mentioned [here](https://www.insanelymac.com/forum/topic/335877-amd-mojave-kernel-development-and-testing/?do=findComment&comment=2658085) under UPDATE-2 heading.
 
-- On macOS Mojave certain webpages will crash upon loading (eg. brew.sh, facebook.com). To fix this issue follow the procedure mentioned [here](https://www.insanelymac.com/forum/topic/335877-amd-mojave-kernel-development-and-testing/?do=findComment&comment=2661857) under the UPDATE-5 heading.
+- On macOS Mojave, certain webpages will crash upon loading (eg. brew.sh, facebook.com). To fix this issue follow the procedure mentioned [here](https://www.insanelymac.com/forum/topic/335877-amd-mojave-kernel-development-and-testing/?do=findComment&comment=2661857) under the UPDATE-5 heading.
 
 
 
