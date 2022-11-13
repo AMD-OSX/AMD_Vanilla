@@ -23,7 +23,8 @@ Patches are now universal across 15h, 16h, 17h, and 19h by utilizing the OpenCor
 
 Make sure to ****enable**** this quirk or the system ****won't boot****.
 
-**Note for Zen 4:** Zen 4 (Ryzen 7000) has issues that have not been sorted out. You are on your own if you have a Zen 4 system.
+**Note for Zen 4:** Zen 4 (Ryzen 7000) requires patching for IOPCIFamily.kext <br />
+These patches are enabled by default. Please ensure you've got them added to your current config for Zen 4 stability. 
 
 Core Count patch needs to be modified to boot your system. Find the three `algrey - Force cpuid_cores_per_package` patches and alter the `Replace` value only.
 
@@ -120,5 +121,7 @@ Do not ask for support on GitHub.
 - [XLNC](https://github.com/XLNCs) for maintaining patches to various macOS versions.
 
 - [Acidanthera](https://github.com/acidanthera) for OpenCore.
+
+- [CaseySJ](https://github.com/CaseySJ/) for Zen 4 IOPCIFamily patch.
 
 - Sinetek, Andy Vandijck, spakk, Bronya, Tora Chi Yo, [Shaneee](https://github.com/Shaneee) and many others for sharing their AMD/XNU kernel knowledge
