@@ -15,10 +15,12 @@ Binary Kernel patches to enable almost native AMD CPU support on macOS.
 
 # Read Me First!
 
-## Added preliminary support for macOS Ventura 13.0 (Beta 1,2 and 3), added algrey - _cpuid_set_generic_info - Disable check to allow leaf7 
-## Use Clover R5147 or greater
+# Note for Zen 4: Zen 4 (Ryzen 7000) requires patching for IOPCIFamily.kext This patch is enabled by default. Please ensure that you've got it added to your current config for Zen 4 stability. This patch also fixes the problem on MSI A520, B550 and X570 motherboards.
 
-## Latest Released Clover 5144 adds `ProvideCurrentCpuInfo`, this quirk allows to AMD users to skip some old kernel patches:
+# Added preliminary support for macOS Ventura 13.1 (Beta 1,2), added algrey - _cpuid_set_generic_info - Disable check to allow leaf7 
+# Use Clover R5147 or greater
+
+# Latest Released Clover 5144 adds `ProvideCurrentCpuInfo`, this quirk allows to AMD users to skip some old kernel patches:
 -`algrey - cpu_topology_sort -disable _x86_validate_topology`
 
 -`algrey - Get DID and VID from MSR - 10.13/10.14/10.15/11.0/12.0`
@@ -157,6 +159,8 @@ PNP0C09 to PNPFFFF  41D00C09 41D0FFFF
 - [AlGrey](https://github.com/AlGreyy) for the idea and creating the patches.
 
 - [XLNC](https://github.com/XLNCs) for maintaining patches to various macOS versions.
+
+- [CaseySJ](https://github.com/CaseySJ/)  for Zen 4 IOPCIFamily patch.
 
 - [macOS86.it](https://www.macos86.it) team for maintaining Clover Patches. [fabiosun](https://www.macos86.it/profile/13-fabiosun), [iGPU](https://www.macos86.it/profile/1303-igpu), [carlo67](https://www.macos86.it/profile/17-carlo_67) and [Tomnic](https://www.macos86.it/profile/69-tomnic)
 
