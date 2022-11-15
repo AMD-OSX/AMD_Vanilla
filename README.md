@@ -13,14 +13,14 @@ Binary Kernel patches to enable almost native AMD CPU support on macOS.
 
 
 
-# Read Me First!
+## Read Me First!
 
-# Note for Zen 4: Zen 4 (Ryzen 7000) requires patching for IOPCIFamily.kext This patch is enabled by default. Please ensure that you've got it added to your current config for Zen 4 stability. This patch also fixes the problem on MSI A520, B550 and X570 motherboards.
+## Note for Zen 4: Zen 4 (Ryzen 7000) requires patching for IOPCIFamily.kext This patch is enabled by default. Please ensure that you've got it added to your current config for Zen 4 stability. This patch also fixes the problem on MSI A520, B550 and X570 motherboards.
 
-# Added preliminary support for macOS Ventura 13.1 (Beta 1,2), added algrey - _cpuid_set_generic_info - Disable check to allow leaf7 
-# Use Clover R5147 or greater
+## Added preliminary support for macOS Ventura 13.1 (Beta 1,2), added algrey - _cpuid_set_generic_info - Disable check to allow leaf7 
+## Use Clover R5147 or greater
 
-# Latest Released Clover 5144 adds `ProvideCurrentCpuInfo`, this quirk allows to AMD users to skip some old kernel patches:
+## Latest Released Clover 5144 adds `ProvideCurrentCpuInfo`, this quirk allows to AMD users to skip some old kernel patches:
 -`algrey - cpu_topology_sort -disable _x86_validate_topology`
 
 -`algrey - Get DID and VID from MSR - 10.13/10.14/10.15/11.0/12.0`
