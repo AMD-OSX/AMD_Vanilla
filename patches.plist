@@ -584,5 +584,33 @@
 			<integer>0</integer>
 		</dict>
 	</array>
+	<key>KextsToPatch</key>
+	<array>
+		<dict>
+			<key>Comment</key>
+			<string>CaseySJ - probeBusGated Disable 10 bit tags - 12.0/13.0</string>
+			<key>Count</key>
+			<integer>1</integer>
+			<key>Disabled</key>
+			<false/>
+			<key>Find</key>
+			<data>
+			5hFyBg==
+			</data>
+			<key>InfoPlistPatch</key>
+			<false/>
+			<key>MaskFind</key>
+			<data>
+			</data>
+			<key>MatchOS</key>
+			<string>12.x,13.x</string>
+			<key>Name</key>
+			<string>com.apple.iokit.IOPCIFamily</string>
+			<key>Replace</key>
+			<data>
+			5hFzBg==
+			</data>
+		</dict>
+	</array>
 </dict>
 </plist>
