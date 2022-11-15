@@ -561,7 +561,7 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>Base</key>
-				<string></string>
+				<string>__ZN11IOPCIBridge13probeBusGatedEP14probeBusParams</string>
 				<key>Comment</key>
 				<string>CaseySJ - probeBusGated Disable 10 bit tags - 12.0/13.0</string>
 				<key>Count</key>
