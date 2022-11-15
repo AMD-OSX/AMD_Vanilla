@@ -24,7 +24,7 @@ Patches are now universal across 15h, 16h, 17h, and 19h by utilizing the OpenCor
 Make sure to ****enable**** this quirk or the system ****won't boot****.
 
 **Note for Zen 4:** Zen 4 (Ryzen 7000) requires patching for IOPCIFamily.kext <br />
-This patches is enabled by default. Please ensure that you've got it added to your current config for Zen 4 stability. 
+This patch is enabled by default. Please ensure that you've got it added to your current config for Zen 4 stability. 
 This patch also fixes the problem on MSI A520, B550 and X570 motherboards.
 
 Core Count patch needs to be modified to boot your system. Find the three `algrey - Force cpuid_cores_per_package` patches and alter the `Replace` value only.
