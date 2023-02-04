@@ -81,6 +81,10 @@ The choice is yours. Don't try to use them both at the same time.
 
 Both `mtrr_update_action - fix PAT` patches are not required on TRX40 systems. Disabling them will result in GPU performance improvements. Test this configuration on a USB drive first in preparation for the unlikely event that something goes wrong. Proceed at your own risk.
 
+## Information on the Fix PCI bus enumeration patch
+
+On AM5 motherboards with on-board Thunderbolt/USB4 (e.g. Asus ROG Crosshair X670E Hero, Gene, Extreme; Asus ProArt X670E-Creator), macOS Ventura may not enumerate devices on the PCI bus properly when on-board WiFi and on-board Thunderbolt are both enabled. This patch bypasses the problem. This patch is disabled by default.
+
 ## Supported macOS versions
 
 - macOS High Sierra (10.13)
