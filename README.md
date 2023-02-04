@@ -127,6 +127,6 @@ Do not ask for support on GitHub.
 
 - [Acidanthera](https://github.com/acidanthera) for OpenCore.
 
-- [CaseySJ](https://github.com/CaseySJ/) for Zen 4 IOPCIFamily patch.
+- [CaseySJ](https://github.com/CaseySJ/) for Zen 4 IOPCIFamily patches.
 
 - Sinetek, Andy Vandijck, spakk, Bronya, Tora Chi Yo, [Shaneee](https://github.com/Shaneee) and many others for sharing their AMD/XNU kernel knowledge
