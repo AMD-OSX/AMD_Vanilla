@@ -27,7 +27,7 @@ Make sure to ****enable**** this quirk or the system ****won't boot****.
 This patch is enabled by default. Please ensure that you've added it to your current config for Zen 4 stability. 
 This patch also allows MSI A520, B550, and X570 boards to boot macOS Monterey and newer.
 
-Core Count patch needs to be modified to boot your system. Find the three `algrey - Force cpuid_cores_per_package` patches and alter the `Replace` value only.
+Core Count patch needs to be modified to boot your system. Find the four `algrey - Force cpuid_cores_per_package` patches and alter the `Replace` value only.
 
 Change `B8000000 0000`/`BA000000 0000`/`BA000000 0090`* to `B8 <Core Count> 0000 0000`/`BA <Core Count> 0000 0000`/`BA <Core Count> 0000 0090`*, substituting `<Core Count>` with the hexadecimal value matching your physical core count. Do not use your CPU's thread count.
 
