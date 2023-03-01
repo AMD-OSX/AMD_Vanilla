@@ -11,7 +11,6 @@
 
 Binary kernel patches to enable almost native AMD CPU support on macOS.
 
-
 # Read me first!
 
 Patches are now universal across `15h`, `16h`, `17h`, and `19h` by utilizing the OpenCore kernel Quirk `ProvideCurrentCpuInfo`. [OpenCore](https://github.com/acidanthera/OpenCorePkg/releases) 0.7.1 or newer is required.
@@ -22,13 +21,17 @@ Make sure to ****enable**** this quirk or the system ****won't boot****.
 > This patch is enabled by default. Please ensure that you've added it to your current config for Zen 4 stability. 
 > This patch also allows MSI A520, B550, and X570 boards to boot macOS Monterey and newer.
 
-The Core Count patch needs to be modified to boot your system. Find the three `algrey - Force cpuid_cores_per_package` patches and alter the `Replace` value only.
+Core Count patch needs to be modified to boot your system. Find the four `algrey - Force cpuid_cores_per_package` patches and alter the `Replace` value only.
 
-Change `B8000000 0000`/`BA000000 0000`/`BA000000 0090` to `B8 <Core Count> 0000 0000`/`BA <Core Count> 0000 0000`/`BA <Core Count> 0000 0090`, substituting `<Core Count>` with the hexadecimal value matching your physical core count. Do not use your CPU's thread count.
+|   macOS Version      | Replace Value | New Value |
+|----------------------|---------------|-----------|
+| 10.13.x, 10.14.x     | B8000000 0000 | B8 < Core Count > 0000 0000 |
+| 10.15.x, 11.x        | BA000000 0000 | BA < Core Count > 0000 0000 |
+| 12.x, 13.0 to 13.2.1 | BA000000 0090 | BA < Core Count > 0000 0090 |
+| 13.3                 |  BA000000 00  | BA < Core Count > 0000 00 |
 
-> :warning: **Note:** *The three different values reflect the patch for different versions of macOS. Be sure to change all three if you boot from macOS 10.13 to macOS 12*
+From the table above substitue `< Core Count >` with the hexadecimal value matching your physical core count. Do not use your CPU's thread count. See the table below for the values matching your CPU core count.
 
-See the table below for the values matching your CPU core count.
 
 | Core Count | Hexadecimal |
 |:----------:|:-----------:|
@@ -40,7 +43,7 @@ See the table below for the values matching your CPU core count.
 |   24 Core  |     `18`    |
 |   32 Core  |     `20`    |
 
-So for example, a user with a 6-core processor should use these `Replace` values: `B8 06 0000 0000`/`BA 06 0000 0000`/`BA 06 0000 0090`
+So for example, a user with a 6-core processor should use these `Replace` values: `B8 06 0000 0000` / `BA 06 0000 0000` / `BA 06 0000 0090` / `BA 06 0000 00`
 
 ---
 
@@ -81,6 +84,9 @@ The choice is yours. ***Don't try to use them both at the same time!***
 
 Both `mtrr_update_action - fix PAT` patches are not required on TRX40 systems. Disabling them will result in GPU performance improvements. Test this configuration on a USB drive first in preparation for the unlikely event that something goes wrong. Proceed at your own risk.
 
+## Information on the Fix PCI bus enumeration patch
+
+On AM5 motherboards with on-board Thunderbolt/USB4 (e.g. Asus ROG Crosshair X670E Hero, Gene, Extreme; Asus ProArt X670E-Creator), macOS Ventura may not enumerate devices on the PCI bus properly when on-board WiFi and on-board Thunderbolt are both enabled. This patch bypasses the problem. This patch is disabled by default.
 
 ## Supported macOS versions
 
@@ -125,6 +131,6 @@ Do not ask for support on GitHub.
 
 - [Acidanthera](https://github.com/acidanthera) for OpenCore.
 
-- [CaseySJ](https://github.com/CaseySJ/) for Zen 4 IOPCIFamily patch.
+- [CaseySJ](https://github.com/CaseySJ/) for Zen 4 IOPCIFamily patches.
 
 - Sinetek, Andy Vandijck, spakk, Bronya, Tora Chi Yo, [Shaneee](https://github.com/Shaneee), and many others for sharing their AMD/XNU kernel knowledge.
