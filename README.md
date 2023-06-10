@@ -15,7 +15,7 @@ Binary Kernel patches to enable almost native AMD CPU support on macOS.
 
 ## Read Me First!
 
-##added support for macOS Sonoma beta 1
+## Added support for macOS Sonoma beta 1
 
 ## Added support for macOS Ventura 13.5 Beta 1 and 2
 
