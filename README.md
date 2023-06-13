@@ -15,6 +15,10 @@ Binary Kernel patches to enable almost native AMD CPU support on macOS.
 
 ## Read Me First!
 
+## Added support for macOS Sonoma beta 1
+
+## Added support for macOS Ventura 13.5 Beta 1 and 2
+
 ## Note for Zen 4: Zen 4 (Ryzen 7000) requires patching for IOPCIFamily.kext This patch is enabled by default. Please ensure that you've got it added to your current config for Zen 4 stability. This patch also fixes the problem on MSI A520, B550 and X570 motherboards.
 
 ## Added preliminary support for macOS Ventura 13.1 (Beta 1,2), added algrey - _cpuid_set_generic_info - Disable check to allow leaf7 
