@@ -28,7 +28,7 @@
 				<key>MaxKernel</key>
 				<string>18.99.99</string>
 				<key>MinKernel</key>
-				<string>17.00.00</string>
+				<string>17.0.0</string>
 				<key>Replace</key>
 				<data>uAAAAAAA</data>
 				<key>ReplaceMask</key>
@@ -118,7 +118,7 @@
 				<key>MaxKernel</key>
 				<string>23.99.99</string>
 				<key>MinKernel</key>
-				<string>22.04.00</string>
+				<string>22.4.0</string>
 				<key>Replace</key>
 				<data>ugAAAAA=</data>
 				<key>ReplaceMask</key>
@@ -148,7 +148,7 @@
 				<key>MaxKernel</key>
 				<string>23.99.99</string>
 				<key>MinKernel</key>
-				<string>17.00.00</string>
+				<string>17.0.0</string>
 				<key>Replace</key>
 				<data>ZpBmkGaQkA==</data>
 				<key>ReplaceMask</key>
@@ -178,7 +178,7 @@
 				<key>MaxKernel</key>
 				<string>23.99.99</string>
 				<key>MinKernel</key>
-				<string>17.00.00</string>
+				<string>17.0.0</string>
 				<key>Replace</key>
 				<data>uB0AAIBEifFEiQ==</data>
 				<key>ReplaceMask</key>
@@ -208,7 +208,7 @@
 				<key>MaxKernel</key>
 				<string>23.99.99</string>
 				<key>MinKernel</key>
-				<string>17.00.00</string>
+				<string>17.0.0</string>
 				<key>Replace</key>
 				<data>ZpBmkGaQZpBmkJA=</data>
 				<key>ReplaceMask</key>
@@ -238,7 +238,7 @@
 				<key>MaxKernel</key>
 				<string>23.99.99</string>
 				<key>MinKernel</key>
-				<string>17.00.00</string>
+				<string>17.0.0</string>
 				<key>Replace</key>
 				<data>uroAAABmkA==</data>
 				<key>ReplaceMask</key>
@@ -268,7 +268,7 @@
 				<key>MaxKernel</key>
 				<string>23.99.99</string>
 				<key>MinKernel</key>
-				<string>17.00.00</string>
+				<string>17.0.0</string>
 				<key>Replace</key>
 				<data>sgFmDx+EAAAAAABmkA==</data>
 				<key>ReplaceMask</key>
@@ -298,7 +298,7 @@
 				<key>MaxKernel</key>
 				<string>23.99.99</string>
 				<key>MinKernel</key>
-				<string>17.00.00</string>
+				<string>17.0.0</string>
 				<key>Replace</key>
 				<data>AAAPgg==</data>
 				<key>ReplaceMask</key>
@@ -328,7 +328,7 @@
 				<key>MaxKernel</key>
 				<string>20.99.99</string>
 				<key>MinKernel</key>
-				<string>17.00.00</string>
+				<string>17.0.0</string>
 				<key>Replace</key>
 				<data>QXV0aGVudGljQU1EAA==</data>
 				<key>ReplaceMask</key>
@@ -358,7 +358,7 @@
 				<key>MaxKernel</key>
 				<string>23.99.99</string>
 				<key>MinKernel</key>
-				<string>21.00.00</string>
+				<string>21.0.0</string>
 				<key>Replace</key>
 				<data>kJCQkJCQMdKzAQ==</data>
 				<key>ReplaceMask</key>
@@ -386,9 +386,9 @@
 				<key>Mask</key>
 				<data>/////wAAAP///wA=</data>
 				<key>MaxKernel</key>
-				<string>20.03.00</string>
+				<string>20.3.0</string>
 				<key>MinKernel</key>
-				<string>17.00.00</string>
+				<string>17.0.0</string>
 				<key>Replace</key>
 				<data>u7xP6njpXQAAAJA=</data>
 				<key>ReplaceMask</key>
@@ -418,7 +418,7 @@
 				<key>MaxKernel</key>
 				<string>23.99.99</string>
 				<key>MinKernel</key>
-				<string>20.04.00</string>
+				<string>20.4.0</string>
 				<key>Replace</key>
 				<data>urxP6ngx2+s=</data>
 				<key>ReplaceMask</key>
@@ -448,7 +448,7 @@
 				<key>MaxKernel</key>
 				<string>23.99.99</string>
 				<key>MinKernel</key>
-				<string>17.00.00</string>
+				<string>17.0.0</string>
 				<key>Replace</key>
 				<data>Zg8fhAAAAAAAZg8fhAAAAAAAZg8fhAAAAAAAZg8fhAAAAAAAZg8fRAAA</data>
 				<key>ReplaceMask</key>
@@ -478,7 +478,7 @@
 				<key>MaxKernel</key>
 				<string>23.99.99</string>
 				<key>MinKernel</key>
-				<string>17.00.00</string>
+				<string>17.0.0</string>
 				<key>Replace</key>
 				<data>JfwAAAAPHwA=</data>
 				<key>ReplaceMask</key>
@@ -508,7 +508,7 @@
 				<key>MaxKernel</key>
 				<string>23.99.99</string>
 				<key>MinKernel</key>
-				<string>21.00.00</string>
+				<string>21.0.0</string>
 				<key>Replace</key>
 				<data>AAADAA==</data>
 				<key>ReplaceMask</key>
@@ -538,7 +538,7 @@
 				<key>MaxKernel</key>
 				<string>23.99.99</string>
 				<key>MinKernel</key>
-				<string>22.00.00</string>
+				<string>22.0.0</string>
 				<key>Replace</key>
 				<data>AADrAA==</data>
 				<key>ReplaceMask</key>
@@ -568,7 +568,7 @@
 				<key>MaxKernel</key>
 				<string>23.99.99</string>
 				<key>MinKernel</key>
-				<string>21.00.00</string>
+				<string>21.0.0</string>
 				<key>Replace</key>
 				<data>AAAAAAAAAAAAAAAAAABmkGaQZpA=</data>
 				<key>ReplaceMask</key>
@@ -598,7 +598,7 @@
 				<key>MaxKernel</key>
 				<string>23.99.99</string>
 				<key>MinKernel</key>
-				<string>21.00.00</string>
+				<string>21.0.0</string>
 				<key>Replace</key>
 				<data>AAAAAAAAAGaQZpBmkA==</data>
 				<key>ReplaceMask</key>
@@ -628,7 +628,7 @@
 				<key>MaxKernel</key>
 				<string>23.99.99</string>
 				<key>MinKernel</key>
-				<string>17.00.00</string>
+				<string>17.0.0</string>
 				<key>Replace</key>
 				<data>uXcCAAC4BgEHALoGAQcADx9AAA==</data>
 				<key>ReplaceMask</key>
@@ -658,7 +658,7 @@
 				<key>MaxKernel</key>
 				<string>23.99.99</string>
 				<key>MinKernel</key>
-				<string>17.00.00</string>
+				<string>17.0.0</string>
 				<key>Replace</key>
 				<data>uXcCAAC4BgYGBroGBgYGDzAPCQ==</data>
 				<key>ReplaceMask</key>
