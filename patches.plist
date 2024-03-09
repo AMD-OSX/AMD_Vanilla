@@ -14,25 +14,19 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				wegaAAAA
-				</data>
+				<data>wegaAAAA</data>
 				<key>MaskFind</key>
-				<data>
-				//3/AAAA
-				</data>
+				<data>//3/AAAA</data>
 				<key>MaskReplace</key>
-				<data>
-				//////8A
-				</data>
+				<data>//////8A</data>
 				<key>MatchOS</key>
 				<string>10.13.x,10.14.x</string>
 				<key>Procedure</key>
 				<string>_cpuid_set_info</string>
+				<key>RangeFind</key>
+				<integer>0</integer>
 				<key>Replace</key>
-				<data>
-				uAAAAAAA
-				</data>
+				<data>uAAAAAAA</data>
 				<key>Skip</key>
 				<integer>0</integer>
 			</dict>
@@ -44,25 +38,19 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				wegaAAAA
-				</data>
+				<data>wegaAAAA</data>
 				<key>MaskFind</key>
-				<data>
-				//3/AAAA
-				</data>
+				<data>//3/AAAA</data>
 				<key>MaskReplace</key>
-				<data>
-				//////8A
-				</data>
+				<data>//////8A</data>
 				<key>MatchOS</key>
 				<string>10.15.x,11.x</string>
 				<key>Procedure</key>
 				<string>_cpuid_set_info</string>
+				<key>RangeFind</key>
+				<integer>0</integer>
 				<key>Replace</key>
-				<data>
-				ugAAAAAA
-				</data>
+				<data>ugAAAAAA</data>
 				<key>Skip</key>
 				<integer>0</integer>
 			</dict>
@@ -74,25 +62,19 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				wegaAAAA
-				</data>
+				<data>wegaAAAA</data>
 				<key>MaskFind</key>
-				<data>
-				//3/AAAA
-				</data>
+				<data>//3/AAAA</data>
 				<key>MaskReplace</key>
-				<data>
-				////////
-				</data>
+				<data></data>
 				<key>MatchOS</key>
 				<string>12.x,13.0,13.1,13.2</string>
 				<key>Procedure</key>
 				<string>_cpuid_set_info</string>
+				<key>RangeFind</key>
+				<integer>0</integer>
 				<key>Replace</key>
-				<data>
-				ugAAAACQ
-				</data>
+				<data>ugAAAACQ</data>
 				<key>Skip</key>
 				<integer>0</integer>
 			</dict>
@@ -104,17 +86,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				wegaAAA=
-				</data>
+				<data>wegaAAA=</data>
 				<key>MaskFind</key>
-				<data>
-				//3/AAA=
-				</data>
+				<data>//3/AAA=</data>
 				<key>MaskReplace</key>
-				<data>
-				//////8=
-				</data>
+				<data>//////8=</data>
 				<key>MatchOS</key>
 				<string>13.3,13.4,13.5,14.x</string>
 				<key>Procedure</key>
@@ -122,159 +98,7 @@
 				<key>RangeFind</key>
 				<integer>0</integer>
 				<key>Replace</key>
-				<data>
-				ugAAAAA=
-				</data>
-				<key>Skip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>algrey - cpu_topology_sort -disable _x86_validate_topology-10.13.x,10.14.x,10.15.x,11.x,11,12.x,13.x</string>
-				<key>Count</key>
-				<integer>1</integer>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				6AAA//8=
-				</data>
-				<key>MaskFind</key>
-				<data>
-				/wAA//8=
-				</data>
-				<key>MaskReplace</key>
-				<data>
-				</data>
-				<key>MatchOS</key>
-				<string>10.13.x,10.14.x,10.15.x,11.x,11,12.x,13.x</string>
-				<key>Procedure</key>
-				<string>_cpu_topology_sort</string>
-				<key>Replace</key>
-				<data>
-				Dx9EAAA=
-				</data>
-				<key>Skip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>algrey - _cpuid_set_cpufamily - Force CPUFAMILY_INTEL_PENRYN - 10.13/10.14/10.15/11.2</string>
-				<key>Count</key>
-				<integer>1</integer>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				MduAPQAAAAAGdQA=
-				</data>
-				<key>MaskFind</key>
-				<data>
-				/////wAAAP///wA=
-				</data>
-				<key>MaskReplace</key>
-				<data>
-				</data>
-				<key>MatchOS</key>
-				<string>10.13.x,10.14.x,10.15.x,11.1,11.2</string>
-				<key>Procedure</key>
-				<string></string>
-				<key>RangeFind</key>
-				<integer>0</integer>
-				<key>Replace</key>
-				<data>
-				u7xP6njpXQAAAJA=
-				</data>
-				<key>Skip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>algrey | _cpuid_set_cpufamily | Force CPUFAMILY_INTEL_PENRYN | 11.3+</string>
-				<key>Count</key>
-				<integer>1</integer>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				gD0AAAAABnU=
-				</data>
-				<key>MaskFind</key>
-				<data>
-				//8AAAAA//8=
-				</data>
-				<key>MaskReplace</key>
-				<data>
-				</data>
-				<key>MatchOS</key>
-				<string>11.x,12.x,13.x,14.x</string>
-				<key>Procedure</key>
-				<string>_cpuid_set_info</string>
-				<key>Replace</key>
-				<data>
-				urxP6ngx2+s=
-				</data>
-				<key>Skip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Goldfish64, algrey | Bypass GenuineIntel check panic | 12.0+</string>
-				<key>Count</key>
-				<integer>1</integer>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				AAAAAAAAMdKzAQ==
-				</data>
-				<key>MaskFind</key>
-				<data>
-				AAAAAAAA/////w==
-				</data>
-				<key>MaskReplace</key>
-				<data>
-				/////////////w==
-				</data>
-				<key>MatchOS</key>
-				<string>12.x,13.x,14.x</string>
-				<key>Procedure</key>
-				<string></string>
-				<key>Replace</key>
-				<data>
-				kJCQkJCQMdKzAQ==
-				</data>
-				<key>Skip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>algrey - _cpuid_set_cache_info - Set cpuid to 0x8000001D instead 0 - 10.13.x,10.14.x</string>
-				<key>Count</key>
-				<integer>1</integer>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				McAx2zHJMdIPokGJxkGJ0QAAAAAAAAA=
-				</data>
-				<key>MaskFind</key>
-				<data>
-				/////////////////////wAAAAAA//8=
-				</data>
-				<key>MaskReplace</key>
-				<data>
-				</data>
-				<key>MatchOS</key>
-				<string>10.13.x,10.14.x</string>
-				<key>Procedure</key>
-				<string></string>
-				<key>RangeFind</key>
-				<integer>0</integer>
-				<key>Replace</key>
-				<data>
-				uB0AAIAx2zHJMdIPokGJxkGJ0escZpA=
-				</data>
+				<data>ugAAAAA=</data>
 				<key>Skip</key>
 				<integer>0</integer>
 			</dict>
@@ -286,23 +110,19 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				uaABAAAPMg==
-				</data>
+				<data>uaABAAAPMg==</data>
 				<key>MaskFind</key>
-				<data>
-				</data>
+				<data></data>
 				<key>MaskReplace</key>
-				<data>
-				</data>
+				<data></data>
 				<key>MatchOS</key>
 				<string>10.13.x,10.14.x,10.15.x,11.x,12.x,13.x,14.x</string>
 				<key>Procedure</key>
 				<string></string>
+				<key>RangeFind</key>
+				<integer>0</integer>
 				<key>Replace</key>
-				<data>
-				Dx+AAAAAAA==
-				</data>
+				<data>ZpBmkGaQkA==</data>
 				<key>Skip</key>
 				<integer>0</integer>
 			</dict>
@@ -314,51 +134,19 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				uAQAAABEifFEiQ==
-				</data>
+				<data>uAQAAABEifFEiQ==</data>
 				<key>MaskFind</key>
-				<data>
-				</data>
+				<data></data>
 				<key>MaskReplace</key>
-				<data>
-				</data>
+				<data></data>
 				<key>MatchOS</key>
 				<string>10.13.x,10.14.x,10.15.x,11.x,12.x,13.x,14.x</string>
 				<key>Procedure</key>
 				<string></string>
-				<key>Replace</key>
-				<data>
-				uB0AAIBEifFEiQ==
-				</data>
-				<key>Skip</key>
+				<key>RangeFind</key>
 				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>algrey | _cpuid_set_generic_info | Disable check to allow leaf7 | 10.13+</string>
-				<key>Count</key>
-				<integer>1</integer>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				ADoPgg==
-				</data>
-				<key>MaskFind</key>
-				<data>
-				</data>
-				<key>MaskReplace</key>
-				<data>
-				</data>
-				<key>MatchOS</key>
-				<string>10.13.x,10.14.x,10.15.x,11.x,12.x,13.x,14.x</string>
-				<key>Procedure</key>
-				<string></string>
 				<key>Replace</key>
-				<data>
-				AAAPgg==
-				</data>
+				<data>uB0AAIBEifFEiQ==</data>
 				<key>Skip</key>
 				<integer>0</integer>
 			</dict>
@@ -370,23 +158,43 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				uYsAAAAxwDHSDzA=
-				</data>
+				<data>uYsAAAAxwDHSDzA=</data>
 				<key>MaskFind</key>
-				<data>
-				</data>
+				<data></data>
 				<key>MaskReplace</key>
-				<data>
-				</data>
+				<data></data>
 				<key>MatchOS</key>
 				<string>10.13.x,10.14.x,10.15.x,11.x,12.x,13.x,14.x</string>
 				<key>Procedure</key>
 				<string></string>
+				<key>RangeFind</key>
+				<integer>0</integer>
 				<key>Replace</key>
-				<data>
-				Zg8fhAAAAAAAZpA=
-				</data>
+				<data>ZpBmkGaQZpBmkJA=</data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>algrey | _cpuid_set_generic_info | Replace rdmsr(0x8B) with constant 186 | 10.13+</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>uYsAAAAPMg==</data>
+				<key>MaskFind</key>
+				<data></data>
+				<key>MaskReplace</key>
+				<data></data>
+				<key>MatchOS</key>
+				<string>10.13.x,10.14.x,10.15.x,11.x,12.x,13.x,14.x</string>
+				<key>Procedure</key>
+				<string></string>
+				<key>RangeFind</key>
+				<integer>0</integer>
+				<key>Replace</key>
+				<data>uroAAABmkA==</data>
 				<key>Skip</key>
 				<integer>0</integer>
 			</dict>
@@ -398,23 +206,43 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				uRcAAAAPMsHqEoDiBw==
-				</data>
+				<data>uRcAAAAPMsHqEoDiBw==</data>
 				<key>MaskFind</key>
-				<data>
-				</data>
+				<data></data>
 				<key>MaskReplace</key>
-				<data>
-				</data>
+				<data></data>
 				<key>MatchOS</key>
 				<string>10.13.x,10.14.x,10.15.x,11.x,12.x,13.x,14.x</string>
 				<key>Procedure</key>
 				<string></string>
+				<key>RangeFind</key>
+				<integer>0</integer>
 				<key>Replace</key>
-				<data>
-				sgFmDx+EAAAAAABmkA==
-				</data>
+				<data>sgFmDx+EAAAAAABmkA==</data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>algrey | _cpuid_set_generic_info | Disable check to allow leaf7 | 10.13+</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>ADoPgg==</data>
+				<key>MaskFind</key>
+				<data></data>
+				<key>MaskReplace</key>
+				<data></data>
+				<key>MatchOS</key>
+				<string>10.13.x,10.14.x,10.15.x,11.x,12.x,13.x,14.x</string>
+				<key>Procedure</key>
+				<string></string>
+				<key>RangeFind</key>
+				<integer>0</integer>
+				<key>Replace</key>
+				<data>AAAPgg==</data>
 				<key>Skip</key>
 				<integer>0</integer>
 			</dict>
@@ -426,23 +254,43 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				R2VudWluZUludGVsAA==
-				</data>
+				<data>R2VudWluZUludGVsAA==</data>
 				<key>MaskFind</key>
-				<data>
-				</data>
+				<data></data>
 				<key>MaskReplace</key>
-				<data>
-				</data>
+				<data></data>
 				<key>MatchOS</key>
 				<string>10.13.x,10.14.x,10.15.x,11.x</string>
 				<key>Procedure</key>
 				<string></string>
+				<key>RangeFind</key>
+				<integer>0</integer>
 				<key>Replace</key>
-				<data>
-				QXV0aGVudGljQU1EAA==
-				</data>
+				<data>QXV0aGVudGljQU1EAA==</data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Goldfish64, algrey | Bypass GenuineIntel check panic | 12.0+</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>AAAAAAAAMdKzAQ==</data>
+				<key>MaskFind</key>
+				<data>AAAAAAAA/////w==</data>
+				<key>MaskReplace</key>
+				<data></data>
+				<key>MatchOS</key>
+				<string>12.x,13.x,14.x</string>
+				<key>Procedure</key>
+				<string>_cpuid_set_info</string>
+				<key>RangeFind</key>
+				<integer>0</integer>
+				<key>Replace</key>
+				<data>kJCQkJCQMdKzAQ==</data>
 				<key>Skip</key>
 				<integer>0</integer>
 			</dict>
@@ -454,26 +302,43 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				MduAPQAAAAAGdQA=
-				</data>
+				<data>MduAPQAAAAAGdQA=</data>
 				<key>MaskFind</key>
-				<data>
-				/////wAAAP///wA=
-				</data>
+				<data>/////wAAAP///wA=</data>
 				<key>MaskReplace</key>
-				<data>
-				</data>
+				<data></data>
 				<key>MatchOS</key>
-				<string>10.13.x,10.14.x,10.15.x,11.1,11.2,11.3</string>
+				<string>10.13.x,10.14.x,10.15.x,11.0,11.1,11.2</string>
 				<key>Procedure</key>
 				<string></string>
 				<key>RangeFind</key>
 				<integer>0</integer>
 				<key>Replace</key>
-				<data>
-				u7xP6njpXQAAAJA=
-				</data>
+				<data>u7xP6njpXQAAAJA=</data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>algrey | _cpuid_set_cpufamily | Force CPUFAMILY_INTEL_PENRYN | 11.3+</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>gD0AAAAABnU=</data>
+				<key>MaskFind</key>
+				<data>//8AAAAA//8=</data>
+				<key>MaskReplace</key>
+				<data></data>
+				<key>MatchOS</key>
+				<string>11.3,11.4,11.5,11.6,11.7,12.x,13.x,14.x</string>
+				<key>Procedure</key>
+				<string>_cpuid_set_info </string>
+				<key>RangeFind</key>
+				<integer>0</integer>
+				<key>Replace</key>
+				<data>urxP6ngx2+s=</data>
 				<key>Skip</key>
 				<integer>0</integer>
 			</dict>
@@ -485,25 +350,19 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				uZkBAAAPMkjB4iCJxkgJ1rmYAQAADzJIweIgicBICcK/
-				WAIxBTHJRTHA
-				</data>
+				<data>uZkBAAAPMkjB4iCJxkgJ1rmYAQAADzJIweIgicBICcK/WAIxBTHJRTHA</data>
 				<key>MaskFind</key>
-				<data>
-				</data>
+				<data></data>
 				<key>MaskReplace</key>
-				<data>
-				</data>
+				<data></data>
 				<key>MatchOS</key>
 				<string>10.13.x,10.14.x,10.15.x,11.x,12.x,13.x,14.x</string>
 				<key>Procedure</key>
 				<string></string>
+				<key>RangeFind</key>
+				<integer>0</integer>
 				<key>Replace</key>
-				<data>
-				Zg8fhAAAAAAAZg8fhAAAAAAAZg8fhAAAAAAAZg8fhAAA
-				AAAAZg8fRAAA
-				</data>
+				<data>Zg8fhAAAAAAAZg8fhAAAAAAAZg8fhAAAAAAAZg8fhAAAAAAAZg8fRAAA</data>
 				<key>Skip</key>
 				<integer>0</integer>
 			</dict>
@@ -515,23 +374,67 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				JfwAAACD+BM=
-				</data>
+				<data>JfwAAACD+BM=</data>
 				<key>MaskFind</key>
-				<data>
-				</data>
+				<data></data>
 				<key>MaskReplace</key>
-				<data>
-				</data>
+				<data></data>
 				<key>MatchOS</key>
 				<string>10.13.x,10.14.x,10.15.x,11.x,12.x,13.x,14.x</string>
 				<key>Procedure</key>
 				<string></string>
+				<key>RangeFind</key>
+				<integer>0</integer>
 				<key>Replace</key>
-				<data>
-				JfwAAAAPHwA=
-				</data>
+				<data>JfwAAAAPHwA=</data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Visual | thread_quantum_expire, thread_unblock, thread_invoke | Remove non-monotonic time panic | 12.0+</string>
+				<key>Count</key>
+				<integer>3</integer>
+				<key>Disabled</key>
+				<true/>
+				<key>Find</key>
+				<data>SAAAAAIAAEgAAFgAAAAPAAAAAAA=</data>
+				<key>MaskFind</key>
+				<data>/wAAD/////8AAP8AAAD/AAAAAAA=</data>
+				<key>MaskReplace</key>
+				<data>AAAAAAAAAAAAAAAAAAD///////8=</data>
+				<key>MatchOS</key>
+				<string>12.x,13.x,14.x</string>
+				<key>Procedure</key>
+				<string></string>
+				<key>RangeFind</key>
+				<integer>0</integer>
+				<key>Replace</key>
+				<data>AAAAAAAAAAAAAAAAAABmkGaQZpA=</data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Visual | thread_invoke, thread_dispatch | Remove non-monotonic time panic | 12.0+</string>
+				<key>Count</key>
+				<integer>2</integer>
+				<key>Disabled</key>
+				<true/>
+				<key>Find</key>
+				<data>SAAAgAQAAA8AAAAAAA==</data>
+				<key>MaskFind</key>
+				<data>SAAA8P////8AAAAAAA==</data>
+				<key>MaskReplace</key>
+				<data>AAAAAAAAAP///////w==</data>
+				<key>MatchOS</key>
+				<string>12.x,13.x,14.x</string>
+				<key>Procedure</key>
+				<string></string>
+				<key>RangeFind</key>
+				<integer>0</integer>
+				<key>Replace</key>
+				<data>AAAAAAAAAGaQZpBmkA==</data>
 				<key>Skip</key>
 				<integer>0</integer>
 			</dict>
@@ -541,26 +444,21 @@
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Disabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
-				<data>
-				icCB4v//AP+BygAAAQC5dwIAAA==
-				</data>
+				<data>icCB4v//AP+BygAAAQC5dwIAAA==</data>
 				<key>MaskFind</key>
-				<data>
-				////////D////////////////w==
-				</data>
+				<data>////////D////////////////w==</data>
 				<key>MaskReplace</key>
-				<data>
-				</data>
+				<data></data>
 				<key>MatchOS</key>
 				<string>10.13.x,10.14.x,10.15.x,11.x,12.x,13.x,14.x</string>
 				<key>Procedure</key>
 				<string></string>
+				<key>RangeFind</key>
+				<integer>0</integer>
 				<key>Replace</key>
-				<data>
-				uXcCAAC4BgEHALoGAQcADx9AAA==
-				</data>
+				<data>uXcCAAC4BgEHALoGAQcADx9AAA==</data>
 				<key>Skip</key>
 				<integer>0</integer>
 			</dict>
@@ -570,26 +468,21 @@
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
-				<data>
-				icCB4v//AP+BygAAAQC5dwIAAA==
-				</data>
+				<data>icCB4v//AP+BygAAAQC5dwIAAA==</data>
 				<key>MaskFind</key>
-				<data>
-				////////D////////////////w==
-				</data>
+				<data>////////D////////////////w==</data>
 				<key>MaskReplace</key>
-				<data>
-				</data>
+				<data></data>
 				<key>MatchOS</key>
 				<string>10.13.x,10.14.x,10.15.x,11.x,12.x,13.x,14.x</string>
 				<key>Procedure</key>
 				<string></string>
+				<key>RangeFind</key>
+				<integer>0</integer>
 				<key>Replace</key>
-				<data>
-				uXcCAAC4BgYGBroGBgYGDzAPCQ==
-				</data>
+				<data>uXcCAAC4BgYGBroGBgYGDzAPCQ==</data>
 				<key>Skip</key>
 				<integer>0</integer>
 			</dict>
@@ -604,17 +497,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				4BFyAA==
-				</data>
+				<data>4BFyAA==</data>
 				<key>MaskFind</key>
-				<data>
-				8P//8A==
-				</data>
+				<data>8P//8A==</data>
 				<key>MaskReplace</key>
-				<data>
-				AAAPAA==
-				</data>
+				<data>AAAPAA==</data>
 				<key>MatchOS</key>
 				<string>12.x,13.x,14.x</string>
 				<key>Name</key>
@@ -622,9 +509,7 @@
 				<key>Procedure</key>
 				<string>__ZN11IOPCIBridge13probeBusGatedEP14probeBusParams</string>
 				<key>Replace</key>
-				<data>
-				AAADAA==
-				</data>
+				<data>AAADAA==</data>
 				<key>Skip</key>
 				<integer>0</integer>
 			</dict>
@@ -634,19 +519,13 @@
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
-				<data>
-				hAB1Sw==
-				</data>
-				<key>MaskFInd</key>
-				<data>
-				/wD//w==
-				</data>
+				<data>hAB1Sw==</data>
+				<key>MaskFind</key>
+				<data>/wD//w==</data>
 				<key>MaskReplace</key>
-				<data>
-				AAD/AA==
-				</data>
+				<data>AAD/AA==</data>
 				<key>MatchOS</key>
 				<string>13.x,14.x</string>
 				<key>Name</key>
@@ -654,9 +533,7 @@
 				<key>Procedure</key>
 				<string>__ZN17IOPCIConfigurator18IOPCIIsHotplugPortEP16IOPCIConfigEntry</string>
 				<key>Replace</key>
-				<data>
-				AADrAA==
-				</data>
+				<data>AADrAA==</data>
 				<key>Skip</key>
 				<integer>0</integer>
 			</dict>
