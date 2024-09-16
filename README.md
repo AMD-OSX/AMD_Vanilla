@@ -5,8 +5,8 @@
 </span>
 
 
-#### Patches for beta versions are provided, but no support is given until the OS is released.
-#### Try these patches at your own risk, and always keep an EFI backup.
+### Patches for beta versions are provided, but no support is given until the OS is released.
+### Try these patches at your own risk, and always keep an EFI backup.
 
 ### Languages: English (current)
 
@@ -14,22 +14,24 @@ Binary kernel patches to enable almost native AMD CPU support on macOS.
 
 # Read me first!
 
-Patches are now universal across 15h, 16h, 17h, and 19h by utilizing the OpenCore kernel Quirk `ProvideCurrentCpuInfo`. OpenCore 0.7.1 or newer is required.
+Patches are now universal across 15h, 16h, 17h, and 19h by utilizing the OpenCore kernel Quirk `ProvideCurrentCpuInfo`. [OpenCore](https://github.com/acidanthera/OpenCorePkg/releases) 0.7.1 or newer is required.
+Make sure to **enable** this quirk or the system **won't boot**.
 
-Make sure to ****enable**** this quirk or the system ****won't boot****.
 
-**Note for Zen 4:** Zen 4 (Ryzen 7000) requires patching for IOPCIFamily.kext. <br/>
+###Note for Zen 4:
+
+Zen 4 (Ryzen 7000) requires patching for IOPCIFamily.kext. <br/>
 This patch is enabled by default. Please ensure that you've added it to your current config for Zen 4 stability. 
 This patch also allows MSI A520, B550, and X570 boards to boot macOS Monterey and newer.
 
-Core Count patch needs to be modified to boot your system. Find the four `algrey - Force cpuid_cores_per_package` patches and alter the `Replace` value only.
+The Core Count patch needs to be modified to boot your system. Find the four `algrey - Force cpuid_cores_per_package` patches and alter the `Replace` value only.
 
 |   macOS Version      | Replace Value | New Value |
 |----------------------|---------------|-----------|
 | 10.13.x, 10.14.x     | B8000000 0000 | B8 < Core Count > 0000 0000 |
 | 10.15.x, 11.x        | BA000000 0000 | BA < Core Count > 0000 0000 |
 | 12.x, 13.0 to 13.2.1 | BA000000 0090 | BA < Core Count > 0000 0090 |
-| 13.3                 |  BA000000 00  | BA < Core Count > 0000 00 |
+| 13.3 +               |  BA000000 00  | BA < Core Count > 0000 00 |
 
 From the table above substitue `< Core Count >` with the hexadecimal value matching your physical core count. Do not use your CPU's thread count. See the table below for the values matching your CPU core count.
 
@@ -74,6 +76,8 @@ The default enabled patch is Algrey's original patch. This will work for all GPU
 
 The other choice is Shaneee's patch which will increase GPU performance on AMD GPUs but can stop NVIDIA GPUs from booting. It might also causes audio issues when using HDMI or DisplayPort audio.
 
+`Note:` There are two versions of these patches. macOS Sequoia has it's own PAT patch. 
+
 The choice is yours. Don't try to use them both at the same time.
 
 ## Note on TRX40 systems
@@ -98,9 +102,13 @@ On AM5 motherboards with on-board Thunderbolt/USB4 (e.g. Asus ROG Crosshair X670
 
 - macOS Ventura (13)
 
+- macOS Sonoma (14)
+
+- macOS Sequoia (15)
+
 ## Instructions
 
-Follow the [Dortania OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/) for instructions on how to create the installer USB and setup the config file with these patches.
+Follow the [Dortania OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/) for instructions on how to create the installer USB and set up the config file with these patches.
 
 Do not ask for support on GitHub.
 
@@ -122,7 +130,7 @@ Do not ask for support on GitHub.
 
 - [AlGrey](https://github.com/AlGreyy) for the idea and creating the patches.
 
-- [XLNC](https://github.com/XLNCs) for maintaining patches to various macOS versions.
+- [XLNC](https://github.com/XLNCs) for maintaining patches for various macOS versions.
 
 - [Acidanthera](https://github.com/acidanthera) for OpenCore.
 
