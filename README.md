@@ -18,7 +18,7 @@ Patches are now universal across 15h, 16h, 17h, and 19h by utilizing the OpenCor
 Make sure to **enable** this quirk or the system **won't boot**.
 
 
-###Note for Zen 4:
+### Note for Zen 4:
 
 Zen 4 (Ryzen 7000) requires patching for IOPCIFamily.kext. <br/>
 This patch is enabled by default. Please ensure that you've added it to your current config for Zen 4 stability. 
