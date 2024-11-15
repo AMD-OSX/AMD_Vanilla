@@ -18,21 +18,21 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>wegaAAAA</data>
+				<data>weoA/8KJFQAAAAA=</data>
 				<key>Identifier</key>
 				<string>kernel</string>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data>//3/AAAA</data>
+				<data>//8A/////wAAAAA=</data>
 				<key>MaxKernel</key>
 				<string>16.99.99</string>
 				<key>MinKernel</key>
 				<string>16.0.0</string>
 				<key>Replace</key>
-				<data>ugQAAAAA</data>
+				<data>ugQAAAAAAAAAAAA=</data>
 				<key>ReplaceMask</key>
-				<data>//////8A</data>
+				<data>//////8AAAAAAAA=</data>
 				<key>Skip</key>
 				<integer>0</integer>
 			</dict>
