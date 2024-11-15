@@ -30,7 +30,7 @@
 				<key>MinKernel</key>
 				<string>16.0.0</string>
 				<key>Replace</key>
-				<data>uggAAAAA</data>
+				<data>ugQAAAAA</data>
 				<key>ReplaceMask</key>
 				<data>//////8A</data>
 				<key>Skip</key>
@@ -252,25 +252,25 @@
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>algrey, Zormeister, RoyalGraphX | _cpuid_set_cpufamily | Force CPUFAMILY_INTEL_PENRYN | 10.12</string>
+				<string>algrey, RoyalGraphX | _cpuid_set_cpufamily | Force CPUFAMILY_INTEL_PENRYN | 10.12</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>MdsPtsiD+QZ1UQ==</data>
+				<data>D7cFAAAAADHbD7bI</data>
 				<key>Identifier</key>
 				<string>kernel</string>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data>/////wAAAP///wA=</data>
+				<data>////AAAAAP//////</data>
 				<key>MaxKernel</key>
-				<string>16.99.99</string>
+				<string>17.99.99</string>
 				<key>MinKernel</key>
 				<string>16.0.0</string>
 				<key>Replace</key>
-				<data>u7xP6njpXQAAAJA=</data>
+				<data>uAYAAACQkJCQkJCQ</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -331,66 +331,6 @@
 				<string>16.0.0</string>
 				<key>Replace</key>
 				<data>JfwAAAAPHwA=</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>x86_64</string>
-				<key>Base</key>
-				<string></string>
-				<key>Comment</key>
-				<string>Shaneee, RoyalGraphX | _mtrr_update_action | fix PAT | 10.12</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>icCB4v//8P9IgcoAAAAAuQAAAA==</data>
-				<key>Identifier</key>
-				<string>kernel</string>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data>////////D////////////////w==</data>
-				<key>MaxKernel</key>
-				<string>16.99.99</string>
-				<key>MinKernel</key>
-				<string>16.0.0</string>
-				<key>Replace</key>
-				<data>uXcCAAC4BgEHALoGAQcADx9AAA==</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>x86_64</string>
-				<key>Base</key>
-				<string></string>
-				<key>Comment</key>
-				<string>Shaneee, RoyalGraphX | _mtrr_update_action | Fix PAT | 10.12</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<false/>
-				<key>Find</key>
-				<data>icCB4v//8P9IgcoAAAAAuQAAAA==</data>
-				<key>Identifier</key>
-				<string>kernel</string>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data>////////D////////////////w==</data>
-				<key>MaxKernel</key>
-				<string>16.99.99</string>
-				<key>MinKernel</key>
-				<string>16.0.0</string>
-				<key>Replace</key>
-				<data>uXcCAAC4BgYGBroGBgYGDzAPCQ==</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
