@@ -9,7 +9,7 @@ Support Chart
 
 | Release Name | Status | Notes |
 | --- | --- | --- |
-| Sierra | <span style="color: #ffe985;">Work-In-Progress</span> | Missing PAT patch.<br> cpuid_cores_per_package patch may not be working properly.<br>Currently Kernel Panics. |
+| Sierra | <span style="color: #ffe985;">Work-In-Progress</span> | cpuid_cores_per_package patch may not be working properly.<br>Currently Kernel Panics. |
 | El Capitan | <span style="color: #a80000;">Incomplete</span> | None |
 | Yosemite | <span style="color: #a80000;">Incomplete</span> | None |
 | Mavericks | <span style="color: #a80000;">Incomplete</span> | None |
