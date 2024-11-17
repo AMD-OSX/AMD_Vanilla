@@ -12,27 +12,27 @@
 				<key>Base</key>
 				<string>_cpuid_set_info</string>
 				<key>Comment</key>
-				<string>algrey, Zormeister | Force cpuid_cores_per_package to constant (user-specified) | 10.12</string>
+				<string>RoyalGraphX | Force cpuid_cores_per_package to constant (user-specified) | 10.12</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>weoA/8KJFQAAAAA=</data>
+				<data>g+AARInqweoA/8KJFQAAAAA=</data>
 				<key>Identifier</key>
 				<string>kernel</string>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data>//8A/////wAAAAA=</data>
+				<data>//8A//////8A/////wAAAAA=</data>
 				<key>MaxKernel</key>
 				<string>16.99.99</string>
 				<key>MinKernel</key>
 				<string>16.0.0</string>
 				<key>Replace</key>
-				<data>ugQAAAAAAAAAAAA=</data>
+				<data>uggAAACJFQAAAACQkJCQkJA=</data>
 				<key>ReplaceMask</key>
-				<data>//////8AAAAAAAA=</data>
+				<data>//////8AAAAAAAD///////8=</data>
 				<key>Skip</key>
 				<integer>0</integer>
 			</dict>
