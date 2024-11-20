@@ -25,9 +25,11 @@ Support Chart
 
 # Preliminary Information
 
+### OpenCore Quirks
+
 Ensure the Kernel Quirk `ProvideCurrentCpuInfo` is enabled. OpenCore 0.7.1 or newer is required. You should NOT be using an outdated copy of OpenCore, this requirement has long been deprecated. Make sure to **enable** this quirk or the system **won't boot**. You're only warned once.
 
-### Note for Zen 4:
+### Note for Zen 4 CPUs
 
 We do not have any people on Zen 4 available for testing at this moment, no official support is provided at this time. Zen 3 FTW (not really, give us time).
 
