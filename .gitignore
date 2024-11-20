@@ -1,6 +1,16 @@
+# General macOS files
+
 .DS_store
 patches_backported.txt
 commit.sh
+
+# Carnations Internal
+
 push.sh
 patch_converter.py
 carnations_patcher.py
+
+# XNU Source Trees
+
+xnu-xnu-3789.70.16
+xnu-xnu-4570.71.2
