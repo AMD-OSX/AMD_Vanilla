@@ -13,7 +13,7 @@ Support Chart
 
 | Release Name | Status | Notes |
 | --- | --- | --- |
-| Sierra | <span style="color: #ffe985;">Work-In-Progress</span> | cpuid_cores_per_package patch borked.<br>Currently Kernel Panics. |
+| Sierra | <span style="color: #7afc4e;">Boots Successfully</span> | "getCPUIDInfo unknown CPU family"<br>Need to update to proper CPU Family ID. |
 | El Capitan | <span style="color: #a80000;">Incomplete</span> | None |
 | Yosemite | <span style="color: #a80000;">Incomplete</span> | None |
 | Mavericks | <span style="color: #a80000;">Incomplete</span> | None |
@@ -58,7 +58,7 @@ The Core Count per Package patch needs to be modified to boot your system. The f
 
 | OS X Version | Default Value | Example Value |
 | --- | --- | --- |
-| 10.12 | TBD | TBD |
+| 10.12 | BA 00 00 00 00 00 | BA 04 00 00 00 00 |
 | 10.11 | TBD | TBD |
 | 10.10 | TBD | TBD |
 | 10.9 | TBD | TBD |
@@ -66,9 +66,9 @@ The Core Count per Package patch needs to be modified to boot your system. The f
 | 10.7 | TBD | TBD |
 | 10.6 | TBD | TBD |
 | 10.5 | TBD | TBD |
-| 10.4 | B8XX0000 | B8040000 |
+| 10.4 | B8 00 00 00 | B8 04 00 00 |
 
-From the table above, replace `<X>` with the hexadecimal value matching your physical core count. Do not use your CPU's thread count. See the table below for the values matching your CPU core count.
+From the table above, replace `<BX XX>` with the hexadecimal value matching your physical core count. Do not use your CPU's thread count. See the table below for the values matching your CPU core count.
 
 | Core Count | Hexadecimal |
 | --- | --- |
@@ -95,6 +95,13 @@ From the table above, replace `<X>` with the hexadecimal value matching your phy
 | 17h and 19h | Zen | Ryzen, Threadripper, Athlon 2xxGE |
 | 16h | Jaguar | A Series (including AM4 A-Series) |
 | 15h | Bulldozer | FX Series |
+
+## Gallery
+
+<h3 align="center">macOS Sierra 10.12.0</h3>
+<p align="center">
+  <img src="./assets/gallery/Sierra.png">
+</p>
 
 ## AMD Kernel Patches Credits
 
