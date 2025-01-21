@@ -56,7 +56,7 @@ Depending on the specific property list you use for your target OS X installatio
 
 The Core Count per Package patch needs to be modified to boot your system. The first kernel patch is the required to be updated no matter what property list you choose. Update the `Replace` value only.
 
-| OS X Version | Replace Value | New Value |
+| OS X Version | Default Value | Example Value |
 | --- | --- | --- |
 | 10.12 | TBD | TBD |
 | 10.11 | TBD | TBD |
@@ -66,9 +66,9 @@ The Core Count per Package patch needs to be modified to boot your system. The f
 | 10.7 | TBD | TBD |
 | 10.6 | TBD | TBD |
 | 10.5 | TBD | TBD |
-| 10.4 | TBD | TBD |
+| 10.4 | B8XX0000 | B8040000 |
 
-From the table above, replace `< Core Count >` with the hexadecimal value matching your physical core count. Do not use your CPU's thread count. See the table below for the values matching your CPU core count.
+From the table above, replace `<X>` with the hexadecimal value matching your physical core count. Do not use your CPU's thread count. See the table below for the values matching your CPU core count.
 
 | Core Count | Hexadecimal |
 | --- | --- |
@@ -102,9 +102,9 @@ If any credits are missing, they are to be added in future commits.
 
 - [RoyalGraphX](https://github.com/RoyalGraphX) for the idea to add support for older OS X releases, updating PAT for Sierra, updating _cpuid_set_cache_info, _cpuid_set_cpufamily, researching cpuid_cores_per_package on older OS X.
 
-- [Zormeister]() for the idea to add support for older OS X releases, initial patch matching confirmations for High Sierra -> Sierra backporting effort, cpuid_cores_per_package effort
+- [Zormeister](https://github.com/zormeister) for the idea to add support for older OS X releases, initial patch matching confirmations for High Sierra -> Sierra backporting effort, cpuid_cores_per_package effort
 
-- []()
+- [Dhinak G](https://github.com/dhinakg), helping reverse-engineer functions for new Find/Replace values in Tiger, for CPUID 4 and Cores Per Package patches
 
 - []()
 

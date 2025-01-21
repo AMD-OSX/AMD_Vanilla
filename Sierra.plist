@@ -10,36 +10,6 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>Base</key>
-				<string>_PE_i_can_has_kernel_configuration</string>
-				<key>Comment</key>
-				<string>RoyalGraphX | Force DEVELOPMENT bitmask for Kernel Configuration | 10.12</string>
-				<key>Count</key>
-				<integer>1</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>VUiJ5YsFAAAAAF3D</data>
-				<key>Identifier</key>
-				<string>kernel</string>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data>////////AAAAAP//</data>
-				<key>MaxKernel</key>
-				<string>16.99.99</string>
-				<key>MinKernel</key>
-				<string>16.0.0</string>
-				<key>Replace</key>
-				<data>VUiJ5bgHAAAAXcOQ</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>x86_64</string>
-				<key>Base</key>
 				<string>_cpuid_set_info</string>
 				<key>Comment</key>
 				<string>RoyalGraphX | Force cpuid_cores_per_package to constant (user-specified) | 10.12</string>
