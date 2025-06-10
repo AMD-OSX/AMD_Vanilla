@@ -106,6 +106,8 @@ On AM5 motherboards with on-board Thunderbolt/USB4 (e.g. Asus ROG Crosshair X670
 
 - macOS Sequoia (15)
 
+- macOS Tahoe Beta (16)
+
 ## Instructions
 
 Follow the [Dortania OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/) for instructions on how to create the installer USB and set up the config file with these patches.
