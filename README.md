@@ -4,10 +4,6 @@
 
 </span>
 
-
-### Patches for beta versions are provided, but no support is given until the OS is released.
-### Try these patches at your own risk, and always keep an EFI backup.
-
 ### Languages: English (current)
 
 Binary kernel patches to enable almost native AMD CPU support on macOS.
@@ -33,7 +29,7 @@ The Core Count patch needs to be modified to boot your system. Find the four `al
 | 12.x, 13.0 to 13.2.1 | BA000000 0090 | BA < Core Count > 0000 0090 |
 | 13.3 +               |  BA000000 00  | BA < Core Count > 0000 00 |
 
-From the table above substitue `< Core Count >` with the hexadecimal value matching your physical core count. Do not use your CPU's thread count. See the table below for the values matching your CPU core count.
+From the table above substitute `< Core Count >` with the hexadecimal value matching your physical core count. Do not use your CPU's thread count. See the table below for the values matching your CPU core count.
 
 
 | Core Count | Hexadecimal |
@@ -106,7 +102,7 @@ On AM5 motherboards with on-board Thunderbolt/USB4 (e.g. Asus ROG Crosshair X670
 
 - macOS Sequoia (15)
 
-- macOS Tahoe Beta (16)
+- macOS Tahoe (26)
 
 ## Instructions
 
