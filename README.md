@@ -15,6 +15,10 @@ Binary Kernel patches to enable almost native AMD CPU support on macOS.
 
 ## Read Me First!
 
+## Added support for macOS Tahoe 26.2 beta and lower OS
+
+## Use latest Clover release which added support for latest AMD Ryzen 9xxx CPU to avoid audio crackling problem
+
 ## Added support for macOS Sonoma beta 1
 
 ## Added support for macOS Ventura 13.5 Beta 1 and 2
