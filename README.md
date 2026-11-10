@@ -72,9 +72,11 @@ The default enabled patch is Algrey's original patch. This will work for all GPU
 
 The other choice is Shaneee's patch which will increase GPU performance on AMD GPUs but can stop NVIDIA GPUs from booting. It might also causes audio issues when using HDMI or DisplayPort audio.
 
+A third choice is the PA6 = WC variant of Algrey's patch (`algrey (PA6 = WC)` and `Algrey / Zormeister (PA6 = WC)`). It writes the same PAT as Algrey's patch except entry 6, which it sets to write-combining (WC) instead of UC-. XNU maps every write-combined page through PAT entry 6: `pat_init()` in `osfmk/i386/mtrr.c` sets PA6 = WC, which is the `or edx, 0x00010000` these patches replace. With Algrey's value every write-combined mapping, GPU VRAM (BAR) mappings in particular, ends up uncached. Shaneee's patch avoids that by making all eight entries write-back, which also makes uncached (MMIO) mappings cacheable. The PA6 = WC variant changes only entry 6. Tested with an RTX 5080 on macOS 26: it boots normally, and CPU-to-VRAM 8-byte stores go from 1.4 GB/s to 27.4 GB/s. Not yet tested on AMD GPUs.
+
 `Note:` There are two versions of these patches. macOS Sequoia has it's own PAT patch. 
 
-The choice is yours. Don't try to use them both at the same time.
+The choice is yours. Don't try to use more than one of them at the same time.
 
 ## Note on TRX40 systems
 
